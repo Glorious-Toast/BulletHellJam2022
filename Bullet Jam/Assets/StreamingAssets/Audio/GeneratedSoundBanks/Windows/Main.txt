@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	27511013	Play_Test_Beep			\Default Work Unit\Play_Test_Beep	
+	641054882	Stop_Test_Beep_Lp			\Default Work Unit\Stop_Test_Beep_Lp	
+	701599435	Stop_Test_Beep			\Default Work Unit\Stop_Test_Beep	
+	2235959444	Play_Test_Beep_Lp			\Default Work Unit\Play_Test_Beep_Lp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	386242470	Test_Beep	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Testing\Test_Beep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep		47620
+	776940909	Test_Beep_Lp	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Testing\Test_Beep_Lp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep_Lp		47288
+
