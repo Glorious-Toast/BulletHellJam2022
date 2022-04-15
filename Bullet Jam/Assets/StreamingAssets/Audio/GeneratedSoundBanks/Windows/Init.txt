@@ -1,0 +1,17 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	397641584	Enem_Twr_A			\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_A	
+	397641586	Enem_Twr_C			\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_C	
+	397641587	Enem_Twr_B			\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_B	
+	397641589	Enem_Twr_D			\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_D	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
+	1470412565	P_Locomotion			\Default Work Unit\Master Audio Bus\Player\P_Locomotion	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\Objects	
+	2151963051	Items			\Default Work Unit\Master Audio Bus\Items	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\Enemies	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
