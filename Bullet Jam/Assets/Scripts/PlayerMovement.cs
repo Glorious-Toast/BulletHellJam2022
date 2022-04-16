@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float travelDistance = 1f;
-    public float lerpSpeed = 20f;
+    public float lerpSpeed = 0.2f;
+    private float elapsedTime;
     public int boundsX = 25;
     public int boundsY = 25;
     public Transform graphicsTransform;
@@ -15,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Movement();
+    }
+
+    private void FixedUpdate()
+    {
         Lerp();
     }
 
@@ -49,14 +54,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (graphicsTransform.position != pLocTransform.position)
         {
-            graphicsTransform.position = Vector2.Lerp(graphicsTransform.position, pLocTransform.position, Time.deltaTime * lerpSpeed);
-            if (Vector2.Distance(graphicsTransform.position, pLocTransform.position) < 0.01f)
-            {
-                graphicsTransform.position = pLocTransform.position;
-            }
+            elapsedTime += Time.fixedDeltaTime;
+            graphicsTransform.position = Vector2.Lerp(graphicsTransform.position, pLocTransform.position, Mathf.SmoothStep(0, 1, elapsedTime/lerpSpeed));
         } else
         {
             isMoving = false;
+            elapsedTime = 0f;
         }
     }
 }
