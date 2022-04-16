@@ -20,6 +20,27 @@ namespace AK
         static const AkUniqueID STOP_TEST_BEEP_LP = 641054882U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace SONGSELECT
+        {
+            static const AkUniqueID GROUP = 1925045826U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SONG1 = 778469039U;
+                static const AkUniqueID SONG2 = 778469036U;
+                static const AkUniqueID SONG3 = 778469037U;
+            } // namespace SWITCH
+        } // namespace SONGSELECT
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SIDECHAIN1 = 1857854620U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -28,6 +49,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID DIEGETIC = 1316532907U;
         static const AkUniqueID ENEM_TWR_A = 397641584U;
         static const AkUniqueID ENEM_TWR_B = 397641587U;
         static const AkUniqueID ENEM_TWR_C = 397641586U;
@@ -39,6 +61,9 @@ namespace AK
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID P_LOCOMOTION = 1470412565U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID SONG_00 = 2482245737U;
+        static const AkUniqueID SONG_01 = 2482245736U;
+        static const AkUniqueID SONG_02 = 2482245739U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
