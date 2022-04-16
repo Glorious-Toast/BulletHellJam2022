@@ -251,8 +251,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5611d5cf80b30543ad294b103ad789a5
     GuidInternal: 
-    m_lastTime: -8585516336008533605
-    List: []
+    m_lastTime: -8585515473760656530
+    List:
+    - name: Main
+      guid: 272bdaff56eb6a478fb15818cad5ebb6
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5611d5cf80b30543ad294b103ad789a5
+      - ElementName: Main
+        ObjectType: 7
+        guid: 272bdaff56eb6a478fb15818cad5ebb6
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
