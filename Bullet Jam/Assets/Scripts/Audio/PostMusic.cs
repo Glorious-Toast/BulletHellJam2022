@@ -14,7 +14,6 @@ public class PostMusic : MonoBehaviour
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncBeat, Callback);
     }
 
-
     void Callback(object in_cookie, AkCallbackType in_type, object in_info)
     {
         AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;
