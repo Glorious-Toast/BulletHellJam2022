@@ -251,7 +251,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5611d5cf80b30543ad294b103ad789a5
     GuidInternal: 
-    m_lastTime: -8585515473760656530
+    m_lastTime: -8585515248786715268
     List:
     - name: Main
       guid: 272bdaff56eb6a478fb15818cad5ebb6
@@ -279,8 +279,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f0b7accbce8a04997d3463c5617f2b9
     GuidInternal: 
-    m_lastTime: -8585515485857665134
+    m_lastTime: -8585515248786769825
     List:
+    - name: Play_Music
+      guid: af6ee6728b1cfa49ab016a949e933ab0
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f0b7accbce8a04997d3463c5617f2b9
+      - ElementName: Play_Music
+        ObjectType: 3
+        guid: af6ee6728b1cfa49ab016a949e933ab0
+      Path: Events\Default Work Unit\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Test_Beep
       guid: 7d045214ca63e840a002c1cc932159f1
       id: 27511013
@@ -406,7 +423,7 @@ MonoBehaviour:
     m_lastTime: -8585516336008468877
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

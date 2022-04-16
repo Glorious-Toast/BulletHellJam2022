@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7284034659313263869}
   - component: {fileID: 7284034659313263842}
+  - component: {fileID: 1881073284575383613}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -55,3 +56,19 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1881073284575383613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7284034659313263843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af38360eb94ea2a4f90f9de617fd988f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7e28d9fd475cd8743ab19389f066b090, type: 2}
