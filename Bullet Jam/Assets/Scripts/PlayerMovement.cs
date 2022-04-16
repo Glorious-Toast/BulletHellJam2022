@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform graphicsTransform;
     public Transform pLocTransform;
     private bool isMoving = false;
+    private Vector2 startPosition;
 
     private void Update()
     {
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
+        startPosition = graphicsTransform.position;
         isMoving = true;
         pLocTransform.position = pLocTransform.position + new Vector3(mVector.x, mVector.y, 0f);
     }
@@ -55,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if (graphicsTransform.position != pLocTransform.position)
         {
             elapsedTime += Time.fixedDeltaTime;
-            graphicsTransform.position = Vector2.Lerp(graphicsTransform.position, pLocTransform.position, Mathf.SmoothStep(0, 1, elapsedTime/lerpSpeed));
+            graphicsTransform.position = Vector2.Lerp(startPosition, pLocTransform.position, Mathf.SmoothStep(0, 1, elapsedTime/lerpSpeed));
         } else
         {
             isMoving = false;

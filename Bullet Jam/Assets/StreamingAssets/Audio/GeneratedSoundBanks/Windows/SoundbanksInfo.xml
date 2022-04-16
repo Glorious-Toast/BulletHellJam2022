@@ -16,5 +16,38 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="4024532580">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="877370132" Language="SFX">
+							<ShortName>Layered Loop 20.wav</ShortName>
+							<Path>SFX\Layered Loop 20_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="27511013" Name="Play_Test_Beep" ObjectPath="\Events\Default Work Unit\Play_Test_Beep" DurationType="OneShot" DurationMin="0.495375" DurationMax="0.495375">
+					<IncludedMemoryFiles>
+						<File Id="386242470" Language="SFX">
+							<ShortName>Testing\Test_Beep.wav</ShortName>
+							<Path>SFX\Testing\Test_Beep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2235959444" Name="Play_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Play_Test_Beep_Lp" DurationType="OneShot" DurationMin="0.491917" DurationMax="0.491917">
+					<IncludedMemoryFiles>
+						<File Id="776940909" Language="SFX">
+							<ShortName>Testing\Test_Beep_Lp.wav</ShortName>
+							<Path>SFX\Testing\Test_Beep_Lp_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="701599435" Name="Stop_Test_Beep" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="641054882" Name="Stop_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep_Lp" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
