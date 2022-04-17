@@ -7,9 +7,6 @@ using AK.Wwise;
 public class Song : ScriptableObject
 {
     public AK.Wwise.Event songEvent;
-    [System.Serializable]
-    private class SongChart
-    {
+    public List<Segment> songChart;
 
-    }
 }

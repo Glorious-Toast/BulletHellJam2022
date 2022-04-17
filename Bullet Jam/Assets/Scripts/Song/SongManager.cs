@@ -9,20 +9,32 @@ public class SongManager : MonoBehaviour
     public float BPM;
     public int timeSignature;
 
+    private void Start()
+    {
+        PlaySong();
+    }
+
     private void PlaySong()
     {
-        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncEntry | AkCallbackType.AK_MusicSyncExit);
+        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar);
         song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
     }
 
     private void MusicCallbacks(object in_cookie, AkCallbackType in_type, object in_info)
     {
         AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;
-        AkMusicPlaylistCallbackInfo pInfo = (AkMusicPlaylistCallbackInfo)in_info;
+
+        timeSignature = Mathf.RoundToInt(info.segmentInfo_fBarDuration / info.segmentInfo_fBeatDuration);
+        BPM = 60 / info.segmentInfo_fBeatDuration;
 
         if (in_type == AkCallbackType.AK_MusicSyncBeat)
         {
-
+            
+        }
+        if (in_type == AkCallbackType.AK_MusicSyncBar)
+        {
+            
         }
     }
 }
+

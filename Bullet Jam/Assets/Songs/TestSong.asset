@@ -16,3 +16,4 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7e28d9fd475cd8743ab19389f066b090, type: 2}
+  songChart: []

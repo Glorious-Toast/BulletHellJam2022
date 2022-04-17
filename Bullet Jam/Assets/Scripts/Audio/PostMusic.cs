@@ -11,14 +11,21 @@ public class PostMusic : MonoBehaviour
     void Start()
     {
        
-        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncBeat, Callback);
+        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar);
+        MusicEvent.Post(gameObject, callbackType, MusicCallbacks);
     }
 
-    void Callback(object in_cookie, AkCallbackType in_type, object in_info)
+    private void MusicCallbacks(object in_cookie, AkCallbackType in_type, object in_info)
     {
         AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;
 
-        playingBPM = 60 / info.segmentInfo_fBeatDuration;
-        print(playingBPM);
+        if (in_type == AkCallbackType.AK_MusicSyncBeat)
+        {
+            Debug.Log("Beat");
+        }
+        if (in_type == AkCallbackType.AK_MusicSyncBar)
+        {
+            Debug.Log("Bar");
+        }
     }
 }
