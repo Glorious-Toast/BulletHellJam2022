@@ -22,14 +22,6 @@ public class PostMusic : MonoBehaviour
     }
 
     private void SwitchPlaylist()
-=======
-       
-        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar);
-        MusicEvent.Post(gameObject, callbackType, MusicCallbacks);
-    }
-
-    private void MusicCallbacks(object in_cookie, AkCallbackType in_type, object in_info)
->>>>>>> main
     {
         switch (currentPlaylistSelection)
         {
@@ -62,15 +54,6 @@ public class PostMusic : MonoBehaviour
             default:
                 //print("Playing Default");
                 break;
-=======
-        if (in_type == AkCallbackType.AK_MusicSyncBeat)
-        {
-            Debug.Log("Beat");
-        }
-        if (in_type == AkCallbackType.AK_MusicSyncBar)
-        {
-            Debug.Log("Bar");
->>>>>>> main
         }
     }
 
