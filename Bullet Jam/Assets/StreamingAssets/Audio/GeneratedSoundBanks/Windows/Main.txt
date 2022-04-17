@@ -5,8 +5,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	2235959444	Play_Test_Beep_Lp			\Default Work Unit\Play_Test_Beep_Lp	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1925045826	SongSelect			\Music\SongSelect	
+
+Switch	ID	Name	Switch Group			Notes
+	778469036	Song2	SongSelect			
+	778469037	Song3	SongSelect			
+	778469039	Song1	SongSelect			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	74140895	Synth_HighnW	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post HighnW_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Synth_HighnW		1980064
+	143586369	Drums_Kick	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post Kick_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Drums_Kick		1980064
 	386242470	Test_Beep	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Testing\Test_Beep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep		47620
+	552062481	Drums_Snare	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post Snare_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Drums_Snare		1980064
+	663221877	Synth_Mid	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post Mid_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Synth_Mid		1980064
 	776940909	Test_Beep_Lp	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Testing\Test_Beep_Lp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep_Lp		47288
-	877370132	Layered Loop 20	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Layered Loop 20_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Playlist Container\Layered Loop 20\Layered Loop 20		1354816
+	850738296	Synth_Power	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post Power_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Synth_Power		1980064
+	929522829	Drums_CHat	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post CHat_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Drums_CHat		1980064
+	993895696	Bass	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\4bars_128bpm_4-4_2Post MidBass_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrackSelect\Song_01\Bridge\Bass		1980064
 
