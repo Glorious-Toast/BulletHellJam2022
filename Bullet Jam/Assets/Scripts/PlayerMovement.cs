@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isMoving = false;
     private Vector2 startPosition;
 
+
     private void Update()
     {
         Movement();
@@ -63,5 +64,12 @@ public class PlayerMovement : MonoBehaviour
             isMoving = false;
             elapsedTime = 0f;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        // Draws the bounds
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position, new Vector3(boundsX * 2, boundsY * 2, 1f));
     }
 }
