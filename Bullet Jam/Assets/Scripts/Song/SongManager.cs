@@ -8,16 +8,13 @@ public class SongManager : MonoBehaviour
     public Song song;
     public float BPM;
     public int timeSignature;
+    public uint playingID;
 
-    private void Start()
-    {
-        PlaySong();
-    }
-
-    private void PlaySong()
+    public void PlaySong()
     {
         uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar);
-        song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
+        playingID = song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
+        
     }
 
     private void MusicCallbacks(object in_cookie, AkCallbackType in_type, object in_info)
