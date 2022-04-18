@@ -16,4 +16,13 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7e28d9fd475cd8743ab19389f066b090, type: 2}
-  songChart: []
+  songChart:
+  - executeTime: 2
+  - executeTime: 2.5
+  - executeTime: 3
+  - executeTime: 3.5
+  - executeTime: 4
+  - executeTime: 4.5
+  - executeTime: 5
+  - executeTime: 5.5
+  - executeTime: 6

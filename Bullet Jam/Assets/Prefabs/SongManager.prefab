@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4540786035279086692}
   - component: {fileID: 4540786035279086693}
   - component: {fileID: 979704080504309240}
+  - component: {fileID: 5209470721313402294}
   m_Layer: 0
   m_Name: SongManager
   m_TagString: Untagged
@@ -45,8 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   song: {fileID: 0}
-  bpm: 0
+  BPM: 0
   timeSignature: 0
+  playingID: 0
 --- !u!114 &979704080504309240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,3 +73,19 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &5209470721313402294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540786035279086714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993fc0fccfbba7c4280f35cc63a5c536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  song: {fileID: 0}
+  BPM: 0
+  timeSignature: 0
+  playingID: 0

@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class DiscoAttack : Segment
 {
     // How long until the attack is active
-    public float attackTime;
+    public float warningLength;
     // The amount of tiles that will become red
     public int attackTiles = 10;
 
-    public DiscoAttack(float pAttackTime, int pAttackTiles = 10)
+    public DiscoAttack(float pTime, float pWarningLength, int pAttackTiles = 10)
     {
-        attackTime = pAttackTime;
+        executeTime = pTime;
+        warningLength = pWarningLength;
         attackTiles = pAttackTiles;
     }
 }

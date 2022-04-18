@@ -422,7 +422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7284034659313263843, guid: ed96c718490331b4cb55210f8dc378ec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7284034659313263869, guid: ed96c718490331b4cb55210f8dc378ec, type: 3}
       propertyPath: m_RootOrder
@@ -779,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 4540786035279086714, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
       propertyPath: m_Name
       value: SongManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540786035279086714, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}

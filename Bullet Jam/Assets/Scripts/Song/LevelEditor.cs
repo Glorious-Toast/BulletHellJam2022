@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelEditor : MonoBehaviour
 {
     public List<Segment> songChart;
-    [Tooltip("Rounds to the nearest 1/beatDenominator of a beat when you add a note.")]
-    public int beatDenominator = 1;
     [HideInInspector]
     public Text timer;
     [HideInInspector]
     public GameObject startButton;
     [HideInInspector]
     public Text startButtonText;
-    private SongManager songManager;
+    [HideInInspector]
+    public Text beatText;
+    private EditorSongManager songManager;
     private bool isPlaying = false;
+    public string sequenceFile;
 
     private void Awake()
     {
-        songManager = FindObjectOfType<SongManager>();
+        songManager = FindObjectOfType<EditorSongManager>();
     }
 
     public void OnStartSong()
@@ -31,10 +33,15 @@ public class LevelEditor : MonoBehaviour
             StartCoroutine("StartSong");
         } else
         {
-            startButtonText.text = "Start Song";
-            isPlaying = false;
-            AkSoundEngine.StopPlayingID(songManager.playingID, 1, AkCurveInterpolation.AkCurveInterpolation_Linear);
+            StopSong();
         }
+    }
+
+    public void StopSong()
+    {
+        startButtonText.text = "Start Song";
+        isPlaying = false;
+        AkSoundEngine.StopPlayingID(songManager.playingID, 1, AkCurveInterpolation.AkCurveInterpolation_Linear);
     }
 
     IEnumerator StartSong()
@@ -50,5 +57,10 @@ public class LevelEditor : MonoBehaviour
         songManager.PlaySong();
         startButton.SetActive(true);
         startButtonText.text = "Stop Song";
+    }
+
+    public void AddSequenceText()
+    {
+
     }
 }
