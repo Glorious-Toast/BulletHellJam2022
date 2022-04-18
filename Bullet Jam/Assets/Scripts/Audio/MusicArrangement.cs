@@ -54,11 +54,11 @@ public class MusicArrangement : MonoBehaviour
             case "TriggerBlock2Exit":
                 AkSoundEngine.SetState("Arrangement", "Block1");
                 break;
-            case "TriggerBridgeExit":
+            case "TriggerBlock3Exit":
                 AkSoundEngine.SetState("Arrangement", "Block2");
                 break;
             case "TriggerBlock1Exit":
-                AkSoundEngine.SetState("Arrangement", "Bridge");
+                AkSoundEngine.SetState("Arrangement", "Block3");
                 break;
             default:
                 AkSoundEngine.SetState("Arrangement", "Block1");
