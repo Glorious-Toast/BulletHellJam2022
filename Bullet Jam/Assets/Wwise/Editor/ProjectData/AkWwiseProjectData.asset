@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: bdddbcc8c11e8f4ab1e0f516a1c92984
     GuidInternal: 
-    m_lastTime: -8585515484418962012
+    m_lastTime: -8585515067069998956
     List:
+    - name: Diegetic
+      guid: af94ffe30ceea64cbbe280ce990537b2
+      id: 1316532907
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic
     - name: Enem_Twr_A
       guid: b6ac830792a53e47b20ba0dcb06d4587
       id: 397641584
@@ -53,13 +70,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
         ObjectType: 2
         guid: d88612f0948bb74c91bb4a0bc654d6fb
       - ElementName: Enem_Twr_A
         ObjectType: 2
         guid: b6ac830792a53e47b20ba0dcb06d4587
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_A
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_A
     - name: Enem_Twr_B
       guid: 379459c895a1fe4a9c6d184f752b2f2e
       id: 397641587
@@ -73,13 +93,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
         ObjectType: 2
         guid: d88612f0948bb74c91bb4a0bc654d6fb
       - ElementName: Enem_Twr_B
         ObjectType: 2
         guid: 379459c895a1fe4a9c6d184f752b2f2e
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_B
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_B
     - name: Enem_Twr_C
       guid: f1baf24100c4214dabe3fd306a352914
       id: 397641586
@@ -93,13 +116,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
         ObjectType: 2
         guid: d88612f0948bb74c91bb4a0bc654d6fb
       - ElementName: Enem_Twr_C
         ObjectType: 2
         guid: f1baf24100c4214dabe3fd306a352914
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_C
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_C
     - name: Enem_Twr_D
       guid: 692b9013c2e2d243a81d13718bb66a54
       id: 397641589
@@ -113,13 +139,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
         ObjectType: 2
         guid: d88612f0948bb74c91bb4a0bc654d6fb
       - ElementName: Enem_Twr_D
         ObjectType: 2
         guid: 692b9013c2e2d243a81d13718bb66a54
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enemies\Enem_Twr_D
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_D
     - name: Enemies
       guid: d88612f0948bb74c91bb4a0bc654d6fb
       id: 2242381963
@@ -133,10 +162,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
         ObjectType: 2
         guid: d88612f0948bb74c91bb4a0bc654d6fb
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enemies
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies
     - name: Items
       guid: 1ccf4d0d1daa4142b79731f0871f6ccd
       id: 2151963051
@@ -150,10 +182,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Items
         ObjectType: 2
         guid: 1ccf4d0d1daa4142b79731f0871f6ccd
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Items
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Items
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -198,10 +233,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Objects
         ObjectType: 2
         guid: d539a8f39fe94b48b69dffdd20958bb5
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Objects
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Objects
     - name: P_Locomotion
       guid: d67de12a0a80564d84b58925d05c1f10
       id: 1470412565
@@ -215,13 +253,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Player
         ObjectType: 2
         guid: 146213e42f112543beb938411bdbc6b7
       - ElementName: P_Locomotion
         ObjectType: 2
         guid: d67de12a0a80564d84b58925d05c1f10
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player\P_Locomotion
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Locomotion
     - name: Player
       guid: 146213e42f112543beb938411bdbc6b7
       id: 1069431850
@@ -235,10 +276,73 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Player
         ObjectType: 2
         guid: 146213e42f112543beb938411bdbc6b7
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player
+    - name: Song_00
+      guid: 3f8a955a80437b4a923f176d200347b7
+      id: 2482245737
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 0003a2a763a4684fa6822280ca5771b1
+      - ElementName: Song_00
+        ObjectType: 2
+        guid: 3f8a955a80437b4a923f176d200347b7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Song_00
+    - name: Song_01
+      guid: 9cd7b0dd25ab114ba56e8c085ffd8d46
+      id: 2482245736
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 0003a2a763a4684fa6822280ca5771b1
+      - ElementName: Song_01
+        ObjectType: 2
+        guid: 9cd7b0dd25ab114ba56e8c085ffd8d46
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Song_01
+    - name: Song_02
+      guid: f8b437c3f2c65540855d90a25cc6278d
+      id: 2482245739
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 0003a2a763a4684fa6822280ca5771b1
+      - ElementName: Song_02
+        ObjectType: 2
+        guid: f8b437c3f2c65540855d90a25cc6278d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Song_02
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -251,7 +355,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5611d5cf80b30543ad294b103ad789a5
     GuidInternal: 
-    m_lastTime: -8585515248786715268
+    m_lastTime: -8585513569218643369
     List:
     - name: Main
       guid: 272bdaff56eb6a478fb15818cad5ebb6
@@ -279,25 +383,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f0b7accbce8a04997d3463c5617f2b9
     GuidInternal: 
-    m_lastTime: -8585515248786769825
+    m_lastTime: -8585513821781659118
     List:
-    - name: Play_Music
-      guid: af6ee6728b1cfa49ab016a949e933ab0
-      id: 2932040671
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5f0b7accbce8a04997d3463c5617f2b9
-      - ElementName: Play_Music
-        ObjectType: 3
-        guid: af6ee6728b1cfa49ab016a949e933ab0
-      Path: Events\Default Work Unit\Play_Music
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Test_Beep
       guid: 7d045214ca63e840a002c1cc932159f1
       id: 27511013
@@ -366,6 +453,73 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: afcf157fbc994842b9e07fb611913c21
+    ParentPath: Events\Music
+    guid: afcf157fbc994842b9e07fb611913c21
+    GuidInternal: 
+    m_lastTime: -8585513549020844404
+    List:
+    - name: Play_Music
+      guid: af6ee6728b1cfa49ab016a949e933ab0
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: afcf157fbc994842b9e07fb611913c21
+      - ElementName: Play_Music
+        ObjectType: 3
+        guid: af6ee6728b1cfa49ab016a949e933ab0
+      Path: Events\Music\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlaylistSeeks
+      guid: b51a568235ebc547a067ecd5b01f4505
+      id: 851037254
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: afcf157fbc994842b9e07fb611913c21
+      - ElementName: PlaylistSeeks
+        ObjectType: 4
+        guid: b51a568235ebc547a067ecd5b01f4505
+      Path: Events\Music\PlaylistSeeks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Song1
+      guid: dce24595f206164ab3cedd981b44c66a
+      id: 778469039
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: afcf157fbc994842b9e07fb611913c21
+      - ElementName: PlaylistSeeks
+        ObjectType: 4
+        guid: b51a568235ebc547a067ecd5b01f4505
+      - ElementName: Song1
+        ObjectType: 4
+        guid: dce24595f206164ab3cedd981b44c66a
+      Path: Events\Music\PlaylistSeeks\Song1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -380,6 +534,33 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585516336008438978
     List: []
+  - PhysicalPath: Game Parameters\Music.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: d6dea85376260241bdb4926652b3ff82
+    ParentPath: Game Parameters\Music
+    guid: d6dea85376260241bdb4926652b3ff82
+    GuidInternal: 
+    m_lastTime: -8585515067069795589
+    List:
+    - name: Sidechain1
+      guid: 84c737e99e53cc40adc96ef153aaa2d5
+      id: 1857854620
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: d6dea85376260241bdb4926652b3ff82
+      - ElementName: Sidechain1
+        ObjectType: 13
+        guid: 84c737e99e53cc40adc96ef153aaa2d5
+      Path: Game Parameters\Music\Sidechain1
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -394,6 +575,215 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585516336007903686
     List: []
+  - PhysicalPath: States\Music.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 8ff4d143d46f774db6d3854ae69ab346
+    ParentPath: States\Music
+    guid: 8ff4d143d46f774db6d3854ae69ab346
+    GuidInternal: 
+    m_lastTime: -8585513519616944390
+    List:
+    - name: Arrangement
+      guid: af6321acc3cf7f49bda4af6d1fe4c215
+      id: 1490607671
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 8ff4d143d46f774db6d3854ae69ab346
+      - ElementName: Arrangement
+        ObjectType: 9
+        guid: af6321acc3cf7f49bda4af6d1fe4c215
+      Path: States\Music\Arrangement
+      values:
+      - name: Block1
+        guid: 047732bf617dc042908593227dddac73
+        id: 682220065
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Arrangement
+          ObjectType: 9
+          guid: af6321acc3cf7f49bda4af6d1fe4c215
+        - ElementName: Block1
+          ObjectType: 8
+          guid: 047732bf617dc042908593227dddac73
+      - name: Block2
+        guid: 549b0ee1e6f8fe4a9580630ec04669b1
+        id: 682220066
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Arrangement
+          ObjectType: 9
+          guid: af6321acc3cf7f49bda4af6d1fe4c215
+        - ElementName: Block2
+          ObjectType: 8
+          guid: 549b0ee1e6f8fe4a9580630ec04669b1
+      - name: Bridge
+        guid: 2b7a8b333dd2ee40bb4027a3b0ab4003
+        id: 2068062714
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Arrangement
+          ObjectType: 9
+          guid: af6321acc3cf7f49bda4af6d1fe4c215
+        - ElementName: Bridge
+          ObjectType: 8
+          guid: 2b7a8b333dd2ee40bb4027a3b0ab4003
+      - name: None
+        guid: a2f8423d3f16a445b903f70392e371af
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Arrangement
+          ObjectType: 9
+          guid: af6321acc3cf7f49bda4af6d1fe4c215
+        - ElementName: None
+          ObjectType: 8
+          guid: a2f8423d3f16a445b903f70392e371af
+      - name: Outro
+        guid: 024ed35d60036c4d9fe08cd8c467e7d9
+        id: 4184794294
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Arrangement
+          ObjectType: 9
+          guid: af6321acc3cf7f49bda4af6d1fe4c215
+        - ElementName: Outro
+          ObjectType: 8
+          guid: 024ed35d60036c4d9fe08cd8c467e7d9
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Gamestate
+      guid: 75ed070c8a8e4549a7d82effa9618dd0
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 8ff4d143d46f774db6d3854ae69ab346
+      - ElementName: Gamestate
+        ObjectType: 9
+        guid: 75ed070c8a8e4549a7d82effa9618dd0
+      Path: States\Music\Gamestate
+      values:
+      - name: Defeat
+        guid: 442290cadef4274ab3e5520b5a4093d0
+        id: 1593864692
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Gamestate
+          ObjectType: 9
+          guid: 75ed070c8a8e4549a7d82effa9618dd0
+        - ElementName: Defeat
+          ObjectType: 8
+          guid: 442290cadef4274ab3e5520b5a4093d0
+      - name: Gameplay
+        guid: db7eb8d50a65c14eb0fa326ddbbcb21b
+        id: 89505537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Gamestate
+          ObjectType: 9
+          guid: 75ed070c8a8e4549a7d82effa9618dd0
+        - ElementName: Gameplay
+          ObjectType: 8
+          guid: db7eb8d50a65c14eb0fa326ddbbcb21b
+      - name: Menu
+        guid: 5802b8c70ab57846a18ccdab551df8b4
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Gamestate
+          ObjectType: 9
+          guid: 75ed070c8a8e4549a7d82effa9618dd0
+        - ElementName: Menu
+          ObjectType: 8
+          guid: 5802b8c70ab57846a18ccdab551df8b4
+      - name: None
+        guid: 3ca105cfa1f51f438490f42069d52013
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Gamestate
+          ObjectType: 9
+          guid: 75ed070c8a8e4549a7d82effa9618dd0
+        - ElementName: None
+          ObjectType: 8
+          guid: 3ca105cfa1f51f438490f42069d52013
+      - name: Victory
+        guid: f373fef1d0f85f4f8a04bdadd045ffae
+        id: 2716678721
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Gamestate
+          ObjectType: 9
+          guid: 75ed070c8a8e4549a7d82effa9618dd0
+        - ElementName: Victory
+          ObjectType: 8
+          guid: f373fef1d0f85f4f8a04bdadd045ffae
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -408,6 +798,19 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585516336008310110
     List: []
+  - PhysicalPath: Switches\Music.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 0f9e256f6c36e44d8234834c084729d7
+    ParentPath: Switches\Music
+    guid: 0f9e256f6c36e44d8234834c084729d7
+    GuidInternal: 
+    m_lastTime: -8585513715812427975
+    List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -420,10 +823,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 18fa8c37e62b7e4da65ce051087934ca
     GuidInternal: 
-    m_lastTime: -8585516336008468877
+    m_lastTime: -8585513821781396244
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

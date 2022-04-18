@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float travelDistance = 1f;
-    public float lerpSpeed = 0.2f;
+    public float lerpSpeed = 0.4f;
     private float elapsedTime;
     public int boundsX = 25;
     public int boundsY = 25;

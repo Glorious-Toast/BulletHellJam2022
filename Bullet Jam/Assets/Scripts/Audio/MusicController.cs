@@ -63,7 +63,7 @@ public class MusicController : MonoBehaviour
              " |Block 2 Played Status: " + arrangement.block2Played);
          arrangement.PerformPlaylist(currentPlaylistSelection);*/
 
-        print("Cue: " + currentUserCue);
+        //print("Cue: " + currentUserCue);
     }
 
 
@@ -78,6 +78,7 @@ public class MusicController : MonoBehaviour
             playingBPM = 60 / info.segmentInfo_fBeatDuration;
 
             //print("BPM: " + playingBPM);
+            print(info.segmentInfo_fBeatDuration);
         }
 
         //this if statment is called every time MusicPlaylistSelect is triggered via wwise and then the items inside are compleated
