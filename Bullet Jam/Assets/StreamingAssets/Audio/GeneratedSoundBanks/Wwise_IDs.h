@@ -20,21 +20,37 @@ namespace AK
         static const AkUniqueID STOP_TEST_BEEP_LP = 641054882U;
     } // namespace EVENTS
 
-    namespace SWITCHES
+    namespace STATES
     {
-        namespace SONGSELECT
+        namespace ARRANGEMENT
         {
-            static const AkUniqueID GROUP = 1925045826U;
+            static const AkUniqueID GROUP = 1490607671U;
 
-            namespace SWITCH
+            namespace STATE
             {
-                static const AkUniqueID SONG1 = 778469039U;
-                static const AkUniqueID SONG2 = 778469036U;
-                static const AkUniqueID SONG3 = 778469037U;
-            } // namespace SWITCH
-        } // namespace SONGSELECT
+                static const AkUniqueID BLOCK1 = 682220065U;
+                static const AkUniqueID BLOCK2 = 682220066U;
+                static const AkUniqueID BRIDGE = 2068062714U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTRO = 4184794294U;
+            } // namespace STATE
+        } // namespace ARRANGEMENT
 
-    } // namespace SWITCHES
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DEFEAT = 1593864692U;
+                static const AkUniqueID GAMEPLAY = 89505537U;
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID VICTORY = 2716678721U;
+            } // namespace STATE
+        } // namespace GAMESTATE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
