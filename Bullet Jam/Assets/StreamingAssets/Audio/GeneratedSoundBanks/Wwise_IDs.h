@@ -20,6 +20,44 @@ namespace AK
         static const AkUniqueID STOP_TEST_BEEP_LP = 641054882U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace ARRANGEMENT
+        {
+            static const AkUniqueID GROUP = 1490607671U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BLOCK1 = 682220065U;
+                static const AkUniqueID BLOCK2 = 682220066U;
+                static const AkUniqueID BLOCK3 = 682220067U;
+                static const AkUniqueID BLOCK4 = 682220068U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTRO = 4184794294U;
+            } // namespace STATE
+        } // namespace ARRANGEMENT
+
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DEFEAT = 1593864692U;
+                static const AkUniqueID GAMEPLAY = 89505537U;
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID VICTORY = 2716678721U;
+            } // namespace STATE
+        } // namespace GAMESTATE
+
+    } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SIDECHAIN1 = 1857854620U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -28,6 +66,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID DIEGETIC = 1316532907U;
         static const AkUniqueID ENEM_TWR_A = 397641584U;
         static const AkUniqueID ENEM_TWR_B = 397641587U;
         static const AkUniqueID ENEM_TWR_C = 397641586U;
@@ -39,6 +78,9 @@ namespace AK
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID P_LOCOMOTION = 1470412565U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID SONG_00 = 2482245737U;
+        static const AkUniqueID SONG_01 = 2482245736U;
+        static const AkUniqueID SONG_02 = 2482245739U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

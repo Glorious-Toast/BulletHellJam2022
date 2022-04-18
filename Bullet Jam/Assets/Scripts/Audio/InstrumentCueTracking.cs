@@ -31,7 +31,7 @@ public class InstrumentCueTracking : MonoBehaviour
         switch (musicController.currentUserCue)
         {
             case "D_Kick":
-
+                print("Cue: " + musicController.currentUserCue);
                 break;
             case "D_Snare":
 
@@ -43,7 +43,7 @@ public class InstrumentCueTracking : MonoBehaviour
 
                 break;
             case "Bass":
-
+                //print("Cue: " + musicController.currentUserCue);
                 break;
             case "Bass1":
 

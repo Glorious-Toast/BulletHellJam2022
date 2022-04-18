@@ -63,7 +63,8 @@ public class MusicController : MonoBehaviour
              " |Block 2 Played Status: " + arrangement.block2Played);
          arrangement.PerformPlaylist(currentPlaylistSelection);*/
 
-        //print("Cue: " + currentUserCue);
+
+        
     }
 
 
