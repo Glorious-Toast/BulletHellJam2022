@@ -11,96 +11,23 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1409664944">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3223727947">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-			<GameParameters>
-				<GameParameter Id="1857854620" Name="Sidechain1" ObjectPath="\Game Parameters\Music\Sidechain1"/>
-			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2597984590">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4024532580">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="74140895" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post HighnW.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post HighnW_D79FB2B7.wem</Path>
-						</File>
-						<File Id="143586369" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post Kick.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post Kick_D79FB2B7.wem</Path>
-						</File>
-						<File Id="552062481" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post Snare.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post Snare_D79FB2B7.wem</Path>
-						</File>
-						<File Id="663221877" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post Mid.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post Mid_D79FB2B7.wem</Path>
-						</File>
-						<File Id="850738296" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post Power.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post Power_D79FB2B7.wem</Path>
-						</File>
-						<File Id="929522829" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post CHat.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post CHat_D79FB2B7.wem</Path>
-						</File>
-						<File Id="993895696" Language="SFX">
-							<ShortName>4bars_128bpm_4-4_2Post MidBass.wav</ShortName>
-							<Path>SFX\4bars_128bpm_4-4_2Post MidBass_D79FB2B7.wem</Path>
+						<File Id="877370132" Language="SFX">
+							<ShortName>Layered Loop 20.wav</ShortName>
+							<Path>SFX\Layered Loop 20_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{99CA2F4F-8E43-4AD1-88AF-64FA3FA4B874}">
-							<Media>
-								<File Id="74140895"/>
-								<File Id="143586369"/>
-								<File Id="552062481"/>
-								<File Id="663221877"/>
-								<File Id="850738296"/>
-								<File Id="929522829"/>
-								<File Id="993895696"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{3B4AA8F9-A6CB-428E-891D-A822AAFB03B5}">
-							<Media>
-								<File Id="74140895"/>
-								<File Id="143586369"/>
-								<File Id="552062481"/>
-								<File Id="663221877"/>
-								<File Id="850738296"/>
-								<File Id="929522829"/>
-								<File Id="993895696"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0384E99A-8DEA-4A8B-AE71-C8E09358334D}">
-							<Media>
-								<File Id="74140895"/>
-								<File Id="143586369"/>
-								<File Id="552062481"/>
-								<File Id="663221877"/>
-								<File Id="850738296"/>
-								<File Id="929522829"/>
-								<File Id="993895696"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{70FD64C9-C3CC-4B17-B472-79281207266D}">
-							<Media>
-								<File Id="74140895"/>
-								<File Id="143586369"/>
-								<File Id="552062481"/>
-								<File Id="663221877"/>
-								<File Id="850738296"/>
-								<File Id="929522829"/>
-								<File Id="993895696"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="27511013" Name="Play_Test_Beep" ObjectPath="\Events\Default Work Unit\Play_Test_Beep" DurationType="OneShot" DurationMin="0.495375" DurationMax="0.495375">
 					<IncludedMemoryFiles>
@@ -121,15 +48,6 @@
 				<Event Id="701599435" Name="Stop_Test_Beep" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="641054882" Name="Stop_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep_Lp" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
-			<SwitchGroups>
-				<SwitchGroup Id="1925045826" Name="SongSelect" ObjectPath="\Switches\Music\SongSelect" GUID="{70FD64C9-C3CC-4B17-B472-79281207266D}">
-					<Switches>
-						<Switch Id="778469039" Name="Song1" ObjectPath="\Switches\Music\SongSelect\Song1" GUID="{99CA2F4F-8E43-4AD1-88AF-64FA3FA4B874}"/>
-						<Switch Id="778469036" Name="Song2" ObjectPath="\Switches\Music\SongSelect\Song2" GUID="{3B4AA8F9-A6CB-428E-891D-A822AAFB03B5}"/>
-						<Switch Id="778469037" Name="Song3" ObjectPath="\Switches\Music\SongSelect\Song3" GUID="{0384E99A-8DEA-4A8B-AE71-C8E09358334D}"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
