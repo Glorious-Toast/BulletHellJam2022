@@ -33,8 +33,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetSpeed()
     {
+        if (songManager == null) return;
         if (songManager.isPlaying)
         {
+            // Will probably change in the future
             lerpSpeed = songManager.BPM / 960;
         }
     }
