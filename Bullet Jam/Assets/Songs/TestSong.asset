@@ -17,12 +17,60 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7e28d9fd475cd8743ab19389f066b090, type: 2}
   songChart:
-  - executeTime: 2
-  - executeTime: 2.5
-  - executeTime: 3
-  - executeTime: 3.5
-  - executeTime: 4
-  - executeTime: 4.5
-  - executeTime: 5
-  - executeTime: 5.5
-  - executeTime: 6
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  references:
+    version: 1
+    00000000:
+      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      data:
+        executeTime: 1
+        direction: 0
+        coordinate: -2
+        damage: 10
+        speed: 8
+        length: 1
+        color: {r: 1, g: 0, b: 0, a: 1}
+    00000001:
+      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      data:
+        executeTime: 2
+        direction: 0
+        coordinate: -1
+        damage: 10
+        speed: 8
+        length: 1
+        color: {r: 1, g: 0.48037386, b: 0, a: 1}
+    00000002:
+      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      data:
+        executeTime: 3
+        direction: 0
+        coordinate: 0
+        damage: 10
+        speed: 8
+        length: 1
+        color: {r: 1, g: 0.82495254, b: 0, a: 1}
+    00000003:
+      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      data:
+        executeTime: 4
+        direction: 0
+        coordinate: 1
+        damage: 10
+        speed: 8
+        length: 1
+        color: {r: 0.032397628, g: 1, b: 0, a: 1}
+    00000004:
+      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      data:
+        executeTime: 5
+        direction: 0
+        coordinate: 2
+        damage: 10
+        speed: 8
+        length: 1
+        color: {r: 0, g: 1, b: 0.99077415, a: 1}

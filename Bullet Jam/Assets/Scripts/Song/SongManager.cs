@@ -6,16 +6,18 @@ using System.Linq;
 
 public class SongManager : MonoBehaviour
 {
+    public bool isPlaying = false;
     public Song song;
     public float BPM;
     public int timeSignature;
     public int currentBeat;
     public uint playingID;
+    [SerializeReference]
+    public List<Segment> playingChart;
+    public int spawnX = 15;
+    public int spawnY = 15;
     public GameObject bulletPrefab;
     public GameObject discoPrefab;
-    public int boundsX = 15;
-    public int boundsY = 15;
-    public List<Segment> playingChart;
 
     public void PlaySong()
     {
@@ -23,7 +25,15 @@ public class SongManager : MonoBehaviour
         currentBeat = 0;
         playingID = song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
         playingChart = song.songChart;
+        isPlaying = true;
         SortChart();
+    }
+
+    public void StopSong()
+    {
+        AkSoundEngine.StopPlayingID(playingID, 1, AkCurveInterpolation.AkCurveInterpolation_Linear);
+        isPlaying = false;
+        currentBeat = 0;
     }
 
     public void SortChart()
@@ -82,16 +92,26 @@ public class SongManager : MonoBehaviour
     {
         Vector2 newPosition = Vector2.zero;
         // this can definitely be done better, but i'm too lazy
-        if ((int)data.direction == 0) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y + boundsY);
-        if ((int)data.direction == 1) newPosition = new Vector2(transform.position.x + boundsX, transform.position.y + data.coordinate);
-        if ((int)data.direction == 2) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y - boundsY);
-        if ((int)data.direction == 3) newPosition = new Vector2(transform.position.x - boundsX, transform.position.y + data.coordinate);
+        if ((int)data.direction == 0) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y + spawnY);
+        if ((int)data.direction == 1) newPosition = new Vector2(transform.position.x + spawnX, transform.position.y + data.coordinate);
+        if ((int)data.direction == 2) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y - spawnY);
+        if ((int)data.direction == 3) newPosition = new Vector2(transform.position.x - spawnX, transform.position.y + data.coordinate);
         float endDirection = (int)data.direction * 90f;
         if ((int)data.direction == 0 || (int)data.direction == 2) endDirection += 180f;
         GameObject firedBullet = Instantiate(bulletPrefab, newPosition, Quaternion.Euler(0f, 0f, endDirection));
         PhysBullet physData = firedBullet.GetComponent<PhysBullet>();
         physData.damage = data.damage;
         physData.speed = data.speed;
+        physData.length = data.speed * (data.length * (1 / (BPM / 60)));
+        // haven't eaten lunch yet, luckily there's a nice plate of spaghetti right here :D
+        if ((int)data.direction == 0 || (int)data.direction == 2)
+        {
+            physData.timer = (physData.length + spawnY*2 + 1) / data.speed;
+        }
+        if ((int)data.direction == 1 || (int)data.direction == 3)
+        {
+            physData.timer = (physData.length + spawnX*2 + 1) / data.speed;
+        }
         firedBullet.GetComponent<SpriteRenderer>().color = data.color;
     }
 

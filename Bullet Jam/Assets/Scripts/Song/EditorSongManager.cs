@@ -19,6 +19,10 @@ public class EditorSongManager : SongManager
         {
             levelEditor.beatText.text = currentBeat.ToString();
         }
+        if (in_type == AkCallbackType.AK_MusicSyncExit)
+        {
+            levelEditor.StopSong();
+        }
     }
 }
 

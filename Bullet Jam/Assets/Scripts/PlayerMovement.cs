@@ -13,16 +13,30 @@ public class PlayerMovement : MonoBehaviour
     public Transform pLocTransform;
     private bool isMoving = false;
     private Vector2 startPosition;
+    private SongManager songManager;
 
+    private void Awake()
+    {
+        songManager = FindObjectOfType<SongManager>();
+    }
 
     private void Update()
     {
+        SetSpeed();
         Movement();
     }
 
     private void FixedUpdate()
     {
         Lerp();
+    }
+
+    private void SetSpeed()
+    {
+        if (songManager.isPlaying)
+        {
+            lerpSpeed = songManager.BPM / 960;
+        }
     }
 
     private void Movement()
