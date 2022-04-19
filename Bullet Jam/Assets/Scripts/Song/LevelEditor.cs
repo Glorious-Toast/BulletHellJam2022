@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +21,14 @@ public class LevelEditor : MonoBehaviour
     public Text startButtonText;
     [HideInInspector]
     public Text beatText;
+    [HideInInspector]
+    public bool cueSync = false;
+    [HideInInspector]
+    public string syncedCue;
+    [HideInInspector]
+    public int beatDenominator = 8;
+    public Bullet editedBullet = new Bullet(0f, Bullet.Direction.North, 0, Color.white);
+    public DiscoAttack editedDiscoAttack = new DiscoAttack(0f, 1f);
     private EditorSongManager songManager;
 
     private void Awake()
@@ -74,16 +86,53 @@ public class LevelEditor : MonoBehaviour
 
     public void AddBullet()
     {
-        songChart.Insert(0, new Bullet(0f, Bullet.Direction.North, 0, Color.white));
+        songChart.Insert(0, new Bullet(editedBullet.executeTime, editedBullet.direction, editedBullet.coordinate, editedBullet.color, editedBullet.damage, editedBullet.speed, editedBullet.length));
     }
 
     public void AddDisco()
     {
-        songChart.Insert(0, new DiscoAttack(0f, 1f));
+        songChart.Insert(0, editedDiscoAttack);
+    }
+
+    public void CueSync(string cue, float time)
+    {
+        if (cue == syncedCue)
+        {
+            int denominator = 1;
+            float dividedDecimal = time - Mathf.Floor(time);
+            List<float> denominatorList = new List<float>();
+            for (int i = beatDenominator; i > 0; i--)
+            {
+                denominator++;
+                float rounded = Mathf.Round(dividedDecimal * denominator);
+                rounded /= denominator;
+                denominatorList.Add(Mathf.Abs(dividedDecimal - rounded));
+            }
+            int smallestIndex = 0;
+            int currentIndex = 0;
+            foreach (float num in denominatorList)
+            {
+                if (num < denominatorList[smallestIndex])
+                {
+                    smallestIndex = currentIndex;
+                }
+                currentIndex++;
+            }
+            float resultTime = Mathf.Round(time * (smallestIndex + 2));
+            resultTime /= smallestIndex + 2;
+            Bullet addedBullet = new Bullet(resultTime, editedBullet.direction, editedBullet.coordinate, editedBullet.color, editedBullet.damage, editedBullet.speed, editedBullet.length);
+            songChart.Add(addedBullet);
+
+        }
     }
 
     public void AddSequenceText()
     {
 
+    }
+
+    public object Clone()
+    {
+        return this.MemberwiseClone();
     }
 }

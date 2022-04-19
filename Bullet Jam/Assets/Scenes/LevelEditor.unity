@@ -496,6 +496,22 @@ MonoBehaviour:
   startButton: {fileID: 454372271}
   startButtonText: {fileID: 2118746413}
   beatText: {fileID: 912972610}
+  cueSync: 0
+  syncedCue: D_Kick
+  beatDenominator: 4
+  editedBullet:
+    executeTime: 0
+    direction: 0
+    coordinate: 0
+    damage: 10
+    speed: 10
+    length: 1
+    color: {r: 1, g: 1, b: 1, a: 0}
+  editedDiscoAttack:
+    executeTime: 0
+    warningLength: 0
+    damage: 0
+    attackTiles: 0
   references:
     version: 1
 --- !u!1 &1079323247
@@ -539,6 +555,7 @@ MonoBehaviour:
   spawnY: 15
   bulletPrefab: {fileID: 1260645993191690938, guid: 3bfb440182a7b3c46aa78987e7084a54, type: 3}
   discoPrefab: {fileID: 0}
+  beatProgress: 0
   references:
     version: 1
 --- !u!4 &1079323249

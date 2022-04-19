@@ -11,6 +11,7 @@ public class SongManager : MonoBehaviour
     public float BPM;
     public int timeSignature;
     public int currentBeat;
+    [HideInInspector]
     public uint playingID;
     [SerializeReference]
     public List<Segment> playingChart;
@@ -19,9 +20,10 @@ public class SongManager : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject discoPrefab;
 
+
     public void PlaySong()
     {
-        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit);
+        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit | AkCallbackType.AK_MusicSyncUserCue);
         currentBeat = 0;
         playingID = song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
         playingChart = song.songChart;
