@@ -1,40 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelEditor : MonoBehaviour
 {
+    public Song editedSong;
+    [SerializeReference]
     public List<Segment> songChart;
-    [Tooltip("Rounds to the nearest 1/beatDenominator of a beat when you add a note.")]
-    public int beatDenominator = 1;
     [HideInInspector]
     public Text timer;
     [HideInInspector]
     public GameObject startButton;
     [HideInInspector]
     public Text startButtonText;
-    private SongManager songManager;
-    private bool isPlaying = false;
+    [HideInInspector]
+    public Text beatText;
+    private EditorSongManager songManager;
 
     private void Awake()
     {
-        songManager = FindObjectOfType<SongManager>();
+        songManager = FindObjectOfType<EditorSongManager>();
     }
 
-    public void OnStartSong()
+    public void SongToggleButton()
     {
-        if (!isPlaying)
+        if (!songManager.isPlaying)
         {
             startButton.SetActive(false);
-            isPlaying = true;
             StartCoroutine("StartSong");
         } else
         {
-            startButtonText.text = "Start Song";
-            isPlaying = false;
-            AkSoundEngine.StopPlayingID(songManager.playingID, 1, AkCurveInterpolation.AkCurveInterpolation_Linear);
+            StopSong();
         }
+    }
+
+    public void StopSong()
+    {
+        startButtonText.text = "Start Song";
+        beatText.text = "";
+        songManager.StopSong();
     }
 
     IEnumerator StartSong()
@@ -50,5 +56,34 @@ public class LevelEditor : MonoBehaviour
         songManager.PlaySong();
         startButton.SetActive(true);
         startButtonText.text = "Stop Song";
+    }
+
+    public void ApplyToSong()
+    {
+        editedSong.songChart.Add(new DiscoAttack(5f, 3f));
+        int attacks = 0;
+        foreach (Segment segment in songChart)
+        {
+            attacks++;
+            editedSong.songChart.Add(segment);
+            editedSong.songChart = editedSong.songChart.OrderBy(x => x.executeTime).ToList();
+        }
+        songChart.Clear();
+        Debug.Log($"Successfully applied {attacks} attacks to song " + editedSong.name);
+    }
+
+    public void AddBullet()
+    {
+        songChart.Insert(0, new Bullet(0f, Bullet.Direction.North, 0, Color.white));
+    }
+
+    public void AddDisco()
+    {
+        songChart.Insert(0, new DiscoAttack(0f, 1f));
+    }
+
+    public void AddSequenceText()
+    {
+
     }
 }

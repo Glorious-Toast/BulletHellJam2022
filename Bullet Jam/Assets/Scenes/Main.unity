@@ -775,7 +775,11 @@ PrefabInstance:
     - target: {fileID: 4540786035279086693, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
       propertyPath: song
       value: 
-      objectReference: {fileID: 11400000, guid: 4102dd971d9dbdc40b7a1c1a3797ec42, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540786035279086693, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1260645993191690938, guid: 3bfb440182a7b3c46aa78987e7084a54, type: 3}
     - target: {fileID: 4540786035279086714, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
       propertyPath: m_Name
       value: SongManager

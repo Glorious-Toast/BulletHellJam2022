@@ -109,6 +109,7 @@ public class MusicController : MonoBehaviour
 
             currentUserCue = cueInfo.userCueName;
 
+            Debug.Log("Cue: " + currentUserCue);
         }
 
 
