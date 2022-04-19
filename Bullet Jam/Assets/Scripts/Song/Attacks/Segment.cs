@@ -6,4 +6,9 @@ using UnityEngine;
 public class Segment
 {
     public float executeTime;
+
+    public Segment Clone()
+    {
+        return (Segment)this.MemberwiseClone();
+    }
 }

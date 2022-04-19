@@ -14,11 +14,6 @@ public class PlayerStats : MonoBehaviour
        hitbox.GetComponent<Rigidbody2D>().isKinematic = true;
     }
 
-    public void Update()
-    {
-
-    }
-
     public void Damage(float amount)
     {
         HP -= amount;

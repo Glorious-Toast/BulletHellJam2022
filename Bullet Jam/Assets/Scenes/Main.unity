@@ -717,8 +717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   travelDistance: 1
   lerpSpeed: 0.2
-  boundsX: 15
-  boundsY: 15
   graphicsTransform: {fileID: 1489778050}
   pLocTransform: {fileID: 1616711441}
 --- !u!1001 &4540786034199784981
@@ -796,6 +794,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5646819063757300732, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
+      propertyPath: song
+      value: 
+      objectReference: {fileID: 11400000, guid: 4102dd971d9dbdc40b7a1c1a3797ec42, type: 2}
     m_RemovedComponents:
     - {fileID: 5209470721313402294, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 66f13dcb9e129a547878f7353cbe043d, type: 3}

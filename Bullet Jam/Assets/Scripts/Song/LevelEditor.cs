@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using System.IO;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,22 +10,17 @@ public class LevelEditor : MonoBehaviour
     public Song editedSong;
     [SerializeReference]
     public List<Segment> songChart;
-    [HideInInspector]
-    public Text timer;
-    [HideInInspector]
-    public GameObject startButton;
-    [HideInInspector]
-    public Text startButtonText;
-    [HideInInspector]
-    public Text beatText;
-    [HideInInspector]
-    public bool cueSync = false;
-    [HideInInspector]
-    public string syncedCue;
-    [HideInInspector]
-    public int beatDenominator = 8;
-    public Bullet editedBullet = new Bullet(0f, Bullet.Direction.North, 0, Color.white);
-    public DiscoAttack editedDiscoAttack = new DiscoAttack(0f, 1f);
+    [HideInInspector] public Text timer;
+    [HideInInspector] public GameObject startButton;
+    [HideInInspector] public Text startButtonText;
+    [HideInInspector] public Text beatText;
+    [HideInInspector] public bool cueSync = false;
+    [HideInInspector] public string syncedCue;
+    [HideInInspector] public int beatDenominator = 8;
+    [HideInInspector] public bool wrapInFolder;
+    [HideInInspector] public string folderName = "Sequence Folder";
+    public Bullet editBullet = new Bullet(0f, Bullet.Direction.North, 0, Color.white);
+    public DiscoAttack editDiscoAttack = new DiscoAttack(0f, 1f);
     private EditorSongManager songManager;
 
     private void Awake()
@@ -72,13 +64,27 @@ public class LevelEditor : MonoBehaviour
 
     public void ApplyToSong()
     {
-        editedSong.songChart.Add(new DiscoAttack(5f, 3f));
         int attacks = 0;
+        List<Segment> folder = new List<Segment>();
+        float smallestTime = Mathf.Infinity;
         foreach (Segment segment in songChart)
         {
             attacks++;
-            editedSong.songChart.Add(segment);
-            editedSong.songChart = editedSong.songChart.OrderBy(x => x.executeTime).ToList();
+            if (wrapInFolder)
+            {
+                folder.Add(segment);
+                if (segment.executeTime < smallestTime)
+                {
+                    smallestTime = segment.executeTime;
+                }
+            } else
+            {
+                editedSong.songChart.Add(segment);
+            }
+        }
+        if (wrapInFolder)
+        {
+            editedSong.songChart.Add(new SegmentFolder(smallestTime, folderName, folder.ToArray()));
         }
         songChart.Clear();
         Debug.Log($"Successfully applied {attacks} attacks to song " + editedSong.name);
@@ -86,24 +92,25 @@ public class LevelEditor : MonoBehaviour
 
     public void AddBullet()
     {
-        songChart.Insert(0, new Bullet(editedBullet.executeTime, editedBullet.direction, editedBullet.coordinate, editedBullet.color, editedBullet.damage, editedBullet.speed, editedBullet.length));
+        songChart.Insert(0, editBullet.Clone());
     }
 
     public void AddDisco()
     {
-        songChart.Insert(0, editedDiscoAttack);
+        songChart.Insert(0, editDiscoAttack.Clone());
     }
 
     public void CueSync(string cue, float time)
     {
+        if (!cueSync) return;
         if (cue == syncedCue)
         {
-            int denominator = 1;
             float dividedDecimal = time - Mathf.Floor(time);
             List<float> denominatorList = new List<float>();
-            for (int i = beatDenominator; i > 0; i--)
+            for (int denominator = 1; denominator < beatDenominator;)
             {
                 denominator++;
+                Debug.Log(denominator);
                 float rounded = Mathf.Round(dividedDecimal * denominator);
                 rounded /= denominator;
                 denominatorList.Add(Mathf.Abs(dividedDecimal - rounded));
@@ -120,7 +127,8 @@ public class LevelEditor : MonoBehaviour
             }
             float resultTime = Mathf.Round(time * (smallestIndex + 2));
             resultTime /= smallestIndex + 2;
-            Bullet addedBullet = new Bullet(resultTime, editedBullet.direction, editedBullet.coordinate, editedBullet.color, editedBullet.damage, editedBullet.speed, editedBullet.length);
+            Bullet addedBullet = (Bullet)editBullet.Clone();
+            addedBullet.executeTime = resultTime;
             songChart.Add(addedBullet);
 
         }
@@ -129,10 +137,5 @@ public class LevelEditor : MonoBehaviour
     public void AddSequenceText()
     {
 
-    }
-
-    public object Clone()
-    {
-        return this.MemberwiseClone();
     }
 }

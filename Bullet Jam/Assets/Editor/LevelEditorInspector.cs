@@ -12,7 +12,7 @@ public class LevelEditorInspector : Editor
         base.OnInspectorGUI();
 
         LevelEditor levelEditor = (LevelEditor)target;
-        GUILayout.Label("Attacks:");
+        GUILayout.Label("Edit Song Chart:");
         if (GUILayout.Button("Add New Bullet"))
         {
             levelEditor.AddBullet();
@@ -38,6 +38,20 @@ public class LevelEditorInspector : Editor
             }
         }
         GUILayout.Label("");
+        if (levelEditor.wrapInFolder)
+        {
+            if (GUILayout.Button("Disable Folder Wrapping"))
+            {
+                levelEditor.wrapInFolder = false;
+            }
+            levelEditor.folderName = EditorGUILayout.TextField("Folder Name: ", levelEditor.folderName);
+        } else
+        {
+            if (GUILayout.Button("Enable Folder Wrapping"))
+            {
+                levelEditor.wrapInFolder = true;
+            }
+        }
         if (GUILayout.Button("Apply to Song Object"))
         {
             levelEditor.ApplyToSong();
