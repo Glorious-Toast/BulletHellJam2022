@@ -355,7 +355,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5611d5cf80b30543ad294b103ad789a5
     GuidInternal: 
-    m_lastTime: -8585513569218643369
+    m_lastTime: -8585512656425844666
     List:
     - name: Main
       guid: 272bdaff56eb6a478fb15818cad5ebb6
@@ -464,7 +464,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: afcf157fbc994842b9e07fb611913c21
     GuidInternal: 
-    m_lastTime: -8585513549020844404
+    m_lastTime: -8585512686637255502
     List:
     - name: Play_Music
       guid: af6ee6728b1cfa49ab016a949e933ab0
@@ -481,45 +481,8 @@ MonoBehaviour:
         guid: af6ee6728b1cfa49ab016a949e933ab0
       Path: Events\Music\Play_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PlaylistSeeks
-      guid: b51a568235ebc547a067ecd5b01f4505
-      id: 851037254
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Music
-        ObjectType: 12
-        guid: afcf157fbc994842b9e07fb611913c21
-      - ElementName: PlaylistSeeks
-        ObjectType: 4
-        guid: b51a568235ebc547a067ecd5b01f4505
-      Path: Events\Music\PlaylistSeeks
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Song1
-      guid: dce24595f206164ab3cedd981b44c66a
-      id: 778469039
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Music
-        ObjectType: 12
-        guid: afcf157fbc994842b9e07fb611913c21
-      - ElementName: PlaylistSeeks
-        ObjectType: 4
-        guid: b51a568235ebc547a067ecd5b01f4505
-      - ElementName: Song1
-        ObjectType: 4
-        guid: dce24595f206164ab3cedd981b44c66a
-      Path: Events\Music\PlaylistSeeks\Song1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -586,7 +549,7 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 8ff4d143d46f774db6d3854ae69ab346
     GuidInternal: 
-    m_lastTime: -8585513519616944390
+    m_lastTime: -8585512886933961105
     List:
     - name: Arrangement
       guid: af6321acc3cf7f49bda4af6d1fe4c215
@@ -635,9 +598,9 @@ MonoBehaviour:
         - ElementName: Block2
           ObjectType: 8
           guid: 549b0ee1e6f8fe4a9580630ec04669b1
-      - name: Bridge
-        guid: 2b7a8b333dd2ee40bb4027a3b0ab4003
-        id: 2068062714
+      - name: Block3
+        guid: ca7a138e5d73b44fb72a0e3d476f5249
+        id: 682220067
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -648,7 +611,23 @@ MonoBehaviour:
         - ElementName: Arrangement
           ObjectType: 9
           guid: af6321acc3cf7f49bda4af6d1fe4c215
-        - ElementName: Bridge
+        - ElementName: Block3
+          ObjectType: 8
+          guid: ca7a138e5d73b44fb72a0e3d476f5249
+      - name: Block4
+        guid: 2b7a8b333dd2ee40bb4027a3b0ab4003
+        id: 682220068
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 8ff4d143d46f774db6d3854ae69ab346
+        - ElementName: Arrangement
+          ObjectType: 9
+          guid: af6321acc3cf7f49bda4af6d1fe4c215
+        - ElementName: Block4
           ObjectType: 8
           guid: 2b7a8b333dd2ee40bb4027a3b0ab4003
       - name: None

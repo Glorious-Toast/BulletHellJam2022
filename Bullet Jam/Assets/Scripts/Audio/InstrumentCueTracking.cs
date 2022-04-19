@@ -9,8 +9,11 @@
 * "Bass2"
 * "Mel"
 * "Mel2"
+* "Mel3"
 * "Fx"
 * "Fx2"
+* "Fx_Impact"
+* "Fx_Riser"
 *
 * each cue is found via postMusic.currentUserCue
 * the cue is triggered on, and then retriggered on the next cue over. 

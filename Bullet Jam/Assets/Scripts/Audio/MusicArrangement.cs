@@ -29,6 +29,14 @@
 * each cue is found via postMusic.currentUserCue
 * the cue is triggered on, and then retriggered on the next cue over. 
 * BUT NEVER TURNED OFF ONCE ON!
+* 
+* 
+* Exit Trigger Names:
+* To leave block 1
+* --- Block1_Exit_Cue
+* Block2_Exit_Cue
+* Block3_Exit_Cue
+* Block4_Exit_Cue
 */
 
 
@@ -51,14 +59,17 @@ public class MusicArrangement : MonoBehaviour
 
         switch (musicController.currentUserCue)
         {
-            case "TriggerBlock2Exit":
-                AkSoundEngine.SetState("Arrangement", "Block1");
-                break;
-            case "TriggerBlock3Exit":
+            case "Block1_Exit_Cue":
                 AkSoundEngine.SetState("Arrangement", "Block2");
                 break;
-            case "TriggerBlock1Exit":
+            case "Block2_Exit_Cue":
                 AkSoundEngine.SetState("Arrangement", "Block3");
+                break;
+            case "Block3_Exit_Cue":
+                AkSoundEngine.SetState("Arrangement", "Block4");
+                break;
+            case "Block4_Exit_Cue":
+                AkSoundEngine.SetState("Arrangement", "Block1");
                 break;
             default:
                 AkSoundEngine.SetState("Arrangement", "Block1");
