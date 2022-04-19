@@ -66,6 +66,11 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BLOCK1 = 682220065U;
+        static const AkUniqueID BLOCK2 = 682220066U;
+        static const AkUniqueID BLOCK3 = 682220067U;
+        static const AkUniqueID BLOCK4 = 682220068U;
         static const AkUniqueID DIEGETIC = 1316532907U;
         static const AkUniqueID ENEM_TWR_A = 397641584U;
         static const AkUniqueID ENEM_TWR_B = 397641587U;
@@ -78,9 +83,7 @@ namespace AK
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID P_LOCOMOTION = 1470412565U;
         static const AkUniqueID PLAYER = 1069431850U;
-        static const AkUniqueID SONG_00 = 2482245737U;
-        static const AkUniqueID SONG_01 = 2482245736U;
-        static const AkUniqueID SONG_02 = 2482245739U;
+        static const AkUniqueID TUNES = 932294442U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
