@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float travelDistance = 1f;
     public float lerpSpeed = 0.4f;
     private float elapsedTime;
-    public int boundsX = 25;
-    public int boundsY = 25;
+    private int boundsX = 15;
+    private int boundsY = 15;
     public Transform graphicsTransform;
     public Transform pLocTransform;
     private bool isMoving = false;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         SetSpeed();
+        SetBounds();
         Movement();
     }
 
@@ -34,11 +35,18 @@ public class PlayerMovement : MonoBehaviour
     private void SetSpeed()
     {
         if (songManager == null) return;
-        if (songManager.isPlaying)
+        if (songManager.isPlaying && songManager.BPM != 0)
         {
             // Will probably change in the future
             lerpSpeed = songManager.BPM / 960;
         }
+    }
+
+    private void SetBounds()
+    {
+        if (songManager == null) return;
+        boundsX = songManager.boundsX;
+        boundsY = songManager.boundsY;
     }
 
     private void Movement()

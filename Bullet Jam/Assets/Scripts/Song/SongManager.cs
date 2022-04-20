@@ -13,20 +13,23 @@ public class SongManager : MonoBehaviour
     public int currentBeat;
     public uint playingID;
     [SerializeReference]
-    public List<Segment> playingChart;
-    public int spawnX = 15;
-    public int spawnY = 15;
+    public Segment[] playingChart;
+    public int boundsX = 15;
+    public int boundsY = 15;
     public GameObject bulletPrefab;
     public GameObject discoPrefab;
+    private int currentNote;
 
     public void PlaySong()
     {
-        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit);
+        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit | AkCallbackType.AK_MusicSyncUserCue);
         currentBeat = 0;
+        currentNote = 0;
+        boundsX = song.boundsX;
+        boundsY = song.boundsY;
+        playingChart = UnwrapChart(song.songChart);
         playingID = song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
-        playingChart = song.songChart;
         isPlaying = true;
-        SortChart();
     }
 
     public void StopSong()
@@ -36,9 +39,47 @@ public class SongManager : MonoBehaviour
         currentBeat = 0;
     }
 
-    public void SortChart()
+    public Segment[] UnwrapChart(List<Segment> chart)
     {
-        playingChart = playingChart.OrderBy(x => x.executeTime).ToList();
+        // Unwraps folders
+        List<Segment> finalArray = new List<Segment>();
+        foreach (Segment segment in chart)
+        {
+            if (segment as SegmentFolder != null)
+            {
+                SegmentFolder segmentFolder = (SegmentFolder)segment;
+                foreach(Segment content in segmentFolder.contents)
+                {
+                    finalArray.Add(content);
+                }
+            } else
+            {
+                finalArray.Add(segment);
+            }
+        }
+        // Unwraps bullet sequences
+        List<Segment> sequenceChecker = new List<Segment>(finalArray);
+        foreach (Segment segment in sequenceChecker)
+        {
+            BulletSequence sequence = (BulletSequence)segment;
+            if (sequence == null) continue;
+            finalArray.Remove(segment);
+            Bullet addedBullet = sequence.bulletData;
+            foreach (Vector2 executeVal in sequence.sequence)
+            {
+                addedBullet.executeTime = executeVal.x;
+                addedBullet.coordinate = Mathf.RoundToInt(executeVal.y);
+                finalArray.Add(addedBullet.Clone());
+            }
+        }
+        finalArray = SortChart(finalArray);
+        return finalArray.ToArray();
+    }
+
+    public List<Segment> SortChart(List<Segment> chart)
+    {
+        chart = chart.OrderBy(x => x.executeTime).ToList();
+        return chart;
     }
 
     public virtual void MusicCallbacks(object in_cookie, AkCallbackType in_type, object in_info)
@@ -51,14 +92,14 @@ public class SongManager : MonoBehaviour
         if (in_type == AkCallbackType.AK_MusicSyncBeat)
         {
             currentBeat++;
-            if (playingChart.Count > 0)
+            if (!(currentNote >= playingChart.Length))
             {
-                while (playingChart[0].executeTime >= currentBeat && playingChart[0].executeTime < currentBeat + 1)
+                while (playingChart[currentNote].executeTime >= currentBeat && playingChart[currentNote].executeTime < currentBeat + 1)
                 {
                     float waitTime = (playingChart[0].executeTime - currentBeat) * info.segmentInfo_fBeatDuration;
-                    StartCoroutine(ExecuteAttacks(waitTime, playingChart[0]));
-                    playingChart.RemoveAt(0);
-                    if (playingChart.Count == 0)
+                    StartCoroutine(ExecuteAttacks(waitTime, playingChart[currentNote]));
+                    currentNote++;
+                    if (currentNote >= playingChart.Length)
                     {
                         break;
                     }
@@ -92,10 +133,10 @@ public class SongManager : MonoBehaviour
     {
         Vector2 newPosition = Vector2.zero;
         // this can definitely be done better, but i'm too lazy
-        if ((int)data.direction == 0) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y + spawnY);
-        if ((int)data.direction == 1) newPosition = new Vector2(transform.position.x + spawnX, transform.position.y + data.coordinate);
-        if ((int)data.direction == 2) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y - spawnY);
-        if ((int)data.direction == 3) newPosition = new Vector2(transform.position.x - spawnX, transform.position.y + data.coordinate);
+        if ((int)data.direction == 0) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y + boundsY);
+        if ((int)data.direction == 1) newPosition = new Vector2(transform.position.x + boundsX, transform.position.y + data.coordinate);
+        if ((int)data.direction == 2) newPosition = new Vector2(transform.position.x + data.coordinate, transform.position.y - boundsY);
+        if ((int)data.direction == 3) newPosition = new Vector2(transform.position.x - boundsX, transform.position.y + data.coordinate);
         float endDirection = (int)data.direction * 90f;
         if ((int)data.direction == 0 || (int)data.direction == 2) endDirection += 180f;
         GameObject firedBullet = Instantiate(bulletPrefab, newPosition, Quaternion.Euler(0f, 0f, endDirection));
@@ -106,11 +147,11 @@ public class SongManager : MonoBehaviour
         // haven't eaten lunch yet, luckily there's a nice plate of spaghetti right here :D
         if ((int)data.direction == 0 || (int)data.direction == 2)
         {
-            physData.timer = (physData.length + spawnY*2 + 1) / data.speed;
+            physData.timer = (physData.length + boundsY*2 + 1) / data.speed;
         }
         if ((int)data.direction == 1 || (int)data.direction == 3)
         {
-            physData.timer = (physData.length + spawnX*2 + 1) / data.speed;
+            physData.timer = (physData.length + boundsX*2 + 1) / data.speed;
         }
         firedBullet.GetComponent<SpriteRenderer>().color = data.color;
     }

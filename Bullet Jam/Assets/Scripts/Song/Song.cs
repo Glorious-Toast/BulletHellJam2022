@@ -7,6 +7,8 @@ using AK.Wwise;
 public class Song : ScriptableObject
 {
     public AK.Wwise.Event songEvent;
+    public int boundsX;
+    public int boundsY;
     [SerializeReference]
     public List<Segment> songChart;
 

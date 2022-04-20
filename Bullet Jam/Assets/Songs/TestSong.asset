@@ -16,135 +16,62 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7e28d9fd475cd8743ab19389f066b090, type: 2}
+  boundsX: 15
+  boundsY: 15
   songChart:
   - id: 0
   - id: 1
   - id: 2
-  - id: 3
-  - id: 4
-  - id: 5
-  - id: 6
-  - id: 7
-  - id: 8
-  - id: 9
-  - id: 10
-  - id: 11
   references:
     version: 1
     00000000:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
       data:
-        executeTime: 1
-        direction: 0
-        coordinate: -2
-        damage: 10
-        speed: 8
-        length: 1
-        color: {r: 1, g: 0, b: 0, a: 1}
+        executeTime: 0
+        bulletData:
+          executeTime: 2
+          direction: 0
+          coordinate: 0
+          damage: 10
+          speed: 10
+          length: 2
+          color: {r: 1, g: 0, b: 0, a: 1}
+        sequence:
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
     00000001:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
       data:
-        executeTime: 1
-        direction: 1
-        coordinate: -2
-        damage: 10
-        speed: 10
-        length: 2
-        color: {r: 0.57619065, g: 0.051886797, b: 1, a: 1}
+        executeTime: 0
+        bulletData:
+          executeTime: 2
+          direction: 0
+          coordinate: 0
+          damage: 10
+          speed: 10
+          length: 2
+          color: {r: 1, g: 1, b: 1, a: 1}
+        sequence:
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
     00000002:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
+      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
       data:
-        executeTime: 1.5
-        direction: 3
-        coordinate: -1
-        damage: 10
-        speed: 10
-        length: 2
-        color: {r: 1, g: 0.92926645, b: 0, a: 1}
-    00000003:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 2
-        direction: 0
-        coordinate: -1
-        damage: 10
-        speed: 8
-        length: 1
-        color: {r: 1, g: 0.48037386, b: 0, a: 1}
-    00000004:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 2
-        direction: 2
-        coordinate: 0
-        damage: 10
-        speed: 10
-        length: 2
-        color: {r: 0, g: 0.40952682, b: 1, a: 1}
-    00000005:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 2.5
-        direction: 1
-        coordinate: 1
-        damage: 10
-        speed: 10
-        length: 2
-        color: {r: 1, g: 1, b: 1, a: 1}
-    00000006:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 3
-        direction: 0
-        coordinate: 0
-        damage: 10
-        speed: 8
-        length: 1
-        color: {r: 1, g: 0.82495254, b: 0, a: 1}
-    00000007:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 3
-        direction: 1
-        coordinate: 2
-        damage: 10
-        speed: 10
-        length: 2
-        color: {r: 1, g: 1, b: 1, a: 1}
-    00000008:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 3.5
-        direction: 0
-        coordinate: 3
-        damage: 10
-        speed: 10
-        length: 2
-        color: {r: 0, g: 0.9604411, b: 1, a: 1}
-    00000009:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 4
-        direction: 0
-        coordinate: 1
-        damage: 10
-        speed: 8
-        length: 1
-        color: {r: 0, g: 1, b: 0.11664677, a: 1}
-    0000000A:
-      type: {class: Bullet, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 5
-        direction: 2
-        coordinate: 2
-        damage: 10
-        speed: 8
-        length: 1
-        color: {r: 0.19425917, g: 0, b: 1, a: 1}
-    0000000B:
-      type: {class: DiscoAttack, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 5
-        warningLength: 3
-        damage: 10
-        attackTiles: 10
+        executeTime: 0
+        bulletData:
+          executeTime: 2
+          direction: 0
+          coordinate: 0
+          damage: 10
+          speed: 10
+          length: 2
+          color: {r: 1, g: 0, b: 0, a: 1}
+        sequence:
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: 0}

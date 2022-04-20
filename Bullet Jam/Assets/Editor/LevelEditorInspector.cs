@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEditor;
 
@@ -11,7 +12,7 @@ public class LevelEditorInspector : Editor
         base.OnInspectorGUI();
 
         LevelEditor levelEditor = (LevelEditor)target;
-        GUILayout.Label("Attacks:");
+        GUILayout.Label("Edit Song Chart:");
         if (GUILayout.Button("Add New Bullet"))
         {
             levelEditor.AddBullet();
@@ -21,6 +22,36 @@ public class LevelEditorInspector : Editor
             levelEditor.AddDisco();
         }
         GUILayout.Label("");
+        if (levelEditor.cueSync)
+        {
+            if (GUILayout.Button("Disable Cue Sync"))
+            {
+                levelEditor.cueSync = false;
+            }
+            levelEditor.syncedCue = EditorGUILayout.TextField("Cue: ", levelEditor.syncedCue);
+            levelEditor.beatDenominator = EditorGUILayout.IntField("Beat Denominator Steps: ", levelEditor.beatDenominator);
+        } else
+        {
+            if (GUILayout.Button("Enable Cue Sync"))
+            {
+                levelEditor.cueSync = true;
+            }
+        }
+        GUILayout.Label("");
+        if (levelEditor.wrapInFolder)
+        {
+            if (GUILayout.Button("Disable Folder Wrapping"))
+            {
+                levelEditor.wrapInFolder = false;
+            }
+            levelEditor.folderName = EditorGUILayout.TextField("Folder Name: ", levelEditor.folderName);
+        } else
+        {
+            if (GUILayout.Button("Enable Folder Wrapping"))
+            {
+                levelEditor.wrapInFolder = true;
+            }
+        }
         if (GUILayout.Button("Apply to Song Object"))
         {
             levelEditor.ApplyToSong();
