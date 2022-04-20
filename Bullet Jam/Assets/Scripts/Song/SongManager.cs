@@ -41,6 +41,7 @@ public class SongManager : MonoBehaviour
 
     public Segment[] UnwrapChart(List<Segment> chart)
     {
+        // Unwraps folders
         List<Segment> finalArray = new List<Segment>();
         foreach (Segment segment in chart)
         {
@@ -54,6 +55,21 @@ public class SongManager : MonoBehaviour
             } else
             {
                 finalArray.Add(segment);
+            }
+        }
+        // Unwraps bullet sequences
+        List<Segment> sequenceChecker = new List<Segment>(finalArray);
+        foreach (Segment segment in sequenceChecker)
+        {
+            BulletSequence sequence = (BulletSequence)segment;
+            if (sequence == null) continue;
+            finalArray.Remove(segment);
+            Bullet addedBullet = sequence.bulletData;
+            foreach (Vector2 executeVal in sequence.sequence)
+            {
+                addedBullet.executeTime = executeVal.x;
+                addedBullet.coordinate = Mathf.RoundToInt(executeVal.y);
+                finalArray.Add(addedBullet.Clone());
             }
         }
         finalArray = SortChart(finalArray);

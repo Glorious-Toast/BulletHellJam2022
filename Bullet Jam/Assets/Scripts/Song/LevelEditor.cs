@@ -65,26 +65,77 @@ public class LevelEditor : MonoBehaviour
     public void ApplyToSong()
     {
         int attacks = 0;
-        List<Segment> folder = new List<Segment>();
-        float smallestTime = Mathf.Infinity;
-        foreach (Segment segment in songChart)
+        List<Segment> finalApplied = songChart;
+        List<Segment> sequenceChecker = songChart;
+        List<BulletSequence> sequences = new List<BulletSequence>();
+        while (sequenceChecker.Count > 0)
         {
-            attacks++;
-            if (wrapInFolder)
+            Bullet bullet = (Bullet)sequenceChecker[0];
+            sequenceChecker.RemoveAt(0);
+            if (bullet == null) continue;
+            bool flag = false;
+            int iter = 0;
+            foreach (BulletSequence sequence in sequences)
             {
-                folder.Add(segment);
-                if (segment.executeTime < smallestTime)
+                sequence.bulletData.executeTime = bullet.executeTime;
+                sequence.bulletData.coordinate = bullet.coordinate;
+                var propertiesSequence = sequence.bulletData.GetType().GetProperties();
+                var propertiesBullet = bullet.GetType().GetProperties();
+                bool same = true;
+                int propertyIter = 0;
+                while (propertyIter < propertiesSequence.Length)
                 {
-                    smallestTime = segment.executeTime;
+                    if (propertiesSequence[propertyIter] != propertiesBullet[propertyIter])
+                    {
+                        same = false;
+                    }
+                    propertyIter++;
                 }
+                if (same)
+                {
+                    flag = true;
+                    sequences[iter].sequence.Add(new Vector2(bullet.executeTime, bullet.coordinate));
+                }
+                iter++;
+            }
+            if (!flag)
+            {
+                List<Vector2> valList = new List<Vector2>();
+                valList.Add(new Vector2(bullet.executeTime, bullet.coordinate));
+                sequences.Add(new BulletSequence(bullet, valList));
+            }
+        }
+        foreach (Segment segment in finalApplied)
+        {
+            if (segment as Bullet != null) finalApplied.Remove(segment);
+        }
+        foreach (BulletSequence sequence in sequences)
+        {
+            Debug.Log("hey");
+            if (sequence.sequence.Count > 1)
+            {
+                finalApplied.Add(sequence);
             } else
             {
-                editedSong.songChart.Add(segment);
+                finalApplied.Add(sequence.bulletData);
             }
         }
         if (wrapInFolder)
         {
-            editedSong.songChart.Add(new SegmentFolder(smallestTime, folderName, folder.ToArray()));
+            List<Segment> folder = new List<Segment>();
+            foreach (Segment segment in finalApplied)
+            {
+                attacks++;
+                folder.Add(segment);
+            }
+            editedSong.songChart.Add(new SegmentFolder(0f, folderName, folder.ToArray()));
+        } else
+        {
+            foreach (Segment segment in finalApplied)
+            {
+                attacks++;
+                editedSong.songChart.Add(segment);
+            }
         }
         songChart.Clear();
         Debug.Log($"Successfully applied {attacks} attacks to song " + editedSong.name);
@@ -110,7 +161,6 @@ public class LevelEditor : MonoBehaviour
             for (int denominator = 1; denominator < beatDenominator;)
             {
                 denominator++;
-                Debug.Log(denominator);
                 float rounded = Mathf.Round(dividedDecimal * denominator);
                 rounded /= denominator;
                 denominatorList.Add(Mathf.Abs(dividedDecimal - rounded));

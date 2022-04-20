@@ -420,7 +420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786342813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.315182, y: -20.496346, z: -309.20825}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -578,13 +578,13 @@ MonoBehaviour:
   startButton: {fileID: 454372271}
   startButtonText: {fileID: 2118746413}
   beatText: {fileID: 912972610}
-  cueSync: 1
+  cueSync: 0
   syncedCue: D_Kick
   beatDenominator: 4
-  wrapInFolder: 1
+  wrapInFolder: 0
   folderName: Kick
   editBullet:
-    executeTime: 0
+    executeTime: 2
     direction: 0
     coordinate: 0
     damage: 10
