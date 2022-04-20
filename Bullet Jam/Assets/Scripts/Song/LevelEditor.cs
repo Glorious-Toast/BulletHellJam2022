@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -66,11 +67,20 @@ public class LevelEditor : MonoBehaviour
     {
         int attacks = 0;
         List<Segment> finalApplied = songChart;
-        List<Segment> sequenceChecker = songChart;
+        List<Segment> sequenceChecker = new List<Segment>(songChart);
         List<BulletSequence> sequences = new List<BulletSequence>();
         while (sequenceChecker.Count > 0)
         {
-            Bullet bullet = (Bullet)sequenceChecker[0];
+            Bullet bullet = new Bullet(0f, Bullet.Direction.North, 15, Color.black);
+            try
+            {
+                bullet = (Bullet)sequenceChecker[0];
+            }
+            catch (InvalidCastException)
+            {
+                sequenceChecker.RemoveAt(0);
+                continue;
+            }
             sequenceChecker.RemoveAt(0);
             if (bullet == null) continue;
             bool flag = false;
@@ -79,15 +89,17 @@ public class LevelEditor : MonoBehaviour
             {
                 sequence.bulletData.executeTime = bullet.executeTime;
                 sequence.bulletData.coordinate = bullet.coordinate;
-                var propertiesSequence = sequence.bulletData.GetType().GetProperties();
-                var propertiesBullet = bullet.GetType().GetProperties();
+                var propertiesSequence = sequence.bulletData.GetType().GetFields();
+                var propertiesBullet = bullet.GetType().GetFields();
                 bool same = true;
                 int propertyIter = 0;
                 while (propertyIter < propertiesSequence.Length)
                 {
+                    Type valueType = propertiesSequence[propertyIter].GetType();
                     if (propertiesSequence[propertyIter] != propertiesBullet[propertyIter])
                     {
                         same = false;
+                        Debug.Log("falsed");
                     }
                     propertyIter++;
                 }
@@ -105,7 +117,7 @@ public class LevelEditor : MonoBehaviour
                 sequences.Add(new BulletSequence(bullet, valList));
             }
         }
-        foreach (Segment segment in finalApplied)
+        foreach (Segment segment in new List<Segment>(finalApplied))
         {
             if (segment as Bullet != null) finalApplied.Remove(segment);
         }
