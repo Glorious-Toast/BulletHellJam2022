@@ -129,7 +129,7 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   activationTimer: 0
   bCollider: {fileID: 1205559473176721724}
-  light: {fileID: 7567068561520655114}
+  lightSource: {fileID: 7567068561520655114}
 --- !u!114 &7567068561520655114
 MonoBehaviour:
   m_ObjectHideFlags: 0

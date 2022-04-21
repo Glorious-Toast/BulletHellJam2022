@@ -1,12 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
 	27511013	Play_Test_Beep			\Default Work Unit\Play_Test_Beep	
+	369982735	Stop_Plyr_Movement			\Player\Stop_Plyr_Movement	
 	641054882	Stop_Test_Beep_Lp			\Default Work Unit\Stop_Test_Beep_Lp	
 	701599435	Stop_Test_Beep			\Default Work Unit\Stop_Test_Beep	
 	2235959444	Play_Test_Beep_Lp			\Default Work Unit\Play_Test_Beep_Lp	
+	2271622313	Play_Plyr_Movement			\Player\Play_Plyr_Movement	
 	2932040671	Play_Music			\Music\Play_Music	
+	3038071762	Play_Plyr_Take_DMG			\Player\Play_Plyr_Take_DMG	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4158069196	PlayerFwdRev			\Default Work Unit\PlayerFwdRev	
+
+Switch	ID	Name	Switch Group			Notes
+	948916608	Fwd	PlayerFwdRev			
+	980603520	Rev	PlayerFwdRev			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1490607671	Arrangement			\Music\Arrangement	
+	4091656514	Gamestate			\Music\Gamestate	
 
 State	ID	Name	State Group			Notes
 	682220065	Block1	Arrangement			
@@ -15,31 +26,88 @@ State	ID	Name	State Group			Notes
 	682220068	Block4	Arrangement			
 	748895195	None	Arrangement			
 	4184794294	Outro	Arrangement			
+	89505537	Gameplay	Gamestate			
+	748895195	None	Gamestate			
+	1593864692	Defeat	Gamestate			
+	2607556080	Menu	Gamestate			
+	2716678721	Victory	Gamestate			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	907376235	Defeat	Gamestate	\Interactive Music Hierarchy\Default Work Unit\Music		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3357794504	PlaySpeed			\Music\PlaySpeed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2675939	Drums-B2- Crash	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B2- Crash_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Drums-B2- Crash		967333
 	8738163	FXs-B1-Impacts	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B1-Impacts_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\FXs-B1-Impacts		979339
+	28862280	B3-R2- HighnW	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- HighnW_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- HighnW		1066268
+	56533890	Plyr_Dmg_Recieve	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Dmg_Recieve_3B527709.wem		\Actor-Mixer Hierarchy\Player\Damage\Plyr_Take_DMG\Plyr_Dmg_Recieve		59758
+	105851463	Plyr_Dmg_Recieve_02	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Dmg_Recieve_FBF9854D.wem		\Actor-Mixer Hierarchy\Player\Damage\Plyr_Take_DMG\Plyr_Dmg_Recieve_02		50994
 	117609476	Mel-B1- Mel1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel-B1- Mel1_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Mel-B1- Mel1		1218904
 	117769942	FXs-B1-Riser3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B1-Riser3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\FXs-B1-Riser3		967154
+	148144075	FXs-B2-Riser1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B2-Riser1_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\FXs-B2-Riser1		1024825
+	157928583	B3-R2- Mid	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- Mid_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- Mid		1092513
+	163971719	B4-R2- Kick	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Kick_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Kick		973126
 	188089119	Drums-B1 CHat	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B1 CHat_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Drums-B1 CHat		1001006
 	199399541	Bass-B1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Bass-B1_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Bass-B1		1510595
 	213832411	MonsterSpooky-3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\MonsterSpooky\MonsterSpooky-3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\MonsterSpooky-3		8640064
 	217448977	MonsterSpooky-3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\MonsterSpooky\MonsterSpooky-2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\MonsterSpooky-3		8640064
+	221125323	Mel-B2- Mel1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel-B2- Mel1_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Mel-B2- Mel1		1072421
+	223315406	Plyr_Loc_Whirr_Short_Fw_Rev	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Short_Fw_Rev_A86437CC.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Fwd\Plyr_Loc_Whirr_Short_Fw_Rev		23204
 	241524591	SpookyWind-2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\SpookyWind\SpookyWind-3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\SpookyWind-2		8640064
+	243810894	Drums-B2- Snare	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B2- Snare_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Drums-B2- Snare		1060190
+	253769245	FXs-B2-GlitchFill	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B2-GlitchFill_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\FXs-B2-GlitchFill		967551
+	263407831	Plyr_Dmg_Recieve_03	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Dmg_Recieve_888EDE27.wem		\Actor-Mixer Hierarchy\Player\Damage\Plyr_Take_DMG\Plyr_Dmg_Recieve_03		48904
 	272358848	SpookyWind-2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\SpookyWind\SpookyWind-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\SpookyWind-2		8640064
+	285512180	Drums-B2- Kick	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B2- Kick_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Drums-B2- Kick		972036
 	294508934	MonsterSpooky-3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\MonsterSpooky\MonsterSpooky-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\MonsterSpooky-3		8640064
+	304918065	B4-R2- Power	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Power_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Power		1042219
+	349802078	Plyr_Loc_Whirr_Lp	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Lp_82E991F5.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Whirr_Lp		508160
+	350208392	Plyr_Dmg_Recieve_01	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Dmg_Recieve_355E0058.wem		\Actor-Mixer Hierarchy\Player\Damage\Plyr_Take_DMG\Plyr_Dmg_Recieve_01		63932
+	360530627	Plyr_Loc_Whirr_Short_Fw_Rev_01	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Short_Fw_Rev_6F486831.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Fwd\Plyr_Loc_Whirr_Short_Fw_Rev_01		23710
+	385875075	B4-R2- Mid	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Mid_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Mid		1020482
 	386242470	Test_Beep	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Testing\Test_Beep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep		47620
 	422387856	FXs-B1-Riser1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B1-Riser1_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\FXs-B1-Riser1		1044832
 	428254554	SpookyWind-2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\SpookyWind\SpookyWind-1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\SpookyWind-2		8640064
+	431506487	B4-R2- Crash	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Crash_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Crash		1013967
+	440978467	FXs-B2-Riser2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B2-Riser2_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\FXs-B2-Riser2		976498
+	449013746	B3-R2- Crash	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- Crash_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- Crash		1005773
 	460168924	Drums-B1 Snare	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B1 Snare_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Drums-B1 Snare		1048670
+	462224221	Mel-B2- Mel3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel-B2- Mel3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Mel-B2- Mel3		967050
+	464774675	FXs-B2-Riser3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B2-Riser3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\FXs-B2-Riser3		967170
+	464935935	B4-R2- Riser2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Riser2_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Riser2		985657
+	477226620	B3-R2- Riser3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- Riser3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- Riser3		941432
+	517854237	Bass-B2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Bass-B2_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Bass-B2		1788292
+	540097979	B4-R2- Riser3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Riser3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Riser3		939971
+	571028233	B3-R2- CHat	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- CHat_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- CHat		1037072
+	584139615	B3-R2- GlitchFill	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- GlitchFill_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- GlitchFill		945775
 	595187339	DoorTexture-1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\DoorTexture\DoorTexture-2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\DoorTexture-1		8640064
+	638703493	FXs-B2-Impacts	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B2-Impacts_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\FXs-B2-Impacts		992878
+	646531217	B3-R2- Snare	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- Snare_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- Snare		1044926
+	646999913	B3-R2- Kick	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- Kick_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- Kick		974122
 	659062909	DoorTexture-1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\DoorTexture\DoorTexture-1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\DoorTexture-1		8640064
 	666811150	FXs-B1-Riser2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B1-Riser2_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\FXs-B1-Riser2		984645
+	680494632	B4-R2- Chords	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Chords_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Chords		974561
+	682475584	B4-R2- Mel3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Mel3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Mel3		850389
 	712656222	SpookyWind-2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\SpookyWind\SpookyWind-2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\SpookyWind-2		8640064
+	727349430	Plyr_Loc_Whirr_Short_Fw_Rev_01	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Short_Fw_Rev_C5899D81.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Rev\Plyr_Loc_Whirr_Short_Fw_Rev_01		33304
 	738773138	Mel-B1- Mel3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel-B1- Mel3_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Mel-B1- Mel3		967537
+	752402815	Mel-B2- Mel2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel-B2- Mel2_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Mel-B2- Mel2		1132940
 	776940909	Test_Beep_Lp	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Testing\Test_Beep_Lp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep_Lp		47288
 	782598522	Drums-B1 Crash	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B1 Crash_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Drums-B1 Crash		967333
+	813308955	Plyr_Loc_Whirr_Short_Fw_Rev_02	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Short_Fw_Rev_DB84133F.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Fwd\Plyr_Loc_Whirr_Short_Fw_Rev_02		25906
+	817705875	B4-R2- Impacts	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- Impacts_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- Impacts		988266
 	850232998	MonsterSpooky-3	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\BGs\MonsterSpooky\MonsterSpooky-1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGs\Ambience\MonsterSpooky-3		8640064
+	873523846	B3-R2- BassBus	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- BassBus_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- BassBus		1824026
+	874325229	B3-R2- Chords	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B3-R2- Chords_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block3\Block3Track\B3-R2- Chords		973940
 	881491424	Drums-B1 Kick	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B1 Kick_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Drums-B1 Kick		972199
+	891938504	Plyr_Loc_Whirr_Short_Fw_Rev	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Short_Fw_Rev_8F6CEECF.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Rev\Plyr_Loc_Whirr_Short_Fw_Rev		32558
 	898825515	Mel-B1- Mel2	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel-B1- Mel2_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Mel-B1- Mel2		967823
+	920221622	B4-R2- BassBus	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- BassBus_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- BassBus		1822155
+	926605170	Drums-B2- CHat	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B2- CHat_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Drums-B2- CHat		992882
+	992060600	B4-R2- CHat	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\B4-R2- CHat_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block4\Block4Track_Trigger\B4-R2- CHat		970306
+	1006198620	Plyr_Loc_Whirr_Short_Fw_Rev_02	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Plyr_Loc_Whirr_Short_Fw_Rev_ED07EC9D.wem		\Actor-Mixer Hierarchy\Player\Locomotion\Plyr_Fwd_Rev\Plyr_Loc_Rev\Plyr_Loc_Whirr_Short_Fw_Rev_02		27394
 	1016571515	FXs-B1-GlitchFill	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B1-GlitchFill_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\FXs-B1-GlitchFill		964037
+	1019761347	Mel1	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Mel1_DCBD9358.wmid		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\Mel1		414
 
