@@ -11,10 +11,10 @@ TagManager:
   - Damager
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Bullets
+  - Player
+  - Objects
+  - Ground
   - 
   - 
   - 

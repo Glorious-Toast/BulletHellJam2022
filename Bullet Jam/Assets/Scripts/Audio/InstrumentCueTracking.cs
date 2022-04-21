@@ -20,53 +20,71 @@
 * BUT NEVER TURNED OFF ONCE ON!
 *
 */
+using BulletFury.Data;
 using UnityEngine;
+
 
 public class InstrumentCueTracking : MonoBehaviour
 {
-    MusicController musicController;
+    [SerializeField] private BulletFury.BulletManager instBulletManager = null;
+    public MusicController musicController;
+
+
+    [SerializeField] string instCueName;
+    private bool isAlreadyOn = false;
+    [SerializeField] private float rotateSpeed = 0f;
+    
+    public float cueDuration = 0.5f;
+    private  float cueTimeout;
+
+    [HideInInspector]
+    [SerializeField] private SpawnSettings spawnSettings = null;
+
     public void Awake()
     {
-        musicController = GetComponent<MusicController>();
+        Application.targetFrameRate = 128;
     }
-    public void TrackIntrumentCues()
+    public void Start()
     {
-        switch (musicController.currentUserCue)
-        {
-            case "D_Kick":
-                print("Cue: " + musicController.currentUserCue);
-                break;
-            case "D_Snare":
 
-                break;
-            case "D_CHat":
-
-                break;
-            case "D_Crash":
-
-                break;
-            case "Bass":
-                //print("Cue: " + musicController.currentUserCue);
-                break;
-            case "Bass1":
-
-                break;
-            case "Mel":
-
-                break;
-            case "Mel2":
-
-                break;
-            case "Fx":
-
-                break;
-            case "Fx2":
-
-                break;
-
-            default:
-
-                break;
-        }
+        cueTimeout = cueDuration;
     }
+
+    public void Update()
+    {
+        if (instBulletManager == null)
+            return;
+
+        if (musicController.currentUserCue.Contains(instCueName) && isAlreadyOn)
+        {
+            isAlreadyOn = false;
+            //print("Turned OFF " + musicController.currentUserCue);
+      
+
+        }
+        else if (musicController.currentUserCue.Contains(instCueName) && !isAlreadyOn)
+        {
+            //print("Turned On " + musicController.currentUserCue);
+            
+            instBulletManager.Spawn(transform.position, instBulletManager.Plane == BulletPlane.XY ? transform.up : transform.forward);
+            transform.Rotate(instBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
+            
+            if (cueTimeout > 0)
+            {
+                cueTimeout -= Time.deltaTime;
+            }
+           
+            isAlreadyOn = true;
+        }
+        else if (!musicController.currentUserCue.Contains(instCueName) || cueTimeout <= 0)
+        {
+            
+            cueTimeout = cueDuration;
+         
+            isAlreadyOn = false;
+        }
+
+
+    }
+
 }

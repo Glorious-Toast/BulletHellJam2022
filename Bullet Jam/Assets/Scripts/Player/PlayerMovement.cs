@@ -6,14 +6,17 @@ public class PlayerMovement : MonoBehaviour
 {
     public float travelDistance = 1f;
     public float lerpSpeed = 0.4f;
+    public Rigidbody2D rb;
+
     private float elapsedTime;
-    private int boundsX = 15;
-    private int boundsY = 15;
+    private int boundsX = 16;
+    private int boundsY = 16;
     public Transform graphicsTransform;
     public Transform pLocTransform;
     private bool isMoving = false;
     private Vector2 startPosition;
     private SongManager songManager;
+
 
     private void Awake()
     {

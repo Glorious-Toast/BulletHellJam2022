@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: bdddbcc8c11e8f4ab1e0f516a1c92984
     GuidInternal: 
-    m_lastTime: -8585512612447193284
+    m_lastTime: -8585512151705650610
     List:
     - name: Ambience
       guid: 7b99fe5ca4ab7445a56749ef984a4cfd
@@ -352,6 +352,52 @@ MonoBehaviour:
         ObjectType: 2
         guid: d539a8f39fe94b48b69dffdd20958bb5
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Objects
+    - name: P_Damage
+      guid: cb696b503ec9434ca3a6e90211de147a
+      id: 7801137
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
+      - ElementName: Player
+        ObjectType: 2
+        guid: 146213e42f112543beb938411bdbc6b7
+      - ElementName: P_Damage
+        ObjectType: 2
+        guid: cb696b503ec9434ca3a6e90211de147a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Damage
+    - name: P_Interaction
+      guid: a9c3ae24bac10f4bb7bd03fd4d1301cc
+      id: 235342938
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Diegetic
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
+      - ElementName: Player
+        ObjectType: 2
+        guid: 146213e42f112543beb938411bdbc6b7
+      - ElementName: P_Interaction
+        ObjectType: 2
+        guid: a9c3ae24bac10f4bb7bd03fd4d1301cc
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Interaction
     - name: P_Locomotion
       guid: d67de12a0a80564d84b58925d05c1f10
       id: 1470412565
@@ -455,8 +501,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f0b7accbce8a04997d3463c5617f2b9
     GuidInternal: 
-    m_lastTime: -8585513821781659118
+    m_lastTime: -8585511940500936999
     List:
+    - name: Play_Plyr_Take_DMG
+      guid: 8dfeee66b9645540b3a6c9093aa68800
+      id: 3038071762
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f0b7accbce8a04997d3463c5617f2b9
+      - ElementName: Play_Plyr_Take_DMG
+        ObjectType: 3
+        guid: 8dfeee66b9645540b3a6c9093aa68800
+      Path: Events\Default Work Unit\Play_Plyr_Take_DMG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Test_Beep
       guid: 7d045214ca63e840a002c1cc932159f1
       id: 27511013
@@ -553,8 +616,55 @@ MonoBehaviour:
         guid: af6ee6728b1cfa49ab016a949e933ab0
       Path: Events\Music\Play_Music
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: 12478c867b5c2746a2d5019579d0da57
+    ParentPath: Events\Player
+    guid: 12478c867b5c2746a2d5019579d0da57
+    GuidInternal: 
+    m_lastTime: -8585511940500827976
+    List:
+    - name: Play_Plyr_Movement
+      guid: 41069129f8adfd458c47a102b5d819f3
+      id: 2271622313
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 12478c867b5c2746a2d5019579d0da57
+      - ElementName: Play_Plyr_Movement
+        ObjectType: 3
+        guid: 41069129f8adfd458c47a102b5d819f3
+      Path: Events\Player\Play_Plyr_Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Plyr_Movement
+      guid: 44672381d75bf7459e8430766674527b
+      id: 369982735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 12478c867b5c2746a2d5019579d0da57
+      - ElementName: Stop_Plyr_Movement
+        ObjectType: 3
+        guid: 44672381d75bf7459e8430766674527b
+      Path: Events\Player\Stop_Plyr_Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -847,8 +957,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a78fa1575964874cbb5206af662e705a
     GuidInternal: 
-    m_lastTime: -8585516336008310110
-    List: []
+    m_lastTime: -8585512082576109348
+    List:
+    - name: PlayerFwdRev
+      guid: a51591c90977804586f4977231c6b69f
+      id: 4158069196
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a78fa1575964874cbb5206af662e705a
+      - ElementName: PlayerFwdRev
+        ObjectType: 11
+        guid: a51591c90977804586f4977231c6b69f
+      Path: Switches\Default Work Unit\PlayerFwdRev
+      values:
+      - name: Fwd
+        guid: 976ef80bc7478549a325598b55d068e9
+        id: 948916608
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a78fa1575964874cbb5206af662e705a
+        - ElementName: PlayerFwdRev
+          ObjectType: 11
+          guid: a51591c90977804586f4977231c6b69f
+        - ElementName: Fwd
+          ObjectType: 10
+          guid: 976ef80bc7478549a325598b55d068e9
+      - name: Rev
+        guid: 6274d63b7bbafc49a3f52e44f4a10550
+        id: 980603520
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a78fa1575964874cbb5206af662e705a
+        - ElementName: PlayerFwdRev
+          ObjectType: 11
+          guid: a51591c90977804586f4977231c6b69f
+        - ElementName: Rev
+          ObjectType: 10
+          guid: 6274d63b7bbafc49a3f52e44f4a10550
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\Music.wwu
     PathAndIcons:
     - ElementName: Switches

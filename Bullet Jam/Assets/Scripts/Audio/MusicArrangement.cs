@@ -41,45 +41,43 @@
 
 
 using UnityEngine;
+using BulletFury.Data;
 
-public class MusicArrangement : MonoBehaviour
-{
-    MusicController musicController;
-    public void Awake()
+
+    public class MusicArrangement : MonoBehaviour
     {
-        musicController = GetComponent<MusicController>();
-    }
-
-    public void Start()
-    {
-
-    }
-    public void PerformPlaylist()
-    {
-
-        switch (musicController.currentUserCue)
+        MusicController musicController;
+        public void Awake()
         {
-            case "Block1_Exit_Cue":
-                AkSoundEngine.SetState("Arrangement", "Block2");
-                break;
-            case "Block2_Exit_Cue":
-                AkSoundEngine.SetState("Arrangement", "Block3");
-                break;
-            case "Block3_Exit_Cue":
-                AkSoundEngine.SetState("Arrangement", "Block4");
-                break;
-            case "Block4_Exit_Cue":
-                AkSoundEngine.SetState("Arrangement", "Block1");
-                break;
-            default:
-                AkSoundEngine.SetState("Arrangement", "Block1");
-                break;
+            musicController = GetComponent<MusicController>();
         }
 
+        public void PerformPlaylist()
+        {
+
+            switch (musicController.currentUserCue)
+            {
+                case "Block1_Exit_Cue":
+                    AkSoundEngine.SetState("Arrangement", "Block2");
+                    break;
+                case "Block2_Exit_Cue":
+                    AkSoundEngine.SetState("Arrangement", "Block3");
+                    break;
+                case "Block3_Exit_Cue":
+                    AkSoundEngine.SetState("Arrangement", "Block4");
+                    break;
+                case "Block4_Exit_Cue":
+                    AkSoundEngine.SetState("Arrangement", "Block1");
+                    break;
+                default:
+                    AkSoundEngine.SetState("Arrangement", "Block1");
+                    break;
+            }
+
+        }
+
+
+
+
+
     }
-
-  
-
-
-
-}
