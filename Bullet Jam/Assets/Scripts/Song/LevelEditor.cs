@@ -23,7 +23,7 @@ public class LevelEditor : MonoBehaviour
     [HideInInspector] public string folderName = "Sequence Folder";
     [HideInInspector] public int randomDiscoAmount;
     public Bullet editBullet = new Bullet(0f, Bullet.Direction.North, 0, Color.white);
-    public DiscoAttack editDiscoAttack = new DiscoAttack(0f, 1f, Color.red);
+    public DiscoAttack editDiscoAttack = new DiscoAttack(0f, 1f, Color.red, new List<Vector2Int>());
 
     private void Awake()
     {
@@ -124,7 +124,6 @@ public class LevelEditor : MonoBehaviour
         }
         foreach (BulletSequence sequence in sequences)
         {
-            Debug.Log("hey");
             if (sequence.sequence.Count > 1)
             {
                 finalApplied.Add(sequence);
@@ -139,7 +138,7 @@ public class LevelEditor : MonoBehaviour
             foreach (Segment segment in finalApplied)
             {
                 attacks++;
-                folder.Add(segment);
+                folder.Add(segment.Clone());
             }
             editedSong.songChart.Add(new SegmentFolder(0f, folderName, folder.ToArray()));
         } else
@@ -147,7 +146,7 @@ public class LevelEditor : MonoBehaviour
             foreach (Segment segment in finalApplied)
             {
                 attacks++;
-                editedSong.songChart.Add(segment);
+                editedSong.songChart.Add(segment.Clone());
             }
         }
         songChart.Clear();

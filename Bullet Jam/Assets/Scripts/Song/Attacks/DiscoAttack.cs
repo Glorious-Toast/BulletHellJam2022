@@ -13,12 +13,13 @@ public class DiscoAttack : Segment
     public Color color;
     public List<Vector2Int> damageTiles;
 
-    public DiscoAttack(float pTime, float pWarningLength, Color pColor, float pDamage = 10f, int pAttackTiles = 10)
+    public DiscoAttack(float pTime, float pWarningLength, Color pColor, List<Vector2Int> pDamageTiles, float pDamage = 10f, int pAttackTiles = 10)
     {
         executeTime = pTime;
         warningLength = pWarningLength;
         damage = pDamage;
         attackTiles = pAttackTiles;
         color = pColor;
+        damageTiles = pDamageTiles;
     }
 }
