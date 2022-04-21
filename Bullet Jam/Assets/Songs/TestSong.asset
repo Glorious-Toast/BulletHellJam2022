@@ -20,58 +20,24 @@ MonoBehaviour:
   boundsY: 15
   songChart:
   - id: 0
-  - id: 1
-  - id: 2
   references:
     version: 1
     00000000:
-      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
+      type: {class: DiscoAttack, ns: , asm: Assembly-CSharp}
       data:
-        executeTime: 0
-        bulletData:
-          executeTime: 2
-          direction: 0
-          coordinate: 0
-          damage: 10
-          speed: 10
-          length: 2
-          color: {r: 1, g: 0, b: 0, a: 1}
-        sequence:
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-    00000001:
-      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 0
-        bulletData:
-          executeTime: 2
-          direction: 0
-          coordinate: 0
-          damage: 10
-          speed: 10
-          length: 2
-          color: {r: 1, g: 1, b: 1, a: 1}
-        sequence:
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-    00000002:
-      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 0
-        bulletData:
-          executeTime: 2
-          direction: 0
-          coordinate: 0
-          damage: 10
-          speed: 10
-          length: 2
-          color: {r: 1, g: 0, b: 0, a: 1}
-        sequence:
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
+        executeTime: 1
+        warningLength: 4
+        damage: 10
+        attackTiles: 10
+        color: {r: 1, g: 0, b: 0, a: 1}
+        damageTiles:
+        - {x: 1, y: 30}
+        - {x: 2, y: 29}
+        - {x: 3, y: 27}
+        - {x: 4, y: 26}
+        - {x: 5, y: 25}
+        - {x: 6, y: 24}
+        - {x: 7, y: 23}
+        - {x: 8, y: 22}
+        - {x: 9, y: 21}
+        - {x: 10, y: 20}

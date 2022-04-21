@@ -408,7 +408,7 @@ MonoBehaviour:
   boundsX: 15
   boundsY: 15
   bulletPrefab: {fileID: 1260645993191690938, guid: 3bfb440182a7b3c46aa78987e7084a54, type: 3}
-  discoPrefab: {fileID: 0}
+  discoPrefab: {fileID: 4244370176305855200, guid: 92e62c130861b7d47a3dc24258ebbf38, type: 3}
   beatProgress: 0
   references:
     version: 1
@@ -596,6 +596,12 @@ MonoBehaviour:
     warningLength: 1
     damage: 10
     attackTiles: 10
+    color: {r: 1, g: 0, b: 0, a: 1}
+    damageTiles:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 2, y: 0}
+    - {x: 3, y: 0}
   references:
     version: 1
 --- !u!1 &1125661779
@@ -1051,7 +1057,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.8490566, g: 0, b: 0, a: 1}
   m_FlipX: 0

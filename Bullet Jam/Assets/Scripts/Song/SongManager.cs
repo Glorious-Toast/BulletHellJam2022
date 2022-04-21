@@ -48,11 +48,12 @@ public class SongManager : MonoBehaviour
             if (segment as SegmentFolder != null)
             {
                 SegmentFolder segmentFolder = (SegmentFolder)segment;
-                foreach(Segment content in segmentFolder.contents)
+                foreach (Segment content in segmentFolder.contents)
                 {
                     finalArray.Add(content);
                 }
-            } else
+            }
+            else
             {
                 finalArray.Add(segment);
             }
@@ -61,7 +62,15 @@ public class SongManager : MonoBehaviour
         List<Segment> sequenceChecker = new List<Segment>(finalArray);
         foreach (Segment segment in sequenceChecker)
         {
-            BulletSequence sequence = (BulletSequence)segment;
+            BulletSequence sequence;
+            try
+            {
+                sequence = (BulletSequence)segment;
+            }
+            catch
+            {
+                continue;
+            }
             if (sequence == null) continue;
             finalArray.Remove(segment);
             Bullet addedBullet = sequence.bulletData;
@@ -108,7 +117,7 @@ public class SongManager : MonoBehaviour
         }
         if (in_type == AkCallbackType.AK_MusicSyncBar)
         {
-            
+
         }
         if (in_type == AkCallbackType.AK_MusicSyncExit)
         {
@@ -147,18 +156,24 @@ public class SongManager : MonoBehaviour
         // haven't eaten lunch yet, luckily there's a nice plate of spaghetti right here :D
         if ((int)data.direction == 0 || (int)data.direction == 2)
         {
-            physData.timer = (physData.length + boundsY*2 + 1) / data.speed;
+            physData.timer = (physData.length + boundsY * 2 + 1) / data.speed;
         }
         if ((int)data.direction == 1 || (int)data.direction == 3)
         {
-            physData.timer = (physData.length + boundsX*2 + 1) / data.speed;
+            physData.timer = (physData.length + boundsX * 2 + 1) / data.speed;
         }
         firedBullet.GetComponent<SpriteRenderer>().color = data.color;
     }
 
     private void DiscoAttack(DiscoAttack data)
     {
-        Debug.Log("Disco attack!");
+        GameObject firedDisco = Instantiate(discoPrefab, Vector2.zero, Quaternion.identity);
+        PhysDisco physData = firedDisco.GetComponent<PhysDisco>();
+        physData.damage = data.damage;
+        physData.warningLength = data.warningLength * 1 / (BPM / 60);
+        physData.damageTiles = data.damageTiles;
+        physData.color = data.color;
+        physData.bounds = new Vector2Int(boundsX, boundsY);
     }
 }
 

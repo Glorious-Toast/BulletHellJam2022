@@ -21,7 +21,7 @@ public class LevelEditor : MonoBehaviour
     [HideInInspector] public bool wrapInFolder;
     [HideInInspector] public string folderName = "Sequence Folder";
     public Bullet editBullet = new Bullet(0f, Bullet.Direction.North, 0, Color.white);
-    public DiscoAttack editDiscoAttack = new DiscoAttack(0f, 1f);
+    public DiscoAttack editDiscoAttack = new DiscoAttack(0f, 1f, Color.red);
     private EditorSongManager songManager;
 
     private void Awake()
