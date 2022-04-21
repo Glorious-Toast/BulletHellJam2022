@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using AK.Wwise;
+using UnityEngine.Experimental.Rendering.Universal;
 using System.Linq;
 
 public class SongManager : MonoBehaviour
@@ -163,6 +164,7 @@ public class SongManager : MonoBehaviour
             physData.timer = (physData.length + boundsX * 2 + 1) / data.speed;
         }
         firedBullet.GetComponent<SpriteRenderer>().color = data.color;
+        firedBullet.GetComponentInChildren<Light2D>().color = data.color;
     }
 
     private void DiscoAttack(DiscoAttack data)

@@ -34,7 +34,7 @@ MonoBehaviour:
           damage: 10
           speed: 10
           length: 1
-          color: {r: 1, g: 1, b: 1, a: 1}
+          color: {r: 1, g: 0.4028268, b: 0, a: 1}
         sequence:
         - {x: 1, y: -15}
         - {x: 2, y: -14}

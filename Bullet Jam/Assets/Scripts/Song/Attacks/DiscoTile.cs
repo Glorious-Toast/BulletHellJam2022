@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
 public class DiscoTile : DamagerBase
@@ -10,6 +11,7 @@ public class DiscoTile : DamagerBase
     // Make sure collider is disabled
     public BoxCollider2D bCollider;
     private SpriteRenderer sp;
+    private Light2D light;
     private float maxActivation;
 
     private void Start()
@@ -17,6 +19,7 @@ public class DiscoTile : DamagerBase
         maxActivation = activationTimer;
         sp = gameObject.GetComponent<SpriteRenderer>();
         sp.color = color;
+        light.color = color;
         if (isDamager)
         {
             sp.enabled = true;
