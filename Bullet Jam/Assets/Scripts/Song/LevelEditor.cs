@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class LevelEditor : MonoBehaviour
 {
+    public EditorSongManager songManager;
     public Song editedSong;
     [SerializeReference]
     public List<Segment> songChart;
@@ -20,9 +21,9 @@ public class LevelEditor : MonoBehaviour
     [HideInInspector] public int beatDenominator = 8;
     [HideInInspector] public bool wrapInFolder;
     [HideInInspector] public string folderName = "Sequence Folder";
+    [HideInInspector] public int randomDiscoAmount;
     public Bullet editBullet = new Bullet(0f, Bullet.Direction.North, 0, Color.white);
     public DiscoAttack editDiscoAttack = new DiscoAttack(0f, 1f, Color.red);
-    private EditorSongManager songManager;
 
     private void Awake()
     {
@@ -196,8 +197,23 @@ public class LevelEditor : MonoBehaviour
         }
     }
 
-    public void AddSequenceText()
+    public void RandomizeDisco()
     {
-
+        editDiscoAttack.damageTiles.Clear();
+        List<Vector2Int> random = new List<Vector2Int>();
+        for (int i = 0; i < randomDiscoAmount; i++)
+        {
+            int x = UnityEngine.Random.Range(1, songManager.boundsX*2);
+            int y = UnityEngine.Random.Range(1, songManager.boundsY*2);
+            Vector2Int addedRandom = new Vector2Int(x, y);
+            if (!random.Contains(addedRandom))
+            {
+                random.Add(addedRandom);
+            } else
+            {
+                i--;
+            }
+        }
+        editDiscoAttack.damageTiles = random;
     }
 }

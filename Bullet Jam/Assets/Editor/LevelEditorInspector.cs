@@ -20,7 +20,11 @@ public class LevelEditorInspector : Editor
         if (GUILayout.Button("Add New Disco Attack"))
         {
             levelEditor.AddDisco();
+        }if (GUILayout.Button("Randomize Disco Tiles"))
+        {
+            levelEditor.RandomizeDisco();
         }
+        levelEditor.randomDiscoAmount = EditorGUILayout.IntField("Number of attack tiles: ", levelEditor.randomDiscoAmount);
         GUILayout.Label("");
         if (levelEditor.cueSync)
         {
