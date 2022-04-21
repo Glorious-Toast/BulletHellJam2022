@@ -11,7 +11,7 @@ public class DiscoTile : DamagerBase
     // Make sure collider is disabled
     public BoxCollider2D bCollider;
     private SpriteRenderer sp;
-    private Light2D light;
+    public Light2D light;
     private float maxActivation;
 
     private void Start()
@@ -23,17 +23,19 @@ public class DiscoTile : DamagerBase
         if (isDamager)
         {
             sp.enabled = true;
+            light.enabled = true;
         }
     }
 
     private void Update()
     {
-        if (isDamager)
-        {
-            sp.color = new Color(color.r, color.g, color.b, 1 - (activationTimer / maxActivation));
-        }
         if (activationTimer > 0f)
         {
+            if (isDamager)
+            {
+                sp.color = new Color(color.r, color.g, color.b, 1 - (activationTimer / maxActivation));
+                light.intensity = (1 - (activationTimer / maxActivation));
+            }
             activationTimer -= Time.deltaTime;
             if (activationTimer < 0f)
             {
@@ -51,6 +53,7 @@ public class DiscoTile : DamagerBase
         if (!isDamager)
         {
             sp.enabled = true;
+            light.enabled = true;
         }
         yield return new WaitForSeconds(0.1f);
         bCollider.enabled = false;
@@ -60,6 +63,13 @@ public class DiscoTile : DamagerBase
             yield return null;
             deactivationTimer -= Time.deltaTime;
             sp.color = new Color(color.r, color.g, color.b, deactivationTimer);
+            if (isDamager)
+            {
+                light.intensity = deactivationTimer / 2;
+            } else
+            {
+                light.intensity = deactivationTimer / 4;
+            }
         }
         Destroy(gameObject);
     }

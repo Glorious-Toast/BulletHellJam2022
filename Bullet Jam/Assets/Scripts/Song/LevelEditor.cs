@@ -160,6 +160,8 @@ public class LevelEditor : MonoBehaviour
     public void AddDisco()
     {
         songChart.Insert(0, editDiscoAttack.Clone());
+        DiscoAttack edited = (DiscoAttack)songChart[0];
+        edited.damageTiles = new List<Vector2Int>(editDiscoAttack.damageTiles);
     }
 
     public void CueSync(string cue, float time)
