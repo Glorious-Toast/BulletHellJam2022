@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: KickSpawnSettings
   m_EditorClassIdentifier: 
   fireRate: 0
-  burstCount: 0
-  burstDelay: 0.01
+  burstCount: 1
+  burstDelay: 0
   spawnDir: 0
   directionArc: 0
   randomise: 0

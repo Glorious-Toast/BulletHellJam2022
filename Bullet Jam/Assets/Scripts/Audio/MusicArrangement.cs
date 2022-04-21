@@ -55,7 +55,7 @@ using BulletFury.Data;
         public void PerformPlaylist()
         {
 
-            switch (musicController.currentUserCue)
+            switch (musicController.activeInst)
             {
                 case "Block1_Exit_Cue":
                     AkSoundEngine.SetState("Arrangement", "Block2");
