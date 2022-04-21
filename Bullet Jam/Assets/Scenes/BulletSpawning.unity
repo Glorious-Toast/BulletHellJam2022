@@ -313,7 +313,6 @@ GameObject:
   - component: {fileID: 276094199}
   - component: {fileID: 276094202}
   - component: {fileID: 276094201}
-  - component: {fileID: 276094200}
   m_Layer: 0
   m_Name: CHatSpawner
   m_TagString: Untagged
@@ -335,25 +334,6 @@ Transform:
   m_Father: {fileID: 232388445}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &276094200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276094198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51bc87c4afdbcd49bd03b71f015f2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instBulletManager: {fileID: 276094201}
-  musicController: {fileID: 761806854}
-  instCueName: D_CHat
-  isAlreadyOn: 0
-  rotateSpeed: 5
-  cueDuration: 0.25
-  cueTimeout: 0
 --- !u!114 &276094201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +601,6 @@ GameObject:
   - component: {fileID: 441080583}
   - component: {fileID: 441080582}
   - component: {fileID: 441080584}
-  - component: {fileID: 441080581}
   m_Layer: 0
   m_Name: KickSpawner
   m_TagString: Untagged
@@ -629,25 +608,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &441080581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441080580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51bc87c4afdbcd49bd03b71f015f2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instBulletManager: {fileID: 441080584}
-  musicController: {fileID: 761806854}
-  instCueName: D_Kick
-  isAlreadyOn: 0
-  rotateSpeed: 2
-  cueDuration: 0
-  cueTimeout: 0
 --- !u!212 &441080582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -758,17 +718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d72311abcd53ae4e8d6be9aa9c626c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &761806854 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1881073284575383613, guid: ed96c718490331b4cb55210f8dc378ec, type: 3}
-  m_PrefabInstance: {fileID: 1374661364}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af38360eb94ea2a4f90f9de617fd988f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1063790298
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +729,6 @@ GameObject:
   - component: {fileID: 1063790299}
   - component: {fileID: 1063790302}
   - component: {fileID: 1063790301}
-  - component: {fileID: 1063790300}
   m_Layer: 0
   m_Name: SnareSpawner
   m_TagString: Untagged
@@ -802,25 +750,6 @@ Transform:
   m_Father: {fileID: 232388445}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1063790300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063790298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51bc87c4afdbcd49bd03b71f015f2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instBulletManager: {fileID: 1063790301}
-  musicController: {fileID: 761806854}
-  instCueName: D_Snare
-  isAlreadyOn: 0
-  rotateSpeed: 2
-  cueDuration: 0.25
-  cueTimeout: 0
 --- !u!114 &1063790301
 MonoBehaviour:
   m_ObjectHideFlags: 0

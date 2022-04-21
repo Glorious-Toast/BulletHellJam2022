@@ -1,9 +1,9 @@
 using System;
+using BulletFury;
 using BulletFury.Data;
 using UnityEngine;
 
-namespace BulletFury.Demo
-{
+
     public class TestWeapon : MonoBehaviour
     {
         [SerializeField] private BulletManager bulletManager = null;
@@ -29,4 +29,3 @@ namespace BulletFury.Demo
             transform.Rotate(bulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
         }
     }
-}
