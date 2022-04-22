@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 276094199}
   - component: {fileID: 276094202}
   - component: {fileID: 276094201}
+  - component: {fileID: 276094200}
   m_Layer: 0
   m_Name: CHatSpawner
   m_TagString: Untagged
@@ -334,6 +335,20 @@ Transform:
   m_Father: {fileID: 232388445}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &276094200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276094198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1700fa3a053457f80c73d153847195f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletManager: {fileID: 276094201}
+  rotateSpeed: 0
 --- !u!114 &276094201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b3b583b5c6d4f4cab32fe763227ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBullets: 95
+  maxBullets: 950
   drawPriority: 0
   bulletSettings: {fileID: 11400000, guid: 9ab0e3a54da420f4189426f6e0b4fe82, type: 2}
   spawnSettings: {fileID: 11400000, guid: 96e1d57ae03669745aff7c50d52715dc, type: 2}
@@ -601,6 +616,7 @@ GameObject:
   - component: {fileID: 441080583}
   - component: {fileID: 441080582}
   - component: {fileID: 441080584}
+  - component: {fileID: 441080581}
   m_Layer: 0
   m_Name: KickSpawner
   m_TagString: Untagged
@@ -608,6 +624,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &441080581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441080580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1700fa3a053457f80c73d153847195f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletManager: {fileID: 441080584}
+  rotateSpeed: 0
 --- !u!212 &441080582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -686,14 +716,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b3b583b5c6d4f4cab32fe763227ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBullets: 95
+  maxBullets: 800
   drawPriority: 0
   bulletSettings: {fileID: 11400000, guid: 7bbb10915366d56428ebd876aaf182f2, type: 2}
   spawnSettings: {fileID: 11400000, guid: 5a28f055087178b489a2e3121e8cce25, type: 2}
   currentActiveBullets: 0
   maxActiveBullets: 0
   seed: 
-  randomiseSeedOnAwake: 1
+  randomiseSeedOnAwake: 0
   playingEditorAnimation: 0
   OnBulletDied:
     m_PersistentCalls:
@@ -729,6 +759,7 @@ GameObject:
   - component: {fileID: 1063790299}
   - component: {fileID: 1063790302}
   - component: {fileID: 1063790301}
+  - component: {fileID: 1063790300}
   m_Layer: 0
   m_Name: SnareSpawner
   m_TagString: Untagged
@@ -750,6 +781,20 @@ Transform:
   m_Father: {fileID: 232388445}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063790300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063790298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1700fa3a053457f80c73d153847195f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletManager: {fileID: 1063790301}
+  rotateSpeed: 0
 --- !u!114 &1063790301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,14 +807,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b3b583b5c6d4f4cab32fe763227ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBullets: 95
+  maxBullets: 800
   drawPriority: 0
   bulletSettings: {fileID: 11400000, guid: ce9969a921cf2064db984fc119917b10, type: 2}
   spawnSettings: {fileID: 11400000, guid: 06dc17200a3ced24aa8dfb37f1e23e2d, type: 2}
   currentActiveBullets: 0
   maxActiveBullets: 0
   seed: 
-  randomiseSeedOnAwake: 1
+  randomiseSeedOnAwake: 0
   playingEditorAnimation: 0
   OnBulletDied:
     m_PersistentCalls:
@@ -1665,7 +1710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1600393836
 Grid:
   m_ObjectHideFlags: 0

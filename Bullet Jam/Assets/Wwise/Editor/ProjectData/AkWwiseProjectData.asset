@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: bdddbcc8c11e8f4ab1e0f516a1c92984
     GuidInternal: 
-    m_lastTime: -8585512151705650610
+    m_lastTime: -8585510443572777999
     List:
     - name: Ambience
       guid: 7b99fe5ca4ab7445a56749ef984a4cfd
@@ -152,6 +152,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: ef795617ccd3b44687251b54997ec81f
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Tunes\Block4
+    - name: Defeated
+      guid: 7729109af6b89e498951649dbde88e9d
+      id: 2791675679
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 0003a2a763a4684fa6822280ca5771b1
+      - ElementName: Defeated
+        ObjectType: 2
+        guid: 7729109af6b89e498951649dbde88e9d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Defeated
     - name: Diegetic
       guid: af94ffe30ceea64cbbe280ce990537b2
       id: 1316532907
@@ -690,8 +710,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Music
     guid: d6dea85376260241bdb4926652b3ff82
     GuidInternal: 
-    m_lastTime: -8585515067069795589
+    m_lastTime: -8585510443563316220
     List:
+    - name: PlaySpeed
+      guid: e572da9f8ab2f44ab586815a1ddb87d2
+      id: 3357794504
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: d6dea85376260241bdb4926652b3ff82
+      - ElementName: PlaySpeed
+        ObjectType: 13
+        guid: e572da9f8ab2f44ab586815a1ddb87d2
+      Path: Game Parameters\Music\PlaySpeed
     - name: Sidechain1
       guid: 84c737e99e53cc40adc96ef153aaa2d5
       id: 1857854620
@@ -731,7 +765,7 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 8ff4d143d46f774db6d3854ae69ab346
     GuidInternal: 
-    m_lastTime: -8585512886933961105
+    m_lastTime: -8585510443572693671
     List:
     - name: Arrangement
       guid: af6321acc3cf7f49bda4af6d1fe4c215
