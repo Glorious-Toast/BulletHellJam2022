@@ -33,4 +33,12 @@ public class PlayerStats : MonoBehaviour
     {
 
     }
+
+    public void BFTakeDamage()
+    {
+        //you have taken instrument damage
+        //take damage from instrument weapon
+    }
+
+
 }

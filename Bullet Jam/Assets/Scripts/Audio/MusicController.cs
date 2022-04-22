@@ -33,6 +33,7 @@ public class MusicController : MonoBehaviour
         //set the starting state for the music in the game
         AkSoundEngine.SetState("Gamestate", "Gameplay");
         AkSoundEngine.SetState("Arrangement", "Block1");
+        AkSoundEngine.SetRTPCValue("PlaySpeed", 1f);
     }
 
     // Start is called before the first frame update

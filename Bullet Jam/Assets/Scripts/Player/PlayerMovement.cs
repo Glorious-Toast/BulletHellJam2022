@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private int boundsY = 16;
     public Transform graphicsTransform;
     public Transform pLocTransform;
+ 
     private bool isMoving = false;
     private Vector2 startPosition;
     private SongManager songManager;
@@ -76,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         startPosition = graphicsTransform.position;
+
         isMoving = true;
         pLocTransform.position = pLocTransform.position + new Vector3(mVector.x, mVector.y, 0f);
     }

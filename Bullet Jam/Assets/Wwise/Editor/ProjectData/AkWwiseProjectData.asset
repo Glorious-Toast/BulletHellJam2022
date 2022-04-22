@@ -493,7 +493,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5611d5cf80b30543ad294b103ad789a5
     GuidInternal: 
-    m_lastTime: -8585512656425844666
+    m_lastTime: -8585510436571369953
     List:
     - name: Main
       guid: 272bdaff56eb6a478fb15818cad5ebb6
@@ -521,25 +521,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f0b7accbce8a04997d3463c5617f2b9
     GuidInternal: 
-    m_lastTime: -8585511940500936999
+    m_lastTime: -8585510436571427487
     List:
-    - name: Play_Plyr_Take_DMG
-      guid: 8dfeee66b9645540b3a6c9093aa68800
-      id: 3038071762
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5f0b7accbce8a04997d3463c5617f2b9
-      - ElementName: Play_Plyr_Take_DMG
-        ObjectType: 3
-        guid: 8dfeee66b9645540b3a6c9093aa68800
-      Path: Events\Default Work Unit\Play_Plyr_Take_DMG
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Test_Beep
       guid: 7d045214ca63e840a002c1cc932159f1
       id: 27511013
@@ -649,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 12478c867b5c2746a2d5019579d0da57
     GuidInternal: 
-    m_lastTime: -8585511940500827976
+    m_lastTime: -8585510436571470262
     List:
     - name: Play_Plyr_Movement
       guid: 41069129f8adfd458c47a102b5d819f3
@@ -668,6 +651,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Plyr_Take_DMG
+      guid: 8dfeee66b9645540b3a6c9093aa68800
+      id: 3038071762
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 12478c867b5c2746a2d5019579d0da57
+      - ElementName: Play_Plyr_Take_DMG
+        ObjectType: 3
+        guid: 8dfeee66b9645540b3a6c9093aa68800
+      Path: Events\Player\Play_Plyr_Take_DMG
+      maxAttenuation: 0
+      maxDuration: 0.665304
+      minDuration: 0.508762
     - name: Stop_Plyr_Movement
       guid: 44672381d75bf7459e8430766674527b
       id: 369982735
@@ -683,8 +683,8 @@ MonoBehaviour:
         guid: 44672381d75bf7459e8430766674527b
       Path: Events\Player\Stop_Plyr_Movement
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
