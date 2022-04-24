@@ -19,7 +19,17 @@ public class SongManager : MonoBehaviour
     public int boundsY = 15;
     public GameObject bulletPrefab;
     public GameObject discoPrefab;
+    public float score = 0f;
+    public bool readNotes = true;
     private int currentNote;
+
+    private void Update()
+    {
+        if (isPlaying)
+        {
+            score += Time.deltaTime;
+        }
+    }
 
     public void PlaySong()
     {
@@ -94,6 +104,7 @@ public class SongManager : MonoBehaviour
 
     public virtual void MusicCallbacks(object in_cookie, AkCallbackType in_type, object in_info)
     {
+        if (!readNotes) return;
         AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;
 
         timeSignature = Mathf.RoundToInt(info.segmentInfo_fBarDuration / info.segmentInfo_fBeatDuration);

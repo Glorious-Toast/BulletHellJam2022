@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class PlayerStats : MonoBehaviour
     public float HP = 100f;
     private float maxHP = 100f;
     public GameObject hitbox;
+    public GameObject gameOverScreen;
+    public Text scoreNumber;
+    public GameObject newHighScore;
     private CameraShake cameraShake;
 
     private void Awake()
@@ -38,21 +43,28 @@ public class PlayerStats : MonoBehaviour
     public void Die()
     {
         // AkSoundEngine.SetState("Gameplay", "Defeat");
+        gameObject.GetComponent<PlayerMovement>().enabled = false;
         StartCoroutine("SlowSong");
     }
 
     IEnumerator SlowSong()
     {
         float newSpeed = 1f;
+        SongManager songManager = FindObjectOfType<SongManager>();
+        SpriteRenderer sp = gameObject.GetComponentInChildren<SpriteRenderer>();
+        Light2D light = gameObject.GetComponentInChildren<Light2D>();
+        songManager.readNotes = false;
         while (newSpeed > 0f)
         {
             yield return null;
-            newSpeed -= Time.deltaTime / 2;
+            newSpeed -= Time.unscaledDeltaTime / 2;
             if (newSpeed < 0f)
             {
                 newSpeed = 0f;
             }
-            Debug.Log(newSpeed);
+            sp.color = new Color(sp.color.r, sp.color.g, sp.color.b, newSpeed);
+            light.intensity = newSpeed;
+            Time.timeScale = newSpeed;
             AkSoundEngine.SetRTPCValue("PlaySpeed", newSpeed);
         }
         LevelEditor editor = FindObjectOfType<LevelEditor>();
@@ -61,7 +73,16 @@ public class PlayerStats : MonoBehaviour
             editor.StopSong();
         } else
         {
-            FindObjectOfType<SongManager>().StopSong();
+            songManager.StopSong();
         }
+        if (songManager.score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", Mathf.FloorToInt(songManager.score));
+            newHighScore.SetActive(true);
+        }
+        scoreNumber.text = Mathf.FloorToInt(songManager.score).ToString() + "s";
+        gameOverScreen.SetActive(true);
+        gameOverScreen.GetComponent<Animator>().Play("udiedurbadatthegame");
+
     }
 }
