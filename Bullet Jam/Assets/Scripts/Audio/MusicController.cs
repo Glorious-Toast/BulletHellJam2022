@@ -17,6 +17,7 @@ public class MusicController : MonoBehaviour
     [SerializeField] private BulletFury.BulletManager kickBulletManager = null;
     [SerializeField] private BulletFury.BulletManager snareBulletManager = null;
 
+    
 
     public AK.Wwise.Event MusicEvent;
 
@@ -43,6 +44,8 @@ public class MusicController : MonoBehaviour
         AkSoundEngine.SetState("Gamestate", "Gameplay");
         AkSoundEngine.SetState("Arrangement", "Block1");
         AkSoundEngine.SetRTPCValue("PlaySpeed", 1f);
+
+        
     }
 
     // Start is called before the first frame update

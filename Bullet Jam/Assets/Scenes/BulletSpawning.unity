@@ -313,7 +313,6 @@ GameObject:
   - component: {fileID: 276094199}
   - component: {fileID: 276094202}
   - component: {fileID: 276094201}
-  - component: {fileID: 276094200}
   m_Layer: 0
   m_Name: CHatSpawner
   m_TagString: Untagged
@@ -335,20 +334,6 @@ Transform:
   m_Father: {fileID: 232388445}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &276094200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276094198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1700fa3a053457f80c73d153847195f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletManager: {fileID: 276094201}
-  rotateSpeed: 0
 --- !u!114 &276094201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,8 +602,6 @@ GameObject:
   - component: {fileID: 441080583}
   - component: {fileID: 441080582}
   - component: {fileID: 441080584}
-  - component: {fileID: 441080581}
-  - component: {fileID: 441080585}
   m_Layer: 0
   m_Name: KickSpawner
   m_TagString: Untagged
@@ -626,20 +609,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &441080581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441080580}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1700fa3a053457f80c73d153847195f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletManager: {fileID: 441080584}
-  rotateSpeed: 0
 --- !u!212 &441080582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -740,24 +709,6 @@ MonoBehaviour:
   OnWeaponFired:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &441080585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441080580}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51bc87c4afdbcd49bd03b71f015f2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instBulletManager: {fileID: 441080584}
-  musicController: {fileID: 1846642506}
-  instCueName: D_Kick
-  isAlreadyOn: 0
-  rotateSpeed: 0
-  timeRemaining: 0.1
 --- !u!114 &761806853 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7431822314550831429, guid: ed96c718490331b4cb55210f8dc378ec,
@@ -781,7 +732,6 @@ GameObject:
   - component: {fileID: 1063790299}
   - component: {fileID: 1063790302}
   - component: {fileID: 1063790301}
-  - component: {fileID: 1063790300}
   m_Layer: 0
   m_Name: SnareSpawner
   m_TagString: Untagged
@@ -803,20 +753,6 @@ Transform:
   m_Father: {fileID: 232388445}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1063790300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063790298}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1700fa3a053457f80c73d153847195f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletManager: {fileID: 1063790301}
-  rotateSpeed: 1
 --- !u!114 &1063790301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 7284034659313263843, guid: ed96c718490331b4cb55210f8dc378ec,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7284034659313263869, guid: ed96c718490331b4cb55210f8dc378ec,
         type: 3}
@@ -15466,18 +15402,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!114 &1846642506 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1881073284575383613, guid: ed96c718490331b4cb55210f8dc378ec,
-    type: 3}
-  m_PrefabInstance: {fileID: 1374661364}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af38360eb94ea2a4f90f9de617fd988f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1923859408
 GameObject:
   m_ObjectHideFlags: 0
@@ -15682,7 +15606,7 @@ PrefabInstance:
     - target: {fileID: 5324225357202786269, guid: 66f13dcb9e129a547878f7353cbe043d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5646819063757300732, guid: 66f13dcb9e129a547878f7353cbe043d,
         type: 3}
