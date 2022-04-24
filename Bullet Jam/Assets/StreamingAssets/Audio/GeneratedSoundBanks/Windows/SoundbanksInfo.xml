@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1137748438">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1422639539">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,16 +19,24 @@
 				<GameParameter Id="1857854620" Name="Sidechain1" ObjectPath="\Game Parameters\Music\Sidechain1"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3802854338">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1198837370">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Music\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="2675939" Language="SFX">
+							<ShortName>Drums-B2- Crash.wav</ShortName>
+							<Path>SFX\Drums-B2- Crash_872E20C5.wem</Path>
+						</File>
 						<File Id="8738163" Language="SFX">
 							<ShortName>FXs-B1-Impacts.wav</ShortName>
 							<Path>SFX\FXs-B1-Impacts_872E20C5.wem</Path>
+						</File>
+						<File Id="28862280" Language="SFX">
+							<ShortName>B3-R2- HighnW.wav</ShortName>
+							<Path>SFX\B3-R2- HighnW_872E20C5.wem</Path>
 						</File>
 						<File Id="117609476" Language="SFX">
 							<ShortName>Mel-B1- Mel1.wav</ShortName>
@@ -37,6 +45,18 @@
 						<File Id="117769942" Language="SFX">
 							<ShortName>FXs-B1-Riser3.wav</ShortName>
 							<Path>SFX\FXs-B1-Riser3_872E20C5.wem</Path>
+						</File>
+						<File Id="148144075" Language="SFX">
+							<ShortName>FXs-B2-Riser1.wav</ShortName>
+							<Path>SFX\FXs-B2-Riser1_872E20C5.wem</Path>
+						</File>
+						<File Id="157928583" Language="SFX">
+							<ShortName>B3-R2- Mid.wav</ShortName>
+							<Path>SFX\B3-R2- Mid_872E20C5.wem</Path>
+						</File>
+						<File Id="163971719" Language="SFX">
+							<ShortName>B4-R2- Kick.wav</ShortName>
+							<Path>SFX\B4-R2- Kick_872E20C5.wem</Path>
 						</File>
 						<File Id="188089119" Language="SFX">
 							<ShortName>Drums-B1 CHat.wav</ShortName>
@@ -54,17 +74,41 @@
 							<ShortName>BGs\MonsterSpooky\MonsterSpooky-2.wav</ShortName>
 							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-2_D79FB2B7.wem</Path>
 						</File>
+						<File Id="221125323" Language="SFX">
+							<ShortName>Mel-B2- Mel1.wav</ShortName>
+							<Path>SFX\Mel-B2- Mel1_872E20C5.wem</Path>
+						</File>
 						<File Id="241524591" Language="SFX">
 							<ShortName>BGs\SpookyWind\SpookyWind-3.wav</ShortName>
 							<Path>SFX\BGs\SpookyWind\SpookyWind-3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="243810894" Language="SFX">
+							<ShortName>Drums-B2- Snare.wav</ShortName>
+							<Path>SFX\Drums-B2- Snare_872E20C5.wem</Path>
+						</File>
+						<File Id="253769245" Language="SFX">
+							<ShortName>FXs-B2-GlitchFill.wav</ShortName>
+							<Path>SFX\FXs-B2-GlitchFill_872E20C5.wem</Path>
 						</File>
 						<File Id="272358848" Language="SFX">
 							<ShortName>BGs\SpookyWind\SpookyWind-4.wav</ShortName>
 							<Path>SFX\BGs\SpookyWind\SpookyWind-4_D79FB2B7.wem</Path>
 						</File>
+						<File Id="285512180" Language="SFX">
+							<ShortName>Drums-B2- Kick.wav</ShortName>
+							<Path>SFX\Drums-B2- Kick_872E20C5.wem</Path>
+						</File>
 						<File Id="294508934" Language="SFX">
 							<ShortName>BGs\MonsterSpooky\MonsterSpooky-4.wav</ShortName>
 							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="304918065" Language="SFX">
+							<ShortName>B4-R2- Power.wav</ShortName>
+							<Path>SFX\B4-R2- Power_872E20C5.wem</Path>
+						</File>
+						<File Id="385875075" Language="SFX">
+							<ShortName>B4-R2- Mid.wav</ShortName>
+							<Path>SFX\B4-R2- Mid_872E20C5.wem</Path>
 						</File>
 						<File Id="422387856" Language="SFX">
 							<ShortName>FXs-B1-Riser1.wav</ShortName>
@@ -74,13 +118,69 @@
 							<ShortName>BGs\SpookyWind\SpookyWind-1.wav</ShortName>
 							<Path>SFX\BGs\SpookyWind\SpookyWind-1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="431506487" Language="SFX">
+							<ShortName>B4-R2- Crash.wav</ShortName>
+							<Path>SFX\B4-R2- Crash_872E20C5.wem</Path>
+						</File>
+						<File Id="440978467" Language="SFX">
+							<ShortName>FXs-B2-Riser2.wav</ShortName>
+							<Path>SFX\FXs-B2-Riser2_872E20C5.wem</Path>
+						</File>
+						<File Id="449013746" Language="SFX">
+							<ShortName>B3-R2- Crash.wav</ShortName>
+							<Path>SFX\B3-R2- Crash_872E20C5.wem</Path>
+						</File>
 						<File Id="460168924" Language="SFX">
 							<ShortName>Drums-B1 Snare.wav</ShortName>
 							<Path>SFX\Drums-B1 Snare_872E20C5.wem</Path>
 						</File>
+						<File Id="462224221" Language="SFX">
+							<ShortName>Mel-B2- Mel3.wav</ShortName>
+							<Path>SFX\Mel-B2- Mel3_872E20C5.wem</Path>
+						</File>
+						<File Id="464774675" Language="SFX">
+							<ShortName>FXs-B2-Riser3.wav</ShortName>
+							<Path>SFX\FXs-B2-Riser3_872E20C5.wem</Path>
+						</File>
+						<File Id="464935935" Language="SFX">
+							<ShortName>B4-R2- Riser2.wav</ShortName>
+							<Path>SFX\B4-R2- Riser2_872E20C5.wem</Path>
+						</File>
+						<File Id="477226620" Language="SFX">
+							<ShortName>B3-R2- Riser3.wav</ShortName>
+							<Path>SFX\B3-R2- Riser3_872E20C5.wem</Path>
+						</File>
+						<File Id="517854237" Language="SFX">
+							<ShortName>Bass-B2.wav</ShortName>
+							<Path>SFX\Bass-B2_872E20C5.wem</Path>
+						</File>
+						<File Id="540097979" Language="SFX">
+							<ShortName>B4-R2- Riser3.wav</ShortName>
+							<Path>SFX\B4-R2- Riser3_872E20C5.wem</Path>
+						</File>
+						<File Id="571028233" Language="SFX">
+							<ShortName>B3-R2- CHat.wav</ShortName>
+							<Path>SFX\B3-R2- CHat_872E20C5.wem</Path>
+						</File>
+						<File Id="584139615" Language="SFX">
+							<ShortName>B3-R2- GlitchFill.wav</ShortName>
+							<Path>SFX\B3-R2- GlitchFill_872E20C5.wem</Path>
+						</File>
 						<File Id="595187339" Language="SFX">
 							<ShortName>BGs\DoorTexture\DoorTexture-2.wav</ShortName>
 							<Path>SFX\BGs\DoorTexture\DoorTexture-2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="638703493" Language="SFX">
+							<ShortName>FXs-B2-Impacts.wav</ShortName>
+							<Path>SFX\FXs-B2-Impacts_872E20C5.wem</Path>
+						</File>
+						<File Id="646531217" Language="SFX">
+							<ShortName>B3-R2- Snare.wav</ShortName>
+							<Path>SFX\B3-R2- Snare_872E20C5.wem</Path>
+						</File>
+						<File Id="646999913" Language="SFX">
+							<ShortName>B3-R2- Kick.wav</ShortName>
+							<Path>SFX\B3-R2- Kick_872E20C5.wem</Path>
 						</File>
 						<File Id="659062909" Language="SFX">
 							<ShortName>BGs\DoorTexture\DoorTexture-1.wav</ShortName>
@@ -90,6 +190,14 @@
 							<ShortName>FXs-B1-Riser2.wav</ShortName>
 							<Path>SFX\FXs-B1-Riser2_872E20C5.wem</Path>
 						</File>
+						<File Id="680494632" Language="SFX">
+							<ShortName>B4-R2- Chords.wav</ShortName>
+							<Path>SFX\B4-R2- Chords_872E20C5.wem</Path>
+						</File>
+						<File Id="682475584" Language="SFX">
+							<ShortName>B4-R2- Mel3.wav</ShortName>
+							<Path>SFX\B4-R2- Mel3_872E20C5.wem</Path>
+						</File>
 						<File Id="712656222" Language="SFX">
 							<ShortName>BGs\SpookyWind\SpookyWind-2.wav</ShortName>
 							<Path>SFX\BGs\SpookyWind\SpookyWind-2_D79FB2B7.wem</Path>
@@ -98,13 +206,29 @@
 							<ShortName>Mel-B1- Mel3.wav</ShortName>
 							<Path>SFX\Mel-B1- Mel3_872E20C5.wem</Path>
 						</File>
+						<File Id="752402815" Language="SFX">
+							<ShortName>Mel-B2- Mel2.wav</ShortName>
+							<Path>SFX\Mel-B2- Mel2_872E20C5.wem</Path>
+						</File>
 						<File Id="782598522" Language="SFX">
 							<ShortName>Drums-B1 Crash.wav</ShortName>
 							<Path>SFX\Drums-B1 Crash_872E20C5.wem</Path>
 						</File>
+						<File Id="817705875" Language="SFX">
+							<ShortName>B4-R2- Impacts.wav</ShortName>
+							<Path>SFX\B4-R2- Impacts_872E20C5.wem</Path>
+						</File>
 						<File Id="850232998" Language="SFX">
 							<ShortName>BGs\MonsterSpooky\MonsterSpooky-1.wav</ShortName>
 							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="873523846" Language="SFX">
+							<ShortName>B3-R2- BassBus.wav</ShortName>
+							<Path>SFX\B3-R2- BassBus_872E20C5.wem</Path>
+						</File>
+						<File Id="874325229" Language="SFX">
+							<ShortName>B3-R2- Chords.wav</ShortName>
+							<Path>SFX\B3-R2- Chords_872E20C5.wem</Path>
 						</File>
 						<File Id="881491424" Language="SFX">
 							<ShortName>Drums-B1 Kick.wav</ShortName>
@@ -114,9 +238,25 @@
 							<ShortName>Mel-B1- Mel2.wav</ShortName>
 							<Path>SFX\Mel-B1- Mel2_872E20C5.wem</Path>
 						</File>
+						<File Id="920221622" Language="SFX">
+							<ShortName>B4-R2- BassBus.wav</ShortName>
+							<Path>SFX\B4-R2- BassBus_872E20C5.wem</Path>
+						</File>
+						<File Id="926605170" Language="SFX">
+							<ShortName>Drums-B2- CHat.wav</ShortName>
+							<Path>SFX\Drums-B2- CHat_872E20C5.wem</Path>
+						</File>
+						<File Id="992060600" Language="SFX">
+							<ShortName>B4-R2- CHat.wav</ShortName>
+							<Path>SFX\B4-R2- CHat_872E20C5.wem</Path>
+						</File>
 						<File Id="1016571515" Language="SFX">
 							<ShortName>FXs-B1-GlitchFill.wav</ShortName>
 							<Path>SFX\FXs-B1-GlitchFill_872E20C5.wem</Path>
+						</File>
+						<File Id="1019761347" Language="SFX">
+							<ShortName>Mel1.mid</ShortName>
+							<Path>SFX\Mel1_DCBD9358.wmid</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -135,23 +275,24 @@
 								<File Id="881491424"/>
 								<File Id="898825515"/>
 								<File Id="1016571515"/>
+								<File Id="1019761347"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{E10E9B54-F8E6-4AFE-9580-630EC04669B1}">
 							<Media>
-								<File Id="8738163"/>
-								<File Id="117609476"/>
-								<File Id="117769942"/>
-								<File Id="188089119"/>
-								<File Id="199399541"/>
-								<File Id="422387856"/>
-								<File Id="460168924"/>
-								<File Id="666811150"/>
-								<File Id="738773138"/>
-								<File Id="782598522"/>
-								<File Id="881491424"/>
-								<File Id="898825515"/>
-								<File Id="1016571515"/>
+								<File Id="2675939"/>
+								<File Id="148144075"/>
+								<File Id="221125323"/>
+								<File Id="243810894"/>
+								<File Id="253769245"/>
+								<File Id="285512180"/>
+								<File Id="440978467"/>
+								<File Id="462224221"/>
+								<File Id="464774675"/>
+								<File Id="517854237"/>
+								<File Id="638703493"/>
+								<File Id="752402815"/>
+								<File Id="926605170"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{3D42F8A2-163F-45A4-B903-F70392E371AF}">
@@ -169,60 +310,110 @@
 								<File Id="881491424"/>
 								<File Id="898825515"/>
 								<File Id="1016571515"/>
+								<File Id="1019761347"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{338B7A2B-D23D-40EE-BB40-27A3B0AB4003}">
 							<Media>
-								<File Id="8738163"/>
-								<File Id="117609476"/>
-								<File Id="117769942"/>
-								<File Id="188089119"/>
-								<File Id="199399541"/>
-								<File Id="422387856"/>
-								<File Id="460168924"/>
-								<File Id="666811150"/>
-								<File Id="738773138"/>
-								<File Id="782598522"/>
-								<File Id="881491424"/>
-								<File Id="898825515"/>
-								<File Id="1016571515"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{5DD34E02-0360-4D6C-9FE0-8CD8C467E7D9}">
-							<Media>
-								<File Id="8738163"/>
-								<File Id="117609476"/>
-								<File Id="117769942"/>
-								<File Id="188089119"/>
-								<File Id="199399541"/>
-								<File Id="422387856"/>
-								<File Id="460168924"/>
-								<File Id="666811150"/>
-								<File Id="738773138"/>
-								<File Id="782598522"/>
-								<File Id="881491424"/>
-								<File Id="898825515"/>
-								<File Id="1016571515"/>
+								<File Id="163971719"/>
+								<File Id="304918065"/>
+								<File Id="385875075"/>
+								<File Id="431506487"/>
+								<File Id="464935935"/>
+								<File Id="540097979"/>
+								<File Id="680494632"/>
+								<File Id="682475584"/>
+								<File Id="817705875"/>
+								<File Id="920221622"/>
+								<File Id="992060600"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{8E137ACA-735D-4FB4-B72A-0E3D476F5249}">
 							<Media>
-								<File Id="8738163"/>
-								<File Id="117609476"/>
-								<File Id="117769942"/>
-								<File Id="188089119"/>
-								<File Id="199399541"/>
-								<File Id="422387856"/>
-								<File Id="460168924"/>
-								<File Id="666811150"/>
-								<File Id="738773138"/>
-								<File Id="782598522"/>
-								<File Id="881491424"/>
-								<File Id="898825515"/>
-								<File Id="1016571515"/>
+								<File Id="28862280"/>
+								<File Id="157928583"/>
+								<File Id="449013746"/>
+								<File Id="477226620"/>
+								<File Id="571028233"/>
+								<File Id="584139615"/>
+								<File Id="646531217"/>
+								<File Id="646999913"/>
+								<File Id="873523846"/>
+								<File Id="874325229"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="2271622313" Name="Play_Plyr_Movement" ObjectPath="\Events\Player\Play_Plyr_Movement" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="223315406" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Short_Fw_Rev.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Short_Fw_Rev_A86437CC.wem</Path>
+						</File>
+						<File Id="349802078" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Lp.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Lp_82E991F5.wem</Path>
+						</File>
+						<File Id="360530627" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Short_Fw_Rev.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Short_Fw_Rev_6F486831.wem</Path>
+						</File>
+						<File Id="727349430" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Short_Fw_Rev.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Short_Fw_Rev_C5899D81.wem</Path>
+						</File>
+						<File Id="813308955" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Short_Fw_Rev.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Short_Fw_Rev_DB84133F.wem</Path>
+						</File>
+						<File Id="891938504" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Short_Fw_Rev.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Short_Fw_Rev_8F6CEECF.wem</Path>
+						</File>
+						<File Id="1006198620" Language="SFX">
+							<ShortName>Plyr_Loc_Whirr_Short_Fw_Rev.wav</ShortName>
+							<Path>SFX\Plyr_Loc_Whirr_Short_Fw_Rev_ED07EC9D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0BF86E97-47C7-4985-A325-598B55D068E9}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{3BD67462-BA7B-49FC-A3F5-2E44F4A10550}">
+							<Media>
+								<File Id="349802078"/>
+								<File Id="727349430"/>
+								<File Id="891938504"/>
+								<File Id="1006198620"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0BF86E97-47C7-4985-A325-598B55D068E9}">
+							<Media>
+								<File Id="223315406"/>
+								<File Id="349802078"/>
+								<File Id="360530627"/>
+								<File Id="813308955"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3038071762" Name="Play_Plyr_Take_DMG" ObjectPath="\Events\Player\Play_Plyr_Take_DMG" DurationType="OneShot" DurationMin="0.508762" DurationMax="0.665304">
+					<IncludedMemoryFiles>
+						<File Id="56533890" Language="SFX">
+							<ShortName>Plyr_Dmg_Recieve.wav</ShortName>
+							<Path>SFX\Plyr_Dmg_Recieve_3B527709.wem</Path>
+						</File>
+						<File Id="105851463" Language="SFX">
+							<ShortName>Plyr_Dmg_Recieve.wav</ShortName>
+							<Path>SFX\Plyr_Dmg_Recieve_FBF9854D.wem</Path>
+						</File>
+						<File Id="263407831" Language="SFX">
+							<ShortName>Plyr_Dmg_Recieve.wav</ShortName>
+							<Path>SFX\Plyr_Dmg_Recieve_888EDE27.wem</Path>
+						</File>
+						<File Id="350208392" Language="SFX">
+							<ShortName>Plyr_Dmg_Recieve.wav</ShortName>
+							<Path>SFX\Plyr_Dmg_Recieve_355E0058.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="27511013" Name="Play_Test_Beep" ObjectPath="\Events\Default Work Unit\Play_Test_Beep" DurationType="OneShot" DurationMin="0.495375" DurationMax="0.495375">
 					<IncludedMemoryFiles>
@@ -240,9 +431,13 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="369982735" Name="Stop_Plyr_Movement" ObjectPath="\Events\Player\Stop_Plyr_Movement" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="701599435" Name="Stop_Test_Beep" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="641054882" Name="Stop_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep_Lp" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3357794504" Name="PlaySpeed" ObjectPath="\Game Parameters\Music\PlaySpeed"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1490607671" Name="Arrangement" ObjectPath="\States\Music\Arrangement" GUID="{AC2163AF-CFC3-497F-BDA4-AF6D1FE4C215}">
 					<States>
@@ -255,6 +450,14 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="4158069196" Name="PlayerFwdRev" ObjectPath="\Switches\Default Work Unit\PlayerFwdRev" GUID="{C99115A5-7709-4580-86F4-977231C6B69F}">
+					<Switches>
+						<Switch Id="948916608" Name="Fwd" ObjectPath="\Switches\Default Work Unit\PlayerFwdRev\Fwd" GUID="{0BF86E97-47C7-4985-A325-598B55D068E9}"/>
+						<Switch Id="980603520" Name="Rev" ObjectPath="\Switches\Default Work Unit\PlayerFwdRev\Rev" GUID="{3BD67462-BA7B-49FC-A3F5-2E44F4A10550}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

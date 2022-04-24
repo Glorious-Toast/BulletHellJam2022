@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\</ProjectRoot>
+		<SourceFilesRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1137748438">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1857854620" Name="Sidechain1" ObjectPath="\Game Parameters\Music\Sidechain1"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3802854338">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Music\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="8738163" Language="SFX">
+							<ShortName>FXs-B1-Impacts.wav</ShortName>
+							<Path>SFX\FXs-B1-Impacts_872E20C5.wem</Path>
+						</File>
+						<File Id="117609476" Language="SFX">
+							<ShortName>Mel-B1- Mel1.wav</ShortName>
+							<Path>SFX\Mel-B1- Mel1_872E20C5.wem</Path>
+						</File>
+						<File Id="117769942" Language="SFX">
+							<ShortName>FXs-B1-Riser3.wav</ShortName>
+							<Path>SFX\FXs-B1-Riser3_872E20C5.wem</Path>
+						</File>
+						<File Id="188089119" Language="SFX">
+							<ShortName>Drums-B1 CHat.wav</ShortName>
+							<Path>SFX\Drums-B1 CHat_872E20C5.wem</Path>
+						</File>
+						<File Id="199399541" Language="SFX">
+							<ShortName>Bass-B1.wav</ShortName>
+							<Path>SFX\Bass-B1_872E20C5.wem</Path>
+						</File>
+						<File Id="213832411" Language="SFX">
+							<ShortName>BGs\MonsterSpooky\MonsterSpooky-3.wav</ShortName>
+							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="217448977" Language="SFX">
+							<ShortName>BGs\MonsterSpooky\MonsterSpooky-2.wav</ShortName>
+							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="241524591" Language="SFX">
+							<ShortName>BGs\SpookyWind\SpookyWind-3.wav</ShortName>
+							<Path>SFX\BGs\SpookyWind\SpookyWind-3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="272358848" Language="SFX">
+							<ShortName>BGs\SpookyWind\SpookyWind-4.wav</ShortName>
+							<Path>SFX\BGs\SpookyWind\SpookyWind-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="294508934" Language="SFX">
+							<ShortName>BGs\MonsterSpooky\MonsterSpooky-4.wav</ShortName>
+							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="422387856" Language="SFX">
+							<ShortName>FXs-B1-Riser1.wav</ShortName>
+							<Path>SFX\FXs-B1-Riser1_872E20C5.wem</Path>
+						</File>
+						<File Id="428254554" Language="SFX">
+							<ShortName>BGs\SpookyWind\SpookyWind-1.wav</ShortName>
+							<Path>SFX\BGs\SpookyWind\SpookyWind-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="460168924" Language="SFX">
+							<ShortName>Drums-B1 Snare.wav</ShortName>
+							<Path>SFX\Drums-B1 Snare_872E20C5.wem</Path>
+						</File>
+						<File Id="595187339" Language="SFX">
+							<ShortName>BGs\DoorTexture\DoorTexture-2.wav</ShortName>
+							<Path>SFX\BGs\DoorTexture\DoorTexture-2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="659062909" Language="SFX">
+							<ShortName>BGs\DoorTexture\DoorTexture-1.wav</ShortName>
+							<Path>SFX\BGs\DoorTexture\DoorTexture-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="666811150" Language="SFX">
+							<ShortName>FXs-B1-Riser2.wav</ShortName>
+							<Path>SFX\FXs-B1-Riser2_872E20C5.wem</Path>
+						</File>
+						<File Id="712656222" Language="SFX">
+							<ShortName>BGs\SpookyWind\SpookyWind-2.wav</ShortName>
+							<Path>SFX\BGs\SpookyWind\SpookyWind-2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="738773138" Language="SFX">
+							<ShortName>Mel-B1- Mel3.wav</ShortName>
+							<Path>SFX\Mel-B1- Mel3_872E20C5.wem</Path>
+						</File>
+						<File Id="782598522" Language="SFX">
+							<ShortName>Drums-B1 Crash.wav</ShortName>
+							<Path>SFX\Drums-B1 Crash_872E20C5.wem</Path>
+						</File>
+						<File Id="850232998" Language="SFX">
+							<ShortName>BGs\MonsterSpooky\MonsterSpooky-1.wav</ShortName>
+							<Path>SFX\BGs\MonsterSpooky\MonsterSpooky-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="881491424" Language="SFX">
+							<ShortName>Drums-B1 Kick.wav</ShortName>
+							<Path>SFX\Drums-B1 Kick_872E20C5.wem</Path>
+						</File>
+						<File Id="898825515" Language="SFX">
+							<ShortName>Mel-B1- Mel2.wav</ShortName>
+							<Path>SFX\Mel-B1- Mel2_872E20C5.wem</Path>
+						</File>
+						<File Id="1016571515" Language="SFX">
+							<ShortName>FXs-B1-GlitchFill.wav</ShortName>
+							<Path>SFX\FXs-B1-GlitchFill_872E20C5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BF327704-7D61-42C0-9085-93227DDDAC73}">
+							<Media>
+								<File Id="8738163"/>
+								<File Id="117609476"/>
+								<File Id="117769942"/>
+								<File Id="188089119"/>
+								<File Id="199399541"/>
+								<File Id="422387856"/>
+								<File Id="460168924"/>
+								<File Id="666811150"/>
+								<File Id="738773138"/>
+								<File Id="782598522"/>
+								<File Id="881491424"/>
+								<File Id="898825515"/>
+								<File Id="1016571515"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E10E9B54-F8E6-4AFE-9580-630EC04669B1}">
+							<Media>
+								<File Id="8738163"/>
+								<File Id="117609476"/>
+								<File Id="117769942"/>
+								<File Id="188089119"/>
+								<File Id="199399541"/>
+								<File Id="422387856"/>
+								<File Id="460168924"/>
+								<File Id="666811150"/>
+								<File Id="738773138"/>
+								<File Id="782598522"/>
+								<File Id="881491424"/>
+								<File Id="898825515"/>
+								<File Id="1016571515"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3D42F8A2-163F-45A4-B903-F70392E371AF}">
+							<Media>
+								<File Id="8738163"/>
+								<File Id="117609476"/>
+								<File Id="117769942"/>
+								<File Id="188089119"/>
+								<File Id="199399541"/>
+								<File Id="422387856"/>
+								<File Id="460168924"/>
+								<File Id="666811150"/>
+								<File Id="738773138"/>
+								<File Id="782598522"/>
+								<File Id="881491424"/>
+								<File Id="898825515"/>
+								<File Id="1016571515"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{338B7A2B-D23D-40EE-BB40-27A3B0AB4003}">
+							<Media>
+								<File Id="8738163"/>
+								<File Id="117609476"/>
+								<File Id="117769942"/>
+								<File Id="188089119"/>
+								<File Id="199399541"/>
+								<File Id="422387856"/>
+								<File Id="460168924"/>
+								<File Id="666811150"/>
+								<File Id="738773138"/>
+								<File Id="782598522"/>
+								<File Id="881491424"/>
+								<File Id="898825515"/>
+								<File Id="1016571515"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5DD34E02-0360-4D6C-9FE0-8CD8C467E7D9}">
+							<Media>
+								<File Id="8738163"/>
+								<File Id="117609476"/>
+								<File Id="117769942"/>
+								<File Id="188089119"/>
+								<File Id="199399541"/>
+								<File Id="422387856"/>
+								<File Id="460168924"/>
+								<File Id="666811150"/>
+								<File Id="738773138"/>
+								<File Id="782598522"/>
+								<File Id="881491424"/>
+								<File Id="898825515"/>
+								<File Id="1016571515"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8E137ACA-735D-4FB4-B72A-0E3D476F5249}">
+							<Media>
+								<File Id="8738163"/>
+								<File Id="117609476"/>
+								<File Id="117769942"/>
+								<File Id="188089119"/>
+								<File Id="199399541"/>
+								<File Id="422387856"/>
+								<File Id="460168924"/>
+								<File Id="666811150"/>
+								<File Id="738773138"/>
+								<File Id="782598522"/>
+								<File Id="881491424"/>
+								<File Id="898825515"/>
+								<File Id="1016571515"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="27511013" Name="Play_Test_Beep" ObjectPath="\Events\Default Work Unit\Play_Test_Beep" DurationType="OneShot" DurationMin="0.495375" DurationMax="0.495375">
+					<IncludedMemoryFiles>
+						<File Id="386242470" Language="SFX">
+							<ShortName>Testing\Test_Beep.wav</ShortName>
+							<Path>SFX\Testing\Test_Beep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2235959444" Name="Play_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Play_Test_Beep_Lp" DurationType="OneShot" DurationMin="0.491917" DurationMax="0.491917">
+					<IncludedMemoryFiles>
+						<File Id="776940909" Language="SFX">
+							<ShortName>Testing\Test_Beep_Lp.wav</ShortName>
+							<Path>SFX\Testing\Test_Beep_Lp_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="701599435" Name="Stop_Test_Beep" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="641054882" Name="Stop_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep_Lp" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="1490607671" Name="Arrangement" ObjectPath="\States\Music\Arrangement" GUID="{AC2163AF-CFC3-497F-BDA4-AF6D1FE4C215}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Music\Arrangement\None" GUID="{3D42F8A2-163F-45A4-B903-F70392E371AF}"/>
+						<State Id="682220068" Name="Block4" ObjectPath="\States\Music\Arrangement\Block4" GUID="{338B7A2B-D23D-40EE-BB40-27A3B0AB4003}"/>
+						<State Id="682220066" Name="Block2" ObjectPath="\States\Music\Arrangement\Block2" GUID="{E10E9B54-F8E6-4AFE-9580-630EC04669B1}"/>
+						<State Id="682220065" Name="Block1" ObjectPath="\States\Music\Arrangement\Block1" GUID="{BF327704-7D61-42C0-9085-93227DDDAC73}"/>
+						<State Id="4184794294" Name="Outro" ObjectPath="\States\Music\Arrangement\Outro" GUID="{5DD34E02-0360-4D6C-9FE0-8CD8C467E7D9}"/>
+						<State Id="682220067" Name="Block3" ObjectPath="\States\Music\Arrangement\Block3" GUID="{8E137ACA-735D-4FB4-B72A-0E3D476F5249}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
