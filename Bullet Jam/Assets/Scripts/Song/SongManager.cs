@@ -36,6 +36,7 @@ public class SongManager : MonoBehaviour
         uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit | AkCallbackType.AK_MusicSyncUserCue);
         currentBeat = 0;
         currentNote = 0;
+        score = 0f;
         boundsX = song.boundsX;
         boundsY = song.boundsY;
         playingChart = UnwrapChart(song.songChart);

@@ -23,16 +23,19 @@ public class PlayerStats : MonoBehaviour
 
     public void Damage(float amount)
     {
-        HP -= amount;
         // Play damage sound
         if (cameraShake != null)
         {
             cameraShake.Shake(0.08f, 0.3f);
         }
-        if (HP <= 0f)
+        if (HP > 0)
         {
-            Die();
+            if (HP - amount <= 0)
+            {
+                Die();
+            }
         }
+        HP -= amount;
     }
 
     public void Heal(float amount)
