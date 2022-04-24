@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: bdddbcc8c11e8f4ab1e0f516a1c92984
     GuidInternal: 
-    m_lastTime: -8585510443572777999
+    m_lastTime: -8585508848050586557
     List:
     - name: Ambience
       guid: 7b99fe5ca4ab7445a56749ef984a4cfd
@@ -53,13 +53,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Ambience
         ObjectType: 2
         guid: 7b99fe5ca4ab7445a56749ef984a4cfd
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Ambience
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Ambience
     - name: Block1
       guid: 42f69c154249264587f9b6ac455b3f7d
       id: 682220065
@@ -73,7 +73,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Tunes
@@ -82,7 +82,7 @@ MonoBehaviour:
       - ElementName: Block1
         ObjectType: 2
         guid: 42f69c154249264587f9b6ac455b3f7d
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Tunes\Block1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block1
     - name: Block2
       guid: 3619fb2adec91c48a9aa878c8d92ade7
       id: 682220066
@@ -96,7 +96,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Tunes
@@ -105,7 +105,7 @@ MonoBehaviour:
       - ElementName: Block2
         ObjectType: 2
         guid: 3619fb2adec91c48a9aa878c8d92ade7
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Tunes\Block2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block2
     - name: Block3
       guid: cc775a773397b846aaf1d227844b5852
       id: 682220067
@@ -119,7 +119,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Tunes
@@ -128,7 +128,7 @@ MonoBehaviour:
       - ElementName: Block3
         ObjectType: 2
         guid: cc775a773397b846aaf1d227844b5852
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Tunes\Block3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block3
     - name: Block4
       guid: ef795617ccd3b44687251b54997ec81f
       id: 682220068
@@ -142,7 +142,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Tunes
@@ -151,7 +151,7 @@ MonoBehaviour:
       - ElementName: Block4
         ObjectType: 2
         guid: ef795617ccd3b44687251b54997ec81f
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Tunes\Block4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block4
     - name: Defeated
       guid: 7729109af6b89e498951649dbde88e9d
       id: 2791675679
@@ -165,30 +165,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Defeated
         ObjectType: 2
         guid: 7729109af6b89e498951649dbde88e9d
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Defeated
-    - name: Diegetic
-      guid: af94ffe30ceea64cbbe280ce990537b2
-      id: 1316532907
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
-        ObjectType: 2
-        guid: af94ffe30ceea64cbbe280ce990537b2
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Defeated
     - name: Enem_Twr_A
       guid: b6ac830792a53e47b20ba0dcb06d4587
       id: 397641584
@@ -202,7 +185,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
@@ -211,7 +194,7 @@ MonoBehaviour:
       - ElementName: Enem_Twr_A
         ObjectType: 2
         guid: b6ac830792a53e47b20ba0dcb06d4587
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_A
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_A
     - name: Enem_Twr_B
       guid: 379459c895a1fe4a9c6d184f752b2f2e
       id: 397641587
@@ -225,7 +208,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
@@ -234,7 +217,7 @@ MonoBehaviour:
       - ElementName: Enem_Twr_B
         ObjectType: 2
         guid: 379459c895a1fe4a9c6d184f752b2f2e
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_B
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_B
     - name: Enem_Twr_C
       guid: f1baf24100c4214dabe3fd306a352914
       id: 397641586
@@ -248,7 +231,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
@@ -257,7 +240,7 @@ MonoBehaviour:
       - ElementName: Enem_Twr_C
         ObjectType: 2
         guid: f1baf24100c4214dabe3fd306a352914
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_C
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_C
     - name: Enem_Twr_D
       guid: 692b9013c2e2d243a81d13718bb66a54
       id: 397641589
@@ -271,7 +254,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
@@ -280,7 +263,7 @@ MonoBehaviour:
       - ElementName: Enem_Twr_D
         ObjectType: 2
         guid: 692b9013c2e2d243a81d13718bb66a54
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_D
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_D
     - name: Enemies
       guid: d88612f0948bb74c91bb4a0bc654d6fb
       id: 2242381963
@@ -294,13 +277,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Enemies
         ObjectType: 2
         guid: d88612f0948bb74c91bb4a0bc654d6fb
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Enemies
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Enemies
     - name: Items
       guid: 1ccf4d0d1daa4142b79731f0871f6ccd
       id: 2151963051
@@ -314,13 +297,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Items
         ObjectType: 2
         guid: 1ccf4d0d1daa4142b79731f0871f6ccd
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Items
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Items
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -335,9 +318,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: Music
+    - name: MusicAmbience
       guid: 0003a2a763a4684fa6822280ca5771b1
-      id: 3991942870
+      id: 2407943938
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -348,10 +331,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience
     - name: Objects
       guid: d539a8f39fe94b48b69dffdd20958bb5
       id: 1695690031
@@ -365,13 +348,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Objects
         ObjectType: 2
         guid: d539a8f39fe94b48b69dffdd20958bb5
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Objects
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Objects
     - name: P_Damage
       guid: cb696b503ec9434ca3a6e90211de147a
       id: 7801137
@@ -385,7 +368,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Player
@@ -394,7 +377,7 @@ MonoBehaviour:
       - ElementName: P_Damage
         ObjectType: 2
         guid: cb696b503ec9434ca3a6e90211de147a
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Damage
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Player\P_Damage
     - name: P_Interaction
       guid: a9c3ae24bac10f4bb7bd03fd4d1301cc
       id: 235342938
@@ -408,7 +391,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Player
@@ -417,7 +400,7 @@ MonoBehaviour:
       - ElementName: P_Interaction
         ObjectType: 2
         guid: a9c3ae24bac10f4bb7bd03fd4d1301cc
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Interaction
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Player\P_Interaction
     - name: P_Locomotion
       guid: d67de12a0a80564d84b58925d05c1f10
       id: 1470412565
@@ -431,7 +414,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Player
@@ -440,7 +423,7 @@ MonoBehaviour:
       - ElementName: P_Locomotion
         ObjectType: 2
         guid: d67de12a0a80564d84b58925d05c1f10
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Locomotion
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Player\P_Locomotion
     - name: Player
       guid: 146213e42f112543beb938411bdbc6b7
       id: 1069431850
@@ -454,13 +437,30 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Diegetic
+      - ElementName: SFXs
         ObjectType: 2
         guid: af94ffe30ceea64cbbe280ce990537b2
       - ElementName: Player
         ObjectType: 2
         guid: 146213e42f112543beb938411bdbc6b7
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Player
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs\Player
+    - name: SFXs
+      guid: af94ffe30ceea64cbbe280ce990537b2
+      id: 602065129
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXs
+        ObjectType: 2
+        guid: af94ffe30ceea64cbbe280ce990537b2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXs
     - name: Tunes
       guid: 00cb5a015cc8ce4e95bc64ffc5eaca98
       id: 932294442
@@ -474,13 +474,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: MusicAmbience
         ObjectType: 2
         guid: 0003a2a763a4684fa6822280ca5771b1
       - ElementName: Tunes
         ObjectType: 2
         guid: 00cb5a015cc8ce4e95bc64ffc5eaca98
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Tunes
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -1071,7 +1071,7 @@ MonoBehaviour:
     m_lastTime: -8585513821781396244
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000c0000000e0000001600000017000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -20,48 +20,12 @@ MonoBehaviour:
   boundsY: 15
   songChart:
   - id: 0
-  - id: 1
-  - id: 2
   references:
     version: 1
     00000000:
       type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
       data:
-        executeTime: 0
-        bulletData:
-          executeTime: 2
-          direction: 0
-          coordinate: 0
-          damage: 10
-          speed: 10
-          length: 2
-          color: {r: 1, g: 0, b: 0, a: 1}
-        sequence:
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-    00000001:
-      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 0
-        bulletData:
-          executeTime: 2
-          direction: 0
-          coordinate: 0
-          damage: 10
-          speed: 10
-          length: 2
-          color: {r: 1, g: 1, b: 1, a: 1}
-        sequence:
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-        - {x: 2, y: 0}
-    00000002:
-      type: {class: BulletSequence, ns: , asm: Assembly-CSharp}
-      data:
-        executeTime: 0
+        executeTime: 1
         bulletData:
           executeTime: 2
           direction: 0

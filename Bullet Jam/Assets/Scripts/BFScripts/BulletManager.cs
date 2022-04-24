@@ -93,7 +93,9 @@ namespace BulletFury
         #endregion
 
         public int NumActiveBullets => currentActiveBullets;
-        
+
+        public BulletPlane XY { get; internal set; }
+
         /// <summary>
         /// Unity function, happens when the object is first loaded.
         /// Initialise the data.

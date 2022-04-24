@@ -19,10 +19,13 @@ public class SongManager : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject discoPrefab;
     private int currentNote;
+    [HideInInspector]
+    public string activeInst;
 
     public void PlaySong()
     {
-        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit | AkCallbackType.AK_MusicSyncUserCue);
+        uint callbackType = (uint)(AkCallbackType.AK_MusicSyncBeat | 
+            AkCallbackType.AK_MusicSyncBar | AkCallbackType.AK_MusicSyncExit | AkCallbackType.AK_MusicSyncUserCue);
         currentBeat = 0;
         currentNote = 0;
         boundsX = song.boundsX;
@@ -112,6 +115,12 @@ public class SongManager : MonoBehaviour
         }
         if (in_type == AkCallbackType.AK_MusicSyncExit)
         {
+
+        }
+        if (in_type == AkCallbackType.AK_MusicSyncUserCue)
+        {
+            AkMusicSyncCallbackInfo instCue = (AkMusicSyncCallbackInfo)(AkCallbackInfo)in_info;
+            activeInst = instCue.userCueName;
 
         }
     }

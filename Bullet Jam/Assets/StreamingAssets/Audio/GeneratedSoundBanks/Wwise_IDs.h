@@ -91,7 +91,6 @@ namespace AK
         static const AkUniqueID BLOCK3 = 682220067U;
         static const AkUniqueID BLOCK4 = 682220068U;
         static const AkUniqueID DEFEATED = 2791675679U;
-        static const AkUniqueID DIEGETIC = 1316532907U;
         static const AkUniqueID ENEM_TWR_A = 397641584U;
         static const AkUniqueID ENEM_TWR_B = 397641587U;
         static const AkUniqueID ENEM_TWR_C = 397641586U;
@@ -99,12 +98,13 @@ namespace AK
         static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID ITEMS = 2151963051U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSICAMBIENCE = 2407943938U;
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID P_DAMAGE = 7801137U;
         static const AkUniqueID P_INTERACTION = 235342938U;
         static const AkUniqueID P_LOCOMOTION = 1470412565U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID SFXS = 602065129U;
         static const AkUniqueID TUNES = 932294442U;
     } // namespace BUSSES
 

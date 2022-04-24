@@ -34,6 +34,9 @@ public class InstrumentCueTracking : MonoBehaviour
     [SerializeField] string instCueName;
     [SerializeField] private bool isAlreadyOn = false;
     [SerializeField] private float rotateSpeed = 0f;
+    [SerializeField] public float timeRemaining = 0.1f;
+
+    private bool spawnOnce = true;
 
 
 
@@ -41,6 +44,7 @@ public class InstrumentCueTracking : MonoBehaviour
     {
         Application.targetFrameRate = 128;
         isAlreadyOn = false;
+        spawnOnce = true;
     }
     public void Start()
     {
@@ -52,22 +56,23 @@ public class InstrumentCueTracking : MonoBehaviour
         //if (instBulletManager == null)
         //    return;
 
-        if (musicController.activeInst.Contains(instCueName) && !isAlreadyOn)
-        {
-            //print("Turned On " + musicController.currentUserCue);
+        if (musicController.activeInst.Contains(instCueName))
+            print(instCueName);
 
+
+
+
+
+    }
+
+
+    public void instrumentBulletFire()
+    {
+        if (musicController.activeInst.Contains(instCueName))
+        {
             instBulletManager.Spawn(transform.position, instBulletManager.Plane == BulletPlane.XY ? transform.up : transform.forward);
             transform.Rotate(instBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
-
-            isAlreadyOn = true;
-        }else if (musicController.activeInst.Contains(instCueName) && isAlreadyOn)
-        {
-            isAlreadyOn = false;
-            //print("Turned OFF " + musicController.currentUserCue);
         }
-
-
-
     }
 
 }
