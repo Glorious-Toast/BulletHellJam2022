@@ -41,18 +41,30 @@
 
 
 using UnityEngine;
-using BulletFury.Data;
+using System.Collections.Generic;
 
 
-    public class MusicArrangement : MonoBehaviour
+
+public class MusicArrangement : MonoBehaviour
     {
         MusicController musicController;
-        public void Awake()
+
+    string[] startupSong = new string[]{ "Block1", "Block2", "Block3", "Block4" };
+
+    public void Awake()
         {
             musicController = GetComponent<MusicController>();
+      
+
         }
 
-        public void PerformPlaylist()
+    public void Start()
+    {
+        string firstSong = startupSong[Random.Range(0, startupSong.Length - 1)];
+        AkSoundEngine.SetState("Arrangement", firstSong);
+    }
+
+    public void PerformPlaylist()
         {
 
             switch (musicController.activeInst)

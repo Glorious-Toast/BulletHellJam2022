@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82dffc9fcebd41c894fc9c65a04b4cda, type: 3}
-  m_Name: SnareBulletSettings
+  m_Name: MelBulletSettings
   m_EditorClassIdentifier: 
   mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: c2e2ddcbdeab04711bb4faf283dd1910, type: 2}
@@ -18,14 +18,14 @@ MonoBehaviour:
   waitToStart: 0
   timeToPlayWhileWaiting: 0.25
   lifetime: 5
-  speed: 15
+  speed: 10
   moveWithTransform: 1
   rotateWithTransform: 1
   damage: 1
   size: 1
   colliderSize: 0.5
   angularVelocity: 0
-  startColor: {r: 0.93333334, g: 0.8847689, b: 0, a: 1}
+  startColor: {r: 0.93011117, g: 0.637597, b: 0.90466136, a: 1}
   useColorOverTime: 1
   colorCurveUsage: 1
   colorCurveTime: 2

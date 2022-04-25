@@ -58,7 +58,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 4
-  useRotationOverTime: 0
+  useRotationOverTime: 1
   rotationCurveUsage: 0
   rotationCurveTime: 0
   rotationOverTime:

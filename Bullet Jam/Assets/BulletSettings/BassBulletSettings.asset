@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82dffc9fcebd41c894fc9c65a04b4cda, type: 3}
-  m_Name: SnareBulletSettings
+  m_Name: BassBulletSettings
   m_EditorClassIdentifier: 
   mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: c2e2ddcbdeab04711bb4faf283dd1910, type: 2}
   plane: 0
   waitToStart: 0
   timeToPlayWhileWaiting: 0.25
-  lifetime: 5
+  lifetime: 8
   speed: 15
   moveWithTransform: 1
   rotateWithTransform: 1
   damage: 1
-  size: 1
+  size: 1.5
   colliderSize: 0.5
-  angularVelocity: 0
-  startColor: {r: 0.93333334, g: 0.8847689, b: 0, a: 1}
-  useColorOverTime: 1
+  angularVelocity: 2
+  startColor: {r: 0.15292618, g: 0.10946172, b: 0.3813261, a: 1}
+  useColorOverTime: 0
   colorCurveUsage: 1
   colorCurveTime: 2
   colorOverTime:
@@ -59,8 +59,8 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 4
   useRotationOverTime: 1
-  rotationCurveUsage: 0
-  rotationCurveTime: 0
+  rotationCurveUsage: 1
+  rotationCurveTime: 1
   rotationOverTime:
     serializedVersion: 2
     m_Curve:
@@ -132,11 +132,11 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   useVelocityOverTime: 0
-  velocitySpace: 0
+  velocitySpace: 1
   scaleWithSpeed: 1
-  velocityCurveUsage: 1
+  velocityCurveUsage: 0
   velocityCurveTime: 1
-  velocityScaleInDirection: {x: 4, y: 1, z: 1}
+  velocityScaleInDirection: {x: 2, y: 8, z: 1}
   velocityOverTimeX:
     serializedVersion: 2
     m_Curve:
@@ -150,8 +150,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.275
-      value: 0.011792453
+      time: 0.23333588
+      value: 0.040097505
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -159,8 +159,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.66722727
-      value: -0.0073903184
+      time: 0.47556162
+      value: 0.11524457
       inSlope: -0.024350015
       outSlope: -0.024350015
       tangentMode: 0
@@ -168,8 +168,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 0
+      time: 0.9833374
+      value: 0.20281982
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: -0.0047302246
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -192,8 +192,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
+      time: 0.9958191
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0

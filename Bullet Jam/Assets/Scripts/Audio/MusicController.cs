@@ -14,10 +14,15 @@ public class MusicController : MonoBehaviour
 {
     public MusicArrangement arrangement;
     //public InstrumentCueTracking instrumentCall;
+    [Header("Bullet Settings")]
     [SerializeField] private BulletFury.BulletManager kickBulletManager = null;
     [SerializeField] private BulletFury.BulletManager snareBulletManager = null;
+    [SerializeField] private BulletFury.BulletManager cHatBulletManager = null;
+    [SerializeField] private BulletFury.BulletManager bassBulletManager = null;
+    [SerializeField] private BulletFury.BulletManager melBulletManager = null;
+    //[SerializeField] private BulletFury.BulletManager fxBulletManager = null;
 
-    
+
 
     public AK.Wwise.Event MusicEvent;
 
@@ -145,15 +150,30 @@ public class MusicController : MonoBehaviour
     {
         if (activeInst.Contains("D_Kick"))
         {
-            kickBulletManager.Spawn(transform.position, kickBulletManager.Plane == kickBulletManager.XY ? transform.up : transform.forward);
-            transform.Rotate(kickBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
+            kickBulletManager.Spawn(kickBulletManager.transform.position, kickBulletManager.Plane == kickBulletManager.XY ? kickBulletManager.transform.up : kickBulletManager.transform.forward);
+            kickBulletManager.transform.Rotate(kickBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
         }
         else if (activeInst.Contains("D_Snare")){
-            snareBulletManager.Spawn(transform.position, snareBulletManager.Plane == BulletPlane.XY ? transform.up : transform.forward);
-            transform.Rotate(snareBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
+            snareBulletManager.Spawn(snareBulletManager.transform.position, snareBulletManager.Plane == BulletPlane.XY ? transform.up : transform.forward);
+            snareBulletManager.transform.Rotate(snareBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
+        }
+        else if (activeInst.Contains("C_Hat"))
+        {
+            cHatBulletManager.Spawn(cHatBulletManager.transform.position, cHatBulletManager.Plane == BulletPlane.XY ? cHatBulletManager.transform.up : cHatBulletManager.transform.forward);
+            cHatBulletManager.transform.Rotate(cHatBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
+        }
+        else if (activeInst.Contains("Bass"))
+        {
+            bassBulletManager.Spawn(bassBulletManager.transform.position, bassBulletManager.Plane == BulletPlane.XY ? bassBulletManager.transform.up : bassBulletManager.transform.forward);
+            bassBulletManager.transform.Rotate(bassBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
+        }
+        else if (activeInst.Contains("Mel"))
+        {
+            melBulletManager.Spawn(melBulletManager.transform.position, melBulletManager.Plane == BulletPlane.XY ? melBulletManager.transform.up : melBulletManager.transform.forward);
+            melBulletManager.transform.Rotate(melBulletManager.Plane == BulletPlane.XY ? Vector3.forward : Vector3.up, (rotateSpeed * Time.smoothDeltaTime));
         }
 
 
-        
+
     }
 }
