@@ -19,31 +19,33 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1857854620	Sidechain1			\Music\Sidechain1	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	7801137	P_Damage			\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Damage	
-	85412153	Ambience			\Default Work Unit\Master Audio Bus\Music\Ambience	
-	235342938	P_Interaction			\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Interaction	
-	397641584	Enem_Twr_A			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_A	
-	397641586	Enem_Twr_C			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_C	
-	397641587	Enem_Twr_B			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_B	
-	397641589	Enem_Twr_D			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_D	
-	682220065	Block1			\Default Work Unit\Master Audio Bus\Music\Tunes\Block1	
-	682220066	Block2			\Default Work Unit\Master Audio Bus\Music\Tunes\Block2	
-	682220067	Block3			\Default Work Unit\Master Audio Bus\Music\Tunes\Block3	
-	682220068	Block4			\Default Work Unit\Master Audio Bus\Music\Tunes\Block4	
-	932294442	Tunes			\Default Work Unit\Master Audio Bus\Music\Tunes	
-	1069431850	Player			\Default Work Unit\Master Audio Bus\Diegetic\Player	
-	1316532907	Diegetic			\Default Work Unit\Master Audio Bus\Diegetic	
-	1470412565	P_Locomotion			\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Locomotion	
-	1695690031	Objects			\Default Work Unit\Master Audio Bus\Diegetic\Objects	
-	2151963051	Items			\Default Work Unit\Master Audio Bus\Diegetic\Items	
-	2242381963	Enemies			\Default Work Unit\Master Audio Bus\Diegetic\Enemies	
-	2791675679	Defeated			\Default Work Unit\Master Audio Bus\Music\Defeated	
+	7801137	P_Damage			\Default Work Unit\Master Audio Bus\SFXs\Player\P_Damage	
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\MusicAmbience\Ambience	
+	235342938	P_Interaction			\Default Work Unit\Master Audio Bus\SFXs\Player\P_Interaction	
+	397641584	Enem_Twr_A			\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_A	
+	397641586	Enem_Twr_C			\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_C	
+	397641587	Enem_Twr_B			\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_B	
+	397641589	Enem_Twr_D			\Default Work Unit\Master Audio Bus\SFXs\Enemies\Enem_Twr_D	
+	602065129	SFXs			\Default Work Unit\Master Audio Bus\SFXs	
+	682220065	Block1			\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block1	
+	682220066	Block2			\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block2	
+	682220067	Block3			\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block3	
+	682220068	Block4			\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block4	
+	932294442	Tunes			\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\SFXs\Player	
+	1470412565	P_Locomotion			\Default Work Unit\Master Audio Bus\SFXs\Player\P_Locomotion	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\SFXs\Objects	
+	2151963051	Items			\Default Work Unit\Master Audio Bus\SFXs\Items	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\SFXs\Enemies	
+	2407943938	MusicAmbience			\Default Work Unit\Master Audio Bus\MusicAmbience	
+	2791675679	Defeated			\Default Work Unit\Master Audio Bus\MusicAmbience\Defeated	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
 	589841755	Wwise Meter (Custom)	Wwise Meter			
+	745158228	Wwise Gain (Custom)	Wwise Gain			
 	843421315	Wwise Gain (Custom)	Wwise Gain			
+	1009609959	Wwise Meter (Custom)	Wwise Meter			
 	3851006675	Secret_message_Distant	Wwise Harmonizer			
 
 Audio Devices	ID	Name	Type				Notes

@@ -14,8 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_PLYR_MOVEMENT = 2271622313U;
+        static const AkUniqueID PLAY_PLYR_TAKE_DMG = 3038071762U;
         static const AkUniqueID PLAY_TEST_BEEP = 27511013U;
         static const AkUniqueID PLAY_TEST_BEEP_LP = 2235959444U;
+        static const AkUniqueID STOP_PLYR_MOVEMENT = 369982735U;
         static const AkUniqueID STOP_TEST_BEEP = 701599435U;
         static const AkUniqueID STOP_TEST_BEEP_LP = 641054882U;
     } // namespace EVENTS
@@ -53,8 +56,24 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace PLAYERFWDREV
+        {
+            static const AkUniqueID GROUP = 4158069196U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FWD = 948916608U;
+                static const AkUniqueID REV = 980603520U;
+            } // namespace SWITCH
+        } // namespace PLAYERFWDREV
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID PLAYSPEED = 3357794504U;
         static const AkUniqueID SIDECHAIN1 = 1857854620U;
     } // namespace GAME_PARAMETERS
 
@@ -66,7 +85,12 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID DIEGETIC = 1316532907U;
+        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BLOCK1 = 682220065U;
+        static const AkUniqueID BLOCK2 = 682220066U;
+        static const AkUniqueID BLOCK3 = 682220067U;
+        static const AkUniqueID BLOCK4 = 682220068U;
+        static const AkUniqueID DEFEATED = 2791675679U;
         static const AkUniqueID ENEM_TWR_A = 397641584U;
         static const AkUniqueID ENEM_TWR_B = 397641587U;
         static const AkUniqueID ENEM_TWR_C = 397641586U;
@@ -74,13 +98,14 @@ namespace AK
         static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID ITEMS = 2151963051U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSICAMBIENCE = 2407943938U;
         static const AkUniqueID OBJECTS = 1695690031U;
+        static const AkUniqueID P_DAMAGE = 7801137U;
+        static const AkUniqueID P_INTERACTION = 235342938U;
         static const AkUniqueID P_LOCOMOTION = 1470412565U;
         static const AkUniqueID PLAYER = 1069431850U;
-        static const AkUniqueID SONG_00 = 2482245737U;
-        static const AkUniqueID SONG_01 = 2482245736U;
-        static const AkUniqueID SONG_02 = 2482245739U;
+        static const AkUniqueID SFXS = 602065129U;
+        static const AkUniqueID TUNES = 932294442U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

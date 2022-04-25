@@ -23,16 +23,18 @@ public class PlayerStats : MonoBehaviour
 
     public void Damage(float amount)
     {
-        // Play damage sound
         if (cameraShake != null)
         {
-            cameraShake.Shake(0.08f, 0.3f);
+            cameraShake.Shake(0.8f);
         }
         if (HP > 0)
         {
             if (HP - amount <= 0)
             {
                 Die();
+            } else
+            {
+                AkSoundEngine.PostEvent("Play_Plyr_Take_DMG", gameObject);
             }
         }
         HP -= amount;
@@ -45,7 +47,7 @@ public class PlayerStats : MonoBehaviour
 
     public void Die()
     {
-        // AkSoundEngine.SetState("Gameplay", "Defeat");
+        AkSoundEngine.SetState("Gamestate", "Defeat");
         gameObject.GetComponent<PlayerMovement>().enabled = false;
         StartCoroutine("SlowSong");
     }

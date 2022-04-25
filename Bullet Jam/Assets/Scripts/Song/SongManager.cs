@@ -40,7 +40,7 @@ public class SongManager : MonoBehaviour
         boundsX = song.boundsX;
         boundsY = song.boundsY;
         playingChart = UnwrapChart(song.songChart);
-        playingID = song.songEvent.Post(gameObject, callbackType, MusicCallbacks);
+        playingID = AkSoundEngine.PostEvent(song.songEvent, gameObject, callbackType, MusicCallbacks, null);
         isPlaying = true;
     }
 

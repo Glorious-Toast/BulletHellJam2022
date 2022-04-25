@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c47e1a81776d8408d0cdf6f08a3354, type: 3}
   m_Name: TestSong
   m_EditorClassIdentifier: 
-  songEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7e28d9fd475cd8743ab19389f066b090, type: 2}
+  songEvent: Play_Music
   boundsX: 15
   boundsY: 15
   songChart:

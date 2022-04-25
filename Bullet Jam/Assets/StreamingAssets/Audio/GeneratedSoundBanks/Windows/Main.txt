@@ -38,6 +38,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3357794504	PlaySpeed			\Music\PlaySpeed	
 
+Effect plug-ins	ID	Name	Type				Notes
+	921478622	Wwise Gain (Custom)	Wwise Gain			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2675939	Drums-B2- Crash	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\Drums-B2- Crash_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block2\Block2Track\Drums-B2- Crash		967333
 	8738163	FXs-B1-Impacts	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BulletHell2022\WwiseProject\BulletHell2022\.cache\Windows\SFX\FXs-B1-Impacts_872E20C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Block1\Block1Track\FXs-B1-Impacts		979339

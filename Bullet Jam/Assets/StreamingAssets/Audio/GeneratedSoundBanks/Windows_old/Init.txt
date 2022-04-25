@@ -1,0 +1,45 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1490607671	Arrangement			\Music\Arrangement	
+	4091656514	Gamestate			\Music\Gamestate	
+
+State	ID	Name	State Group			Notes
+	682220065	Block1	Arrangement			
+	682220066	Block2	Arrangement			
+	682220067	Block3	Arrangement			
+	682220068	Block4	Arrangement			
+	748895195	None	Arrangement			
+	4184794294	Outro	Arrangement			
+	89505537	Gameplay	Gamestate			
+	748895195	None	Gamestate			
+	1593864692	Defeat	Gamestate			
+	2607556080	Menu	Gamestate			
+	2716678721	Victory	Gamestate			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1857854620	Sidechain1			\Music\Sidechain1	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	397641584	Enem_Twr_A			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_A	
+	397641586	Enem_Twr_C			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_C	
+	397641587	Enem_Twr_B			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_B	
+	397641589	Enem_Twr_D			\Default Work Unit\Master Audio Bus\Diegetic\Enemies\Enem_Twr_D	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\Diegetic\Player	
+	1316532907	Diegetic			\Default Work Unit\Master Audio Bus\Diegetic	
+	1470412565	P_Locomotion			\Default Work Unit\Master Audio Bus\Diegetic\Player\P_Locomotion	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\Diegetic\Objects	
+	2151963051	Items			\Default Work Unit\Master Audio Bus\Diegetic\Items	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\Diegetic\Enemies	
+	2482245736	Song_01			\Default Work Unit\Master Audio Bus\Music\Song_01	
+	2482245737	Song_00			\Default Work Unit\Master Audio Bus\Music\Song_00	
+	2482245739	Song_02			\Default Work Unit\Master Audio Bus\Music\Song_02	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	589841755	Wwise Meter (Custom)	Wwise Meter			
+	843421315	Wwise Gain (Custom)	Wwise Gain			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
