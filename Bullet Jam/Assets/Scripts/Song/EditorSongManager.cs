@@ -19,6 +19,7 @@ public class EditorSongManager : SongManager
         if (isPlaying)
         {
             beatProgress += Time.deltaTime;
+            score += Time.deltaTime;
         }
     }
 

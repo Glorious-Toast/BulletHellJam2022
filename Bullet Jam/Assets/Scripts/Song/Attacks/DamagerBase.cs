@@ -8,7 +8,6 @@ public class DamagerBase : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Entered");
         if (collision.tag == "Player")
         {
             collision.transform.parent.GetComponent<PlayerStats>().Damage(damage);

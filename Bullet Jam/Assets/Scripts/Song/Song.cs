@@ -6,7 +6,7 @@ using AK.Wwise;
 [CreateAssetMenu(fileName = "New Song", menuName = "Song")]
 public class Song : ScriptableObject
 {
-    public AK.Wwise.Event songEvent;
+    public string songEvent;
     public int boundsX;
     public int boundsY;
     [SerializeReference]

@@ -10,12 +10,16 @@ public class DiscoAttack : Segment
     public float damage;
     // The amount of tiles that will become red
     public int attackTiles = 10;
+    public Color color;
+    public List<Vector2Int> damageTiles;
 
-    public DiscoAttack(float pTime, float pWarningLength, float pDamage = 10f, int pAttackTiles = 10)
+    public DiscoAttack(float pTime, float pWarningLength, Color pColor, List<Vector2Int> pDamageTiles, float pDamage = 10f, int pAttackTiles = 10)
     {
         executeTime = pTime;
         warningLength = pWarningLength;
         damage = pDamage;
         attackTiles = pAttackTiles;
+        color = pColor;
+        damageTiles = pDamageTiles;
     }
 }

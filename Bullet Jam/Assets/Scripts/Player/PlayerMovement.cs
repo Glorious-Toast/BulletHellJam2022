@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer(Vector3 mVector)
     {
+        AkSoundEngine.PostEvent("Play_Plyr_Movement", gameObject);
         mVector = mVector.normalized * travelDistance;
         if (pLocTransform.position.x + mVector.x > boundsX || pLocTransform.position.x + mVector.x < -boundsX)
         {
