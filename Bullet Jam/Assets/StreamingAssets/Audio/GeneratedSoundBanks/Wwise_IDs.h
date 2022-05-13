@@ -55,6 +55,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+<<<<<<< Updated upstream
+=======
+        static const AkUniqueID PLAYSPEED = 3357794504U;
+        static const AkUniqueID RTPCB1BASS = 893339350U;
+>>>>>>> Stashed changes
         static const AkUniqueID SIDECHAIN1 = 1857854620U;
     } // namespace GAME_PARAMETERS
 
@@ -67,6 +72,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID B1BASS = 7647699U;
         static const AkUniqueID BLOCK1 = 682220065U;
         static const AkUniqueID BLOCK2 = 682220066U;
         static const AkUniqueID BLOCK3 = 682220067U;

@@ -23,6 +23,9 @@ public class MusicController : MonoBehaviour
     public uint currentGameplayState = 0;
     public string currentUserCue;
 
+    public float bassFloat = 0f;
+    uint musicID = 2932040671;
+
     public void Awake()
     {
         arrangement = GetComponent<MusicArrangement>();
@@ -30,6 +33,14 @@ public class MusicController : MonoBehaviour
         //set the starting state for the music in the game
         AkSoundEngine.SetState("Gamestate", "Gameplay");
         AkSoundEngine.SetState("Arrangement", "Block1");
+<<<<<<< Updated upstream
+=======
+        AkSoundEngine.SetRTPCValue("PlaySpeed", 1f);
+       
+
+
+
+>>>>>>> Stashed changes
     }
 
     // Start is called before the first frame update
@@ -63,14 +74,32 @@ public class MusicController : MonoBehaviour
              " |Block 2 Played Status: " + arrangement.block2Played);
          arrangement.PerformPlaylist(currentPlaylistSelection);*/
 
+        NoteFollower();
 
         
     }
 
-
+    private void NoteFollower()
+    {
+        int type = 1;
+        AkSoundEngine.GetRTPCValue("rtpcB1Bass", gameObject, 0, out bassFloat, ref type);
+        print(bassFloat);
+    }
 
     void CallbackFunciton(object in_cookie, AkCallbackType in_type, object in_info)
     {
+<<<<<<< Updated upstream
+=======
+
+        if(in_type== AkCallbackType.AK_MusicSyncUserCue){
+            AkMusicSyncCallbackInfo instCue = (AkMusicSyncCallbackInfo)(AkCallbackInfo)in_info;
+            activeInst = instCue.userCueName;
+
+            //InstrumentSwitch();
+            
+        }
+
+>>>>>>> Stashed changes
         //this if statment is called every time MusicSyncBeat is triggered via wwise and then the items inside are compleated
         if (in_type == AkCallbackType.AK_MusicSyncBeat)
         {

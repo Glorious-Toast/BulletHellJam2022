@@ -38,7 +38,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: bdddbcc8c11e8f4ab1e0f516a1c92984
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585512612447193284
+=======
+    m_lastTime: -8585503276393170273
+>>>>>>> Stashed changes
     List:
     - name: Ambience
       guid: 7b99fe5ca4ab7445a56749ef984a4cfd
@@ -59,7 +63,37 @@ MonoBehaviour:
       - ElementName: Ambience
         ObjectType: 2
         guid: 7b99fe5ca4ab7445a56749ef984a4cfd
+<<<<<<< Updated upstream
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Ambience
+=======
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Ambience
+    - name: B1Bass
+      guid: 2281cd2924efbc4fae8716dbb65ba105
+      id: 7647699
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bdddbcc8c11e8f4ab1e0f516a1c92984
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MusicAmbience
+        ObjectType: 2
+        guid: 0003a2a763a4684fa6822280ca5771b1
+      - ElementName: Tunes
+        ObjectType: 2
+        guid: 00cb5a015cc8ce4e95bc64ffc5eaca98
+      - ElementName: Block1
+        ObjectType: 2
+        guid: 42f69c154249264587f9b6ac455b3f7d
+      - ElementName: B1Bass
+        ObjectType: 2
+        guid: 2281cd2924efbc4fae8716dbb65ba105
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicAmbience\Tunes\Block1\B1Bass
+>>>>>>> Stashed changes
     - name: Block1
       guid: 42f69c154249264587f9b6ac455b3f7d
       id: 682220065
@@ -553,6 +587,73 @@ MonoBehaviour:
         guid: af6ee6728b1cfa49ab016a949e933ab0
       Path: Events\Music\Play_Music
       maxAttenuation: 0
+<<<<<<< Updated upstream
+=======
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: 12478c867b5c2746a2d5019579d0da57
+    ParentPath: Events\Player
+    guid: 12478c867b5c2746a2d5019579d0da57
+    GuidInternal: 
+    m_lastTime: -8585507665744114736
+    List:
+    - name: Play_Plyr_Movement
+      guid: 41069129f8adfd458c47a102b5d819f3
+      id: 2271622313
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 12478c867b5c2746a2d5019579d0da57
+      - ElementName: Play_Plyr_Movement
+        ObjectType: 3
+        guid: 41069129f8adfd458c47a102b5d819f3
+      Path: Events\Player\Play_Plyr_Movement
+      maxAttenuation: 0
+      maxDuration: 0.538386
+      minDuration: 0.482075
+    - name: Play_Plyr_Take_DMG
+      guid: 8dfeee66b9645540b3a6c9093aa68800
+      id: 3038071762
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 12478c867b5c2746a2d5019579d0da57
+      - ElementName: Play_Plyr_Take_DMG
+        ObjectType: 3
+        guid: 8dfeee66b9645540b3a6c9093aa68800
+      Path: Events\Player\Play_Plyr_Take_DMG
+      maxAttenuation: 0
+      maxDuration: 0.665304
+      minDuration: 0.508762
+    - name: Stop_Plyr_Movement
+      guid: 44672381d75bf7459e8430766674527b
+      id: 369982735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 12478c867b5c2746a2d5019579d0da57
+      - ElementName: Stop_Plyr_Movement
+        ObjectType: 3
+        guid: 44672381d75bf7459e8430766674527b
+      Path: Events\Player\Stop_Plyr_Movement
+      maxAttenuation: 0
+>>>>>>> Stashed changes
       maxDuration: 0
       minDuration: 0
   RtpcWwu:
@@ -569,6 +670,50 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585516336008438978
     List: []
+  - PhysicalPath: Game Parameters\InstrumentTracking.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: InstrumentTracking
+      ObjectType: 12
+      guid: 75bb606998d56f419e343a63ed018019
+    ParentPath: Game Parameters\InstrumentTracking
+    guid: 75bb606998d56f419e343a63ed018019
+    GuidInternal: 
+    m_lastTime: -8585503278986027556
+    List:
+    - name: Block1
+      guid: 44af916a9edfdb44b4673dfdf38b2b2d
+      id: 682220065
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: InstrumentTracking
+        ObjectType: 12
+        guid: 75bb606998d56f419e343a63ed018019
+      - ElementName: Block1
+        ObjectType: 4
+        guid: 44af916a9edfdb44b4673dfdf38b2b2d
+      Path: Game Parameters\InstrumentTracking\Block1
+    - name: rtpcB1Bass
+      guid: 9472810a59154547961c927f37fcce0a
+      id: 893339350
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: InstrumentTracking
+        ObjectType: 12
+        guid: 75bb606998d56f419e343a63ed018019
+      - ElementName: Block1
+        ObjectType: 4
+        guid: 44af916a9edfdb44b4673dfdf38b2b2d
+      - ElementName: rtpcB1Bass
+        ObjectType: 13
+        guid: 9472810a59154547961c927f37fcce0a
+      Path: Game Parameters\InstrumentTracking\Block1\rtpcB1Bass
   - PhysicalPath: Game Parameters\Music.wwu
     PathAndIcons:
     - ElementName: Game Parameters
